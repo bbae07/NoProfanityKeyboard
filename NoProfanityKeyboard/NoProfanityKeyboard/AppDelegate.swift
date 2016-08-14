@@ -11,12 +11,49 @@ import UIKit
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
+/*
+   기능: 
+        1. 통계 (욕 쓴 횟수, 바꾼 횟수) --> 수치, 그래프
+        2. 자기 목표 설정 기능
+*/
+
     var window: UIWindow?
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+
+        if(!NSUserDefaults.standardUserDefaults().boolForKey("HasLaunchedOnce"))
+        {
+            NSUserDefaults.standardUserDefaults().setBool(true, forKey: "HasLaunchedOnce")
+            initWordBank()
+        }
+
+        let tabBar      = UITabBarController()
+        let statPage    = StatisticVC()
+        let graphPage   = GraphVC()
+
+        let controllers:[UIViewController] = [statPage,graphPage]
+        tabBar.viewControllers = controllers;
+        self.window?.rootViewController = tabBar;
         return true
+    }
+
+    func initWordBank()
+    {
+        let swears:[String]     = ["LKM","BCS","hello"]
+        let s_count:[NSInteger] = [0,0,0]
+        let array_1 = ["이경문","KyungMoon","Mark", 0]
+        let array_2 = ["배찬서","Chanseo","Brian",0]
+        let array_3 = ["안녕","Bonjour","",0]
+        let array = [array_1,array_2,array_3]
+
+        for i in 0 ..< swears.count
+        {
+            NSUserDefaults.standardUserDefaults().setObject([array[i],s_count[i]], forKey: swears[i])
+        }
+        NSUserDefaults.standardUserDefaults().setObject(swears, forKey: "swear")
+
     }
 
     func applicationWillResignActive(application: UIApplication) {

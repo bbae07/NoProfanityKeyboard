@@ -73,25 +73,25 @@ class KeyboardViewController: UIInputViewController {
                 Btn.setTitle(member, forState: UIControlState.Normal)
                 Btn.backgroundColor = UIColor.whiteColor()
                 Btn.setTitleColor(UIColor.blackColor(), forState: .Normal)
-                let doubleTap:UITapGestureRecognizer = UITapGestureRecognizer()
-                doubleTap.numberOfTapsRequired = 2
-                doubleTap.numberOfTouchesRequired = 1
                 if(Btn.titleLabel?.text == "#")
                 {
+                    let doubleTap:UITapGestureRecognizer = UITapGestureRecognizer()
+                    doubleTap.numberOfTapsRequired = 2
+                    doubleTap.numberOfTouchesRequired = 1
+
                     doubleTap.addTarget(self, action: #selector(capsLock(_:)))
+                    Btn.addGestureRecognizer(doubleTap)
                 }
-                Btn.addGestureRecognizer(doubleTap)
 
-                let singleTap:UITapGestureRecognizer = UITapGestureRecognizer()
-                singleTap.numberOfTapsRequired = 1
-                singleTap.numberOfTouchesRequired = 1
-                //singleTap.addTarget(self, action: #selector(nothing(_:)))
-                Btn.addGestureRecognizer(singleTap)
-
-                singleTap.requireGestureRecognizerToFail(doubleTap)
+//                let singleTap:UITapGestureRecognizer = UITapGestureRecognizer()
+//                singleTap.numberOfTapsRequired = 1
+//                singleTap.numberOfTouchesRequired = 1
+//                //singleTap.addTarget(self, action: #selector(nothing(_:)))
+//                Btn.addGestureRecognizer(singleTap)
+//
+//                singleTap.requireGestureRecognizerToFail(doubleTap)
 
                 Btn.addTarget(self, action: #selector(handleBtn(_:)), forControlEvents: .TouchUpInside)
-
 
                 self.view.addSubview(Btn)
                 count+=Btn.bounds.size.width
@@ -99,11 +99,6 @@ class KeyboardViewController: UIInputViewController {
             y+=CGFloat(224)/4
         }
         
-    }
-
-    func nothing(sener:UITapGestureRecognizer)
-    {
-
     }
 
     func capsLock(sender:UITapGestureRecognizer)

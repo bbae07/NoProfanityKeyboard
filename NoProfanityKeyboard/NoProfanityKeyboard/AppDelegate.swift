@@ -26,7 +26,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         if(!NSUserDefaults.standardUserDefaults().boolForKey("HasLaunchedOnce"))
         {
             NSUserDefaults.standardUserDefaults().setBool(true, forKey: "HasLaunchedOnce")
-            initWordBank()
+            Manager.initWordBank()
         }
 
         let tabBar      = UITabBarController()
@@ -38,24 +38,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.window?.rootViewController = tabBar;
         return true
     }
-
-    func initWordBank()
-    {
-        let swears:[String]     = ["LKM","BCS","hello"]
-        let s_count:[NSInteger] = [0,0,0]
-        let array_1 = ["이경문","KyungMoon","Mark", 0]
-        let array_2 = ["배찬서","Chanseo","Brian",0]
-        let array_3 = ["안녕","Bonjour","",0]
-        let array = [array_1,array_2,array_3]
-
-        for i in 0 ..< swears.count
-        {
-            NSUserDefaults.standardUserDefaults().setObject([array[i],s_count[i]], forKey: swears[i])
-        }
-        NSUserDefaults.standardUserDefaults().setObject(swears, forKey: "swear")
-
-    }
-
+    
     func applicationWillResignActive(application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
         // Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.

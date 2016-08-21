@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2361534D1D69C48800C6A2AF /* Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2361534C1D69C48800C6A2AF /* Manager.swift */; };
+		2361534E1D69C57500C6A2AF /* Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2361534C1D69C48800C6A2AF /* Manager.swift */; };
 		595A017F1D5EA22500F826F3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 595A017E1D5EA22500F826F3 /* AppDelegate.swift */; };
 		595A01811D5EA22500F826F3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 595A01801D5EA22500F826F3 /* ViewController.swift */; };
 		595A01841D5EA22500F826F3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 595A01821D5EA22500F826F3 /* Main.storyboard */; };
@@ -45,6 +47,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		2361534A1D69C37600C6A2AF /* NoProfanityKeyboard.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = NoProfanityKeyboard.entitlements; sourceTree = "<group>"; };
+		2361534B1D69C3A300C6A2AF /* keyboard.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = keyboard.entitlements; sourceTree = "<group>"; };
+		2361534C1D69C48800C6A2AF /* Manager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Manager.swift; sourceTree = "<group>"; };
 		595A017B1D5EA22500F826F3 /* NoProfanityKeyboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NoProfanityKeyboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		595A017E1D5EA22500F826F3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		595A01801D5EA22500F826F3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -82,6 +87,7 @@
 		595A01721D5EA22500F826F3 = {
 			isa = PBXGroup;
 			children = (
+				2361534C1D69C48800C6A2AF /* Manager.swift */,
 				595A017D1D5EA22500F826F3 /* NoProfanityKeyboard */,
 				595A01951D5EA25500F826F3 /* keyboard */,
 				595A017C1D5EA22500F826F3 /* Products */,
@@ -100,6 +106,7 @@
 		595A017D1D5EA22500F826F3 /* NoProfanityKeyboard */ = {
 			isa = PBXGroup;
 			children = (
+				2361534A1D69C37600C6A2AF /* NoProfanityKeyboard.entitlements */,
 				59D3D1951D60904E00172EFE /* ViewController */,
 				59D3D1941D60903D00172EFE /* custom */,
 				595A017E1D5EA22500F826F3 /* AppDelegate.swift */,
@@ -114,6 +121,7 @@
 		595A01951D5EA25500F826F3 /* keyboard */ = {
 			isa = PBXGroup;
 			children = (
+				2361534B1D69C3A300C6A2AF /* keyboard.entitlements */,
 				595A01961D5EA25500F826F3 /* KeyboardViewController.swift */,
 				595A01981D5EA25500F826F3 /* Info.plist */,
 			);
@@ -190,10 +198,21 @@
 				TargetAttributes = {
 					595A017A1D5EA22500F826F3 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = L6C8TCRC5L;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					595A01931D5EA25500F826F3 = {
 						CreatedOnToolsVersion = 7.3.1;
 						DevelopmentTeam = L6C8TCRC5L;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -243,6 +262,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				59D3D18B1D60816A00172EFE /* StatisticVC.swift in Sources */,
+				2361534E1D69C57500C6A2AF /* Manager.swift in Sources */,
 				595A01811D5EA22500F826F3 /* ViewController.swift in Sources */,
 				59D3D1921D608D6C00172EFE /* CustomCell.swift in Sources */,
 				595A017F1D5EA22500F826F3 /* AppDelegate.swift in Sources */,
@@ -255,6 +275,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				595A01971D5EA25500F826F3 /* KeyboardViewController.swift in Sources */,
+				2361534D1D69C48800C6A2AF /* Manager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -375,10 +396,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = NoProfanityKeyboard/NoProfanityKeyboard.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = NoProfanityKeyboard/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = kyungmonlee.NoProfanityKeyboard;
+				PRODUCT_BUNDLE_IDENTIFIER = chanseobae.NoProfanityKeyboard;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -387,10 +410,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = NoProfanityKeyboard/NoProfanityKeyboard.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = NoProfanityKeyboard/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = kyungmonlee.NoProfanityKeyboard;
+				PRODUCT_BUNDLE_IDENTIFIER = chanseobae.NoProfanityKeyboard;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -398,11 +423,12 @@
 		595A019D1D5EA25500F826F3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = keyboard/keyboard.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = keyboard/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = kyungmonlee.NoProfanityKeyboard.keyboard;
+				PRODUCT_BUNDLE_IDENTIFIER = chanseobae.NoProfanityKeyboard.keyboard;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SKIP_INSTALL = YES;
@@ -412,11 +438,12 @@
 		595A019E1D5EA25500F826F3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = keyboard/keyboard.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = keyboard/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = kyungmonlee.NoProfanityKeyboard.keyboard;
+				PRODUCT_BUNDLE_IDENTIFIER = chanseobae.NoProfanityKeyboard.keyboard;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SKIP_INSTALL = YES;

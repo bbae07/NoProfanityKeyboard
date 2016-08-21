@@ -10,7 +10,7 @@ import UIKit
 
 class StatisticVC: UITableViewController {
 
-    let swears:[String] = NSUserDefaults.standardUserDefaults().arrayForKey("swear") as! [String]
+    let swears:[String] = Manager.defaults!.arrayForKey("swear") as! [String]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,7 +38,7 @@ class StatisticVC: UITableViewController {
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return (NSUserDefaults.standardUserDefaults().objectForKey("swear")?.count)!
+        return (Manager.defaults!.objectForKey("swear")?.count)!
     }
 
 
@@ -47,7 +47,7 @@ class StatisticVC: UITableViewController {
 
         if(indexPath.row != 0)
         {
-            var x = NSUserDefaults.standardUserDefaults().arrayForKey(swears[indexPath.row - 1]) as! [AnyObject!]
+            var x = Manager.defaults!.arrayForKey(swears[indexPath.row - 1]) as! [AnyObject!]
             cell.swearStr = swears[indexPath.row - 1]
             cell.noStr = (x[1] as! NSNumber).stringValue
             cell.yesStr = ((x[0] as! [AnyObject!])[3] as! NSNumber).stringValue

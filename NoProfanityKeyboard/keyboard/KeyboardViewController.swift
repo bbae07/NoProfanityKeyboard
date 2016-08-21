@@ -8,7 +8,7 @@
 
 import UIKit
 
-class KeyboardViewController: UIInputViewController,TestProtocol {
+class KeyboardViewController: UIInputViewController {
 
     var topCharacterList:[String] = ["q","w","e","r","t","y","u","i","o","p"] // 10개
     var upperCharacterList:[String] = ["a","s","d","f","g","h","j","k","l"] // 9개
@@ -80,7 +80,7 @@ class KeyboardViewController: UIInputViewController,TestProtocol {
         
         Btn_1.backgroundColor = UIColor(red:1.0,green:1.0,blue:1.0,alpha:0.6)
         Btn_2.backgroundColor = UIColor(red:1.0,green:1.0,blue:1.0,alpha:0.6)
-        Btn_2.backgroundColor = UIColor(red:1.0,green:1.0,blue:1.0,alpha:0.6)
+        Btn_3.backgroundColor = UIColor(red:1.0,green:1.0,blue:1.0,alpha:0.6)
         Btn_1.setTitleColor(UIColor(red:85.0/255.0, green:85.0/255.0, blue:85.0/255.0, alpha: 1.0), forState: .Normal)
         Btn_2.setTitleColor(UIColor(red:85.0/255.0, green:85.0/255.0, blue:85.0/255.0, alpha: 1.0), forState: .Normal)
         Btn_3.setTitleColor(UIColor(red:85.0/255.0, green:85.0/255.0, blue:85.0/255.0, alpha: 1.0), forState: .Normal)

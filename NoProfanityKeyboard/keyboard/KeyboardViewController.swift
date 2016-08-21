@@ -8,7 +8,7 @@
 
 import UIKit
 
-class KeyboardViewController: UIInputViewController {
+class KeyboardViewController: UIInputViewController,TestProtocol {
 
     var topCharacterList:[String] = ["q","w","e","r","t","y","u","i","o","p"] // 10개
     var upperCharacterList:[String] = ["a","s","d","f","g","h","j","k","l"] // 9개
@@ -40,11 +40,20 @@ class KeyboardViewController: UIInputViewController {
     lazy var CharacterList: [[String]] = [self.topCharacterList,self.upperCharacterList,self.footerCharacterList,self.bottomCharacterList]
 
     var mainview = UIView(frame:CGRect(x:0,y:40,width: UIScreen.mainScreen().bounds.size.width, height: 184.0))
-    var suggestionView = Suggestion(frame:CGRect(x: 0, y: 0, width: UIScreen.mainScreen().bounds.size.width, height: 40))
+    var suggestionView:Suggestion = Suggestion(frame:CGRect(x:0,y:0,width:UIScreen.mainScreen().bounds.size.width,height:40.0))
+
+
+    //NSBundle.mainBundle().loadNibNamed("View.xib", owner: nil, options: nil)[0] as! UIView
+    //Suggestion(frame:CGRect(x: 0, y: 0, width: UIScreen.mainScreen().bounds.size.width, height: 40))
 
     //let colors = [UIColor.redColor(), UIColor.blueColor(), UIColor.greenColor(), UIColor.grayColor()]
 
 //#selector(advanceToNextInputMode)
+    func onButtonTap(sender: UIButton) {
+        // invoking the delegate when the
+        // button is actually tapped
+        NSLog("This button was clicked in the subview!")
+    }
     override func updateViewConstraints() {
         super.updateViewConstraints()
     
@@ -53,6 +62,8 @@ class KeyboardViewController: UIInputViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.suggestionView.delegate = self
+
         createKeyBoard()
         self.view.addSubview(mainview)
         self.view.addSubview(suggestionView)

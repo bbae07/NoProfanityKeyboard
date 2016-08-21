@@ -8,11 +8,17 @@
 
 import UIKit
 
-class Suggestion: NibLoadingView {
+protocol TestProtocol {
+    func onButtonTap(sender: UIButton)
+}
 
-    @IBOutlet weak var Btn_1: UIButton!
-    @IBOutlet weak var Btn_2: UIButton!
-    @IBOutlet weak var Btn_3: UIButton!
+class Suggestion: UIView {
+    var delegate: TestProtocol?
+    //@IBOutlet weak var Btn_1: UIButton!
+    //@IBOutlet weak var Btn_2: UIButton!
+    //@IBOutlet weak var Btn_3: UIButton!
+
+    @IBOutlet weak var b2: UIButton!
 
 
     /*
@@ -22,40 +28,31 @@ class Suggestion: NibLoadingView {
         // Drawing code
     }
     */
-
-}
-@IBDesignable
-class NibLoadingView: UIView {
-
-    @IBOutlet weak var view: UIView!
-
     override init(frame: CGRect) {
         super.init(frame: frame)
-        nibSetup()
+        self.loadNib()
     }
 
-    required init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
-        nibSetup()
+    required init(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)!
+        self.loadNib()
     }
 
-    private func nibSetup() {
-        backgroundColor = .clearColor()
-
-        view = loadViewFromNib()
-        view.frame = bounds
-        view.autoresizingMask = [.FlexibleWidth, .FlexibleHeight]
-        view.translatesAutoresizingMaskIntoConstraints = true
-
-        addSubview(view)
+    func loadNib(){
+        let view = NSBundle.mainBundle().loadNibNamed("TestView", owner: self, options: nil).first as! UIView
+        view.frame = self.bounds
+        self.addSubview(view)
+        b2.addTarget(self, action: #selector(test(_:)
+            ), forControlEvents: .TouchUpInside)
+        //return UINib(nibName: "TestView", bundle: nil).instantiateWithOwner(nil, options: nil).first as! UIView
     }
-
-    private func loadViewFromNib() -> UIView {
-        let bundle = NSBundle(forClass: self.dynamicType)
-        let nib = UINib(nibName: String(self.dynamicType), bundle: bundle)
-        let nibView = nib.instantiateWithOwner(self, options: nil).first as! UIView
-        
-        return nibView
+    func test(sender:UIButton){
+        NSLog("test")
+        self.onButtonTap(sender)
     }
-    
+    func onButtonTap(sender: UIButton) {
+        // invoking the delegate when the
+        // button is actually tapped
+        delegate?.onButtonTap(sender)
+    }
 }

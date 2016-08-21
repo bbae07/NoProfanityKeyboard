@@ -102,14 +102,6 @@ class KeyboardViewController: UIInputViewController,TestProtocol {
                     Btn.addGestureRecognizer(doubleTap)
                 }
 
-//                let singleTap:UITapGestureRecognizer = UITapGestureRecognizer()
-//                singleTap.numberOfTapsRequired = 1
-//                singleTap.numberOfTouchesRequired = 1
-//                //singleTap.addTarget(self, action: #selector(nothing(_:)))
-//                Btn.addGestureRecognizer(singleTap)
-//
-//                singleTap.requireGestureRecognizerToFail(doubleTap)
-
                 Btn.addTarget(self, action: #selector(handleBtn(_:)), forControlEvents: .TouchUpInside)
 
                 mainview.addSubview(Btn)

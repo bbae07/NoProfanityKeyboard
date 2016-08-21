@@ -14,20 +14,9 @@ protocol TestProtocol {
 
 class Suggestion: UIView {
     var delegate: TestProtocol?
-    //@IBOutlet weak var Btn_1: UIButton!
-    //@IBOutlet weak var Btn_2: UIButton!
-    //@IBOutlet weak var Btn_3: UIButton!
 
     @IBOutlet weak var b2: UIButton!
 
-
-    /*
-    // Only override drawRect: if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func drawRect(rect: CGRect) {
-        // Drawing code
-    }
-    */
     override init(frame: CGRect) {
         super.init(frame: frame)
         self.loadNib()
@@ -44,7 +33,6 @@ class Suggestion: UIView {
         self.addSubview(view)
         b2.addTarget(self, action: #selector(test(_:)
             ), forControlEvents: .TouchUpInside)
-        //return UINib(nibName: "TestView", bundle: nil).instantiateWithOwner(nil, options: nil).first as! UIView
     }
     func test(sender:UIButton){
         NSLog("test")

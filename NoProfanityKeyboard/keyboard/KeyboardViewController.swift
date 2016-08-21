@@ -40,7 +40,7 @@ class KeyboardViewController: UIInputViewController,TestProtocol {
 
     lazy var CharacterList: [[String]] = [self.topCharacterList,self.upperCharacterList,self.footerCharacterList,self.bottomCharacterList]
 
-    var mainview = UIView(frame:CGRect(x:0,y:40,width: UIScreen.mainScreen().bounds.size.width, height: 184.0))
+    var mainview = UIView()
     
     
     var suggestionView = UIView(frame:CGRect(x: 0, y: 0, width: UIScreen.mainScreen().bounds.size.width, height: 40.0))
@@ -54,6 +54,7 @@ class KeyboardViewController: UIInputViewController,TestProtocol {
     var Btn_3 = UIButton(frame: CGRect(x:(UIScreen.mainScreen().bounds.size.width-3)/3*2+3,y:0,width: (UIScreen.mainScreen().bounds.size.width-3)/3, height:40))
     var Line_2 = UIView(frame: CGRect(x: (UIScreen.mainScreen().bounds.size.width-3)/3*2+1.5, y:0, width: 1.5, height: 40))
 
+    var keyboardHeight = 184.0 as CGFloat
 
     //NSBundle.mainBundle().loadNibNamed("View.xib", owner: nil, options: nil)[0] as! UIView
     //Suggestion(frame:CGRect(x: 0, y: 0, width: UIScreen.mainScreen().bounds.size.width, height: 40))
@@ -74,6 +75,10 @@ class KeyboardViewController: UIInputViewController,TestProtocol {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        NSNotificationCenter.defaultCenter().addObserver(self,selector: #selector(KeyboardViewController.keyboardShown(_:)), name: UIKeyboardDidShowNotification, object: nil)
+        
+        mainview.frame = CGRect(x:0,y:40,width: UIScreen.mainScreen().bounds.size.width, height: keyboardHeight)
 
         createKeyBoard()
         self.view.addSubview(mainview)
@@ -103,6 +108,16 @@ class KeyboardViewController: UIInputViewController,TestProtocol {
 
     }
 
+    func keyboardShown(notification: NSNotification) {
+        let info  = notification.userInfo!
+        let value: AnyObject = info[UIKeyboardFrameEndUserInfoKey]!
+        
+        let rawFrame = value.CGRectValue
+        let keyboardFrame = view.convertRect(rawFrame, fromView: nil)
+        keyboardHeight = keyboardFrame.size.width - 40
+    }
+    
+    
     func createKeyBoard()
     {
         for subview in mainview.subviews
@@ -121,7 +136,7 @@ class KeyboardViewController: UIInputViewController,TestProtocol {
             var count:CGFloat = 0
             for member in array
             {
-                let Btn = UIButton(frame:CGRect(x:count,y:y,width:UIScreen.mainScreen().bounds.size.width/CGFloat(array.count),height:CGFloat(184)/4))
+                let Btn = UIButton(frame:CGRect(x:count,y:y,width:UIScreen.mainScreen().bounds.size.width/CGFloat(array.count),height:keyboardHeight/4))
                 Btn.setTitle(member, forState: UIControlState.Normal)
                 Btn.backgroundColor = UIColor.whiteColor()
                 Btn.setTitleColor(UIColor.blackColor(), forState: .Normal)
@@ -140,7 +155,7 @@ class KeyboardViewController: UIInputViewController,TestProtocol {
                 mainview.addSubview(Btn)
                 count+=Btn.bounds.size.width
             }
-            y+=CGFloat(184)/4
+            y+=keyboardHeight/4
         }
         
     }

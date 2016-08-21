@@ -39,6 +39,11 @@ class KeyboardViewController: UIInputViewController {
 
     lazy var CharacterList: [[String]] = [self.topCharacterList,self.upperCharacterList,self.footerCharacterList,self.bottomCharacterList]
 
+    var mainview = UIView(frame:CGRect(x:0,y:40,width: UIScreen.mainScreen().bounds.size.width, height: 184.0))
+    var suggestionView = Suggestion(frame:CGRect(x: 0, y: 0, width: UIScreen.mainScreen().bounds.size.width, height: 40))
+
+    //let colors = [UIColor.redColor(), UIColor.blueColor(), UIColor.greenColor(), UIColor.grayColor()]
+
 //#selector(advanceToNextInputMode)
     override func updateViewConstraints() {
         super.updateViewConstraints()
@@ -49,11 +54,14 @@ class KeyboardViewController: UIInputViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         createKeyBoard()
+        self.view.addSubview(mainview)
+        self.view.addSubview(suggestionView)
+
     }
 
     func createKeyBoard()
     {
-        for subview in self.view.subviews
+        for subview in mainview.subviews
         {
             subview.removeFromSuperview()
         }
@@ -69,7 +77,7 @@ class KeyboardViewController: UIInputViewController {
             var count:CGFloat = 0
             for member in array
             {
-                let Btn = UIButton(frame:CGRect(x:count,y:y,width:UIScreen.mainScreen().bounds.size.width/CGFloat(array.count),height:CGFloat(224)/4))
+                let Btn = UIButton(frame:CGRect(x:count,y:y,width:UIScreen.mainScreen().bounds.size.width/CGFloat(array.count),height:CGFloat(184)/4))
                 Btn.setTitle(member, forState: UIControlState.Normal)
                 Btn.backgroundColor = UIColor.whiteColor()
                 Btn.setTitleColor(UIColor.blackColor(), forState: .Normal)
@@ -93,10 +101,10 @@ class KeyboardViewController: UIInputViewController {
 
                 Btn.addTarget(self, action: #selector(handleBtn(_:)), forControlEvents: .TouchUpInside)
 
-                self.view.addSubview(Btn)
+                mainview.addSubview(Btn)
                 count+=Btn.bounds.size.width
             }
-            y+=CGFloat(224)/4
+            y+=CGFloat(184)/4
         }
         
     }
@@ -160,7 +168,7 @@ class KeyboardViewController: UIInputViewController {
         else
         {
             self.textDocumentProxy.insertText(label!)
-            let shiftBtn:UIButton = self.view.subviews[19] as! UIButton
+            let shiftBtn:UIButton = self.mainview.subviews[19] as! UIButton
             if(shiftBtn.titleLabel?.text=="##")
             {
                 CharacterList = [topCharacterList,upperCharacterList,footerCharacterList,bottomCharacterList]

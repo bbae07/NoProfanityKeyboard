@@ -35,12 +35,24 @@ class KeyboardViewController: UIInputViewController,TestProtocol {
     var footerShiftCharacterList:[String] = ["##","Z","X","C","V","B","N","M","<-"] // 9개
     var bottomShiftCharacterList:[String] = ["123","@@","space","return"] // 4개
 
+
     //var buttons:[UIButton]? = nil
 
     lazy var CharacterList: [[String]] = [self.topCharacterList,self.upperCharacterList,self.footerCharacterList,self.bottomCharacterList]
 
     var mainview = UIView(frame:CGRect(x:0,y:40,width: UIScreen.mainScreen().bounds.size.width, height: 184.0))
-    var suggestionView:Suggestion = Suggestion(frame:CGRect(x:0,y:0,width:UIScreen.mainScreen().bounds.size.width,height:40.0))
+    
+    
+    var suggestionView = UIView(frame:CGRect(x: 0, y: 0, width: UIScreen.mainScreen().bounds.size.width, height: 40.0))
+    
+    var Btn_1 = UIButton(frame: CGRect(x:0,y:0,width: (UIScreen.mainScreen().bounds.size.width-3)/3, height:40))
+    
+    var Line_1 = UIView(frame: CGRect(x: (UIScreen.mainScreen().bounds.size.width-3)/3, y:0, width: 1.5, height: 40))
+    
+    var Btn_2 = UIButton(frame: CGRect(x:(UIScreen.mainScreen().bounds.size.width-3)/3+1.5,y:0,width: (UIScreen.mainScreen().bounds.size.width-3)/3, height:40))
+    
+    var Btn_3 = UIButton(frame: CGRect(x:(UIScreen.mainScreen().bounds.size.width-3)/3*2+3,y:0,width: (UIScreen.mainScreen().bounds.size.width-3)/3, height:40))
+    var Line_2 = UIView(frame: CGRect(x: (UIScreen.mainScreen().bounds.size.width-3)/3*2+1.5, y:0, width: 1.5, height: 40))
 
 
     //NSBundle.mainBundle().loadNibNamed("View.xib", owner: nil, options: nil)[0] as! UIView
@@ -62,10 +74,31 @@ class KeyboardViewController: UIInputViewController,TestProtocol {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.suggestionView.delegate = self
 
         createKeyBoard()
         self.view.addSubview(mainview)
+        
+        Btn_1.backgroundColor = UIColor(red:1.0,green:1.0,blue:1.0,alpha:0.6)
+        Btn_2.backgroundColor = UIColor(red:1.0,green:1.0,blue:1.0,alpha:0.6)
+        Btn_2.backgroundColor = UIColor(red:1.0,green:1.0,blue:1.0,alpha:0.6)
+        Btn_1.setTitleColor(UIColor(red:85.0/255.0, green:85.0/255.0, blue:85.0/255.0, alpha: 1.0), forState: .Normal)
+        Btn_2.setTitleColor(UIColor(red:85.0/255.0, green:85.0/255.0, blue:85.0/255.0, alpha: 1.0), forState: .Normal)
+        Btn_3.setTitleColor(UIColor(red:85.0/255.0, green:85.0/255.0, blue:85.0/255.0, alpha: 1.0), forState: .Normal)
+        
+        Line_1.backgroundColor = UIColor.whiteColor()
+        Line_2.backgroundColor = UIColor.whiteColor()
+        
+        Btn_1.setTitle("HI", forState: .Normal)
+        
+        Btn_2.setTitle("HI", forState: .Normal)
+        
+        Btn_3.setTitle("HI", forState: .Normal)
+        
+        suggestionView.addSubview(Btn_1)
+        suggestionView.addSubview(Btn_2)
+        suggestionView.addSubview(Btn_3)
+        suggestionView.addSubview(Line_1)
+        suggestionView.addSubview(Line_2)
         self.view.addSubview(suggestionView)
 
     }

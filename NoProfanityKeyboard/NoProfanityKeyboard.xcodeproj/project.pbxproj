@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		236153491D69B76000C6A2AF /* SuggestionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 236153481D69B75F00C6A2AF /* SuggestionView.xib */; };
 		595A017F1D5EA22500F826F3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 595A017E1D5EA22500F826F3 /* AppDelegate.swift */; };
 		595A01811D5EA22500F826F3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 595A01801D5EA22500F826F3 /* ViewController.swift */; };
 		595A01841D5EA22500F826F3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 595A01821D5EA22500F826F3 /* Main.storyboard */; };
@@ -15,12 +14,10 @@
 		595A01891D5EA22500F826F3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 595A01871D5EA22500F826F3 /* LaunchScreen.storyboard */; };
 		595A01971D5EA25500F826F3 /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 595A01961D5EA25500F826F3 /* KeyboardViewController.swift */; };
 		595A019B1D5EA25500F826F3 /* keyboard.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 595A01941D5EA25500F826F3 /* keyboard.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		59C5740D1D699BCD00B5516C /* View.xib in Resources */ = {isa = PBXBuildFile; fileRef = 59C5740C1D699BCD00B5516C /* View.xib */; };
 		59D3D18B1D60816A00172EFE /* StatisticVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59D3D18A1D60816A00172EFE /* StatisticVC.swift */; };
 		59D3D18D1D60818000172EFE /* GraphVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59D3D18C1D60818000172EFE /* GraphVC.swift */; };
 		59D3D1921D608D6C00172EFE /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59D3D1901D608D6C00172EFE /* CustomCell.swift */; };
 		59D3D1931D608D6C00172EFE /* CustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 59D3D1911D608D6C00172EFE /* CustomCell.xib */; };
-		59D3D1971D609BB600172EFE /* Suggestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59D3D1961D609BB600172EFE /* Suggestion.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,7 +45,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		236153481D69B75F00C6A2AF /* SuggestionView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SuggestionView.xib; sourceTree = "<group>"; };
 		595A017B1D5EA22500F826F3 /* NoProfanityKeyboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NoProfanityKeyboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		595A017E1D5EA22500F826F3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		595A01801D5EA22500F826F3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -59,12 +55,10 @@
 		595A01941D5EA25500F826F3 /* keyboard.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = keyboard.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		595A01961D5EA25500F826F3 /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
 		595A01981D5EA25500F826F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		59C5740C1D699BCD00B5516C /* View.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = View.xib; sourceTree = "<group>"; };
 		59D3D18A1D60816A00172EFE /* StatisticVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatisticVC.swift; sourceTree = "<group>"; };
 		59D3D18C1D60818000172EFE /* GraphVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraphVC.swift; sourceTree = "<group>"; };
 		59D3D1901D608D6C00172EFE /* CustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CustomCell.swift; path = ../CustomCell.swift; sourceTree = "<group>"; };
 		59D3D1911D608D6C00172EFE /* CustomCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CustomCell.xib; path = ../CustomCell.xib; sourceTree = "<group>"; };
-		59D3D1961D609BB600172EFE /* Suggestion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Suggestion.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,9 +116,6 @@
 			children = (
 				595A01961D5EA25500F826F3 /* KeyboardViewController.swift */,
 				595A01981D5EA25500F826F3 /* Info.plist */,
-				59D3D1961D609BB600172EFE /* Suggestion.swift */,
-				59C5740C1D699BCD00B5516C /* View.xib */,
-				236153481D69B75F00C6A2AF /* SuggestionView.xib */,
 			);
 			path = keyboard;
 			sourceTree = "<group>";
@@ -241,8 +232,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				236153491D69B76000C6A2AF /* SuggestionView.xib in Resources */,
-				59C5740D1D699BCD00B5516C /* View.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,7 +255,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				595A01971D5EA25500F826F3 /* KeyboardViewController.swift in Sources */,
-				59D3D1971D609BB600172EFE /* Suggestion.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

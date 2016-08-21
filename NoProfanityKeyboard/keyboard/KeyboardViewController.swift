@@ -54,14 +54,9 @@ class KeyboardViewController: UIInputViewController,TestProtocol {
     var Btn_3 = UIButton(frame: CGRect(x:(UIScreen.mainScreen().bounds.size.width-3)/3*2+3,y:0,width: (UIScreen.mainScreen().bounds.size.width-3)/3, height:40))
     var Line_2 = UIView(frame: CGRect(x: (UIScreen.mainScreen().bounds.size.width-3)/3*2+1.5, y:0, width: 1.5, height: 40))
 
-    var keyboardHeight = 184.0 as CGFloat
+    var keyboardHeight = 176.0 as CGFloat
 
-    //NSBundle.mainBundle().loadNibNamed("View.xib", owner: nil, options: nil)[0] as! UIView
-    //Suggestion(frame:CGRect(x: 0, y: 0, width: UIScreen.mainScreen().bounds.size.width, height: 40))
-
-    //let colors = [UIColor.redColor(), UIColor.blueColor(), UIColor.greenColor(), UIColor.grayColor()]
-
-//#selector(advanceToNextInputMode)
+    
     func onButtonTap(sender: UIButton) {
         // invoking the delegate when the
         // button is actually tapped

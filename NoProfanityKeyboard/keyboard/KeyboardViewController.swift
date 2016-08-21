@@ -56,6 +56,10 @@ class KeyboardViewController: UIInputViewController {
 
     var keyboardHeight = 176.0 as CGFloat
 
+    var textLength:Int = 0
+    var currentText = ""
+    
+    var currentSwear = ""
     
     func onButtonTap(sender: UIButton) {
         // invoking the delegate when the
@@ -84,15 +88,13 @@ class KeyboardViewController: UIInputViewController {
         Btn_1.setTitleColor(UIColor(red:85.0/255.0, green:85.0/255.0, blue:85.0/255.0, alpha: 1.0), forState: .Normal)
         Btn_2.setTitleColor(UIColor(red:85.0/255.0, green:85.0/255.0, blue:85.0/255.0, alpha: 1.0), forState: .Normal)
         Btn_3.setTitleColor(UIColor(red:85.0/255.0, green:85.0/255.0, blue:85.0/255.0, alpha: 1.0), forState: .Normal)
+        Btn_1.addTarget(self, action: #selector(switchWord(_:)), forControlEvents: .TouchUpInside)
+        Btn_2.addTarget(self, action: #selector(switchWord(_:)), forControlEvents: .TouchUpInside)
+        Btn_3.addTarget(self, action: #selector(switchWord(_:)), forControlEvents: .TouchUpInside)
+        
         
         Line_1.backgroundColor = UIColor.whiteColor()
         Line_2.backgroundColor = UIColor.whiteColor()
-        
-        Btn_1.setTitle("HI", forState: .Normal)
-        
-        Btn_2.setTitle("HI", forState: .Normal)
-        
-        Btn_3.setTitle("HI", forState: .Normal)
         
         suggestionView.addSubview(Btn_1)
         suggestionView.addSubview(Btn_2)
@@ -101,6 +103,16 @@ class KeyboardViewController: UIInputViewController {
         suggestionView.addSubview(Line_2)
         self.view.addSubview(suggestionView)
 
+    }
+    
+    func switchWord(sender:UIButton)
+    {
+        let newStr = currentText.stringByReplacingOccurrencesOfString(currentSwear, withString: sender.titleLabel!.text!)
+        for i in 0 ..< currentText.characters.count
+        {
+           self.textDocumentProxy.deleteBackward()
+        }
+        self.textDocumentProxy.insertText(newStr)
     }
 
     func keyboardShown(notification: NSNotification) {
@@ -220,9 +232,35 @@ class KeyboardViewController: UIInputViewController {
                 CharacterList = [topCharacterList,upperCharacterList,footerCharacterList,bottomCharacterList]
                 createKeyBoard()
             }
+            if self.textDocumentProxy.hasText() {
+                checkforSwear(self.textDocumentProxy.documentContextBeforeInput!,length: self.textLength)
+            }
         }
     }
-
+    
+    func checkforSwear(text:String, length:Int)
+    {
+        let range = Range(start: text.startIndex.advancedBy(length), end: text.endIndex.advancedBy(text.characters.count))
+        let subText = text.substringWithRange(range)
+        currentText = subText
+        
+        
+        for word in Manager.allSwears()
+        {
+            if(subText.containsString(word))
+            {
+                currentSwear = word
+                self.textLength = (self.textDocumentProxy.documentContextBeforeInput?.characters.count)!
+                Btn_1.setTitle(((Manager.defaults!.objectForKey(word) as! [AnyObject!])[0] as! [AnyObject!])[0] as! String , forState: .Normal)
+                Btn_2.setTitle(((Manager.defaults!.objectForKey(word) as! [AnyObject!])[0] as! [AnyObject!])[1] as! String , forState: .Normal)
+                Btn_3.setTitle(((Manager.defaults!.objectForKey(word) as! [AnyObject!])[0] as! [AnyObject!])[2] as! String , forState: .Normal)
+                Manager.increment(word)
+            }
+        }
+        
+    }
+    
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated

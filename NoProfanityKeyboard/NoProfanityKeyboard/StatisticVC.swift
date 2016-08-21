@@ -38,7 +38,7 @@ class StatisticVC: UITableViewController {
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return (Manager.defaults!.objectForKey("swear")?.count)!
+        return (Manager.defaults!.objectForKey("swear")?.count)! + 1
     }
 
 

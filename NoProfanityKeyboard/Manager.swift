@@ -45,7 +45,12 @@ class Manager{
     
     class func incrementChange(swear:String)
     {
-        var a =(Manager.defaults!.objectForKey(swear) as! [AnyObject!])[0] as! AnyObject!
+        let array = (Manager.defaults!.objectForKey(swear) as! [AnyObject!])[0] as! [AnyObject!]
+        var a = array[3] as! Int
+        a += 1
+        let new_array = [array[0],array[1],array[2],a]
+        Manager.defaults!.setObject([new_array, (Manager.defaults!.objectForKey(swear) as! [AnyObject!])[1]], forKey: swear)
+        Manager.defaults!.synchronize()
     }
     
     

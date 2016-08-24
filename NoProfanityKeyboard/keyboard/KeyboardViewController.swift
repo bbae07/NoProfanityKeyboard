@@ -112,6 +112,7 @@ class KeyboardViewController: UIInputViewController {
         self.textDocumentProxy.insertText(newStr)
         self.textLength = 0
         btnReset()
+        Manager.incrementChange(currentSwear)
     }
 
     func btnReset()
@@ -153,10 +154,15 @@ class KeyboardViewController: UIInputViewController {
             var count:CGFloat = 0
             for member in array
             {
-                let Btn = UIButton(frame:CGRect(x:count,y:y,width:UIScreen.mainScreen().bounds.size.width/CGFloat(array.count),height:keyboardHeight/4))
+                let Btn = UIButton(frame:CGRect(x:count,y:y,width:(UIScreen.mainScreen().bounds.size.width - 100)/CGFloat(array.count),height:keyboardHeight/4))
                 Btn.setTitle(member, forState: UIControlState.Normal)
                 Btn.backgroundColor = UIColor.whiteColor()
                 Btn.setTitleColor(UIColor.blackColor(), forState: .Normal)
+                Btn.layer.cornerRadius = 5
+                //Btn.layer.borderWidth = 1
+                //Btn.layer.borderColor = UIColor.blackColor().CGColor
+                Btn.layoutMargins = UIEdgeInsets(top: 0.5, left: 10.0, bottom: 0.5, right: 10.0)
+                
                 if(Btn.titleLabel?.text == "#")
                 {
                     let doubleTap:UITapGestureRecognizer = UITapGestureRecognizer()
@@ -186,6 +192,7 @@ class KeyboardViewController: UIInputViewController {
     func handleBtn(sender:UIButton)
     {
         let label = sender.titleLabel?.text
+        
         if(label == "space")
         {
             self.textDocumentProxy.insertText(" ")
@@ -265,6 +272,9 @@ class KeyboardViewController: UIInputViewController {
             if(subText.containsString(word))
             {
                 currentSwear = word
+                Btn_1.enabled = true
+                Btn_2.enabled = true
+                Btn_3.enabled = true
                 self.textLength = (self.textDocumentProxy.documentContextBeforeInput?.characters.count)!
                 Btn_1.setTitle(((Manager.defaults!.objectForKey(word) as! [AnyObject!])[0] as! [AnyObject!])[0] as! String , forState: .Normal)
                 Btn_2.setTitle(((Manager.defaults!.objectForKey(word) as! [AnyObject!])[0] as! [AnyObject!])[1] as! String , forState: .Normal)

@@ -19,7 +19,8 @@ class StatisticVC: UITableViewController {
         self.tabBarController?.navigationItem.title = "No Profanity Keyboard"
 
         self.tableView.registerNib(UINib(nibName: "CustomCell", bundle: nil), forCellReuseIdentifier: "identifier")
-
+        self.tableView.allowsSelection = false
+        
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 

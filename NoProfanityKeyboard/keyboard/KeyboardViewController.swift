@@ -160,14 +160,14 @@ class KeyboardViewController: UIInputViewController {
             var count:CGFloat = 0
             for member in array
             {
-                let Btn = UIButton(frame:CGRect(x:count,y:y,width:(UIScreen.mainScreen().bounds.size.width - 100)/CGFloat(array.count),height:keyboardHeight/4))
+                let Btn = UIButton(frame:CGRect(x:count,y:y,width:(UIScreen.mainScreen().bounds.size.width)/CGFloat(array.count),height:keyboardHeight/4))
                 Btn.setTitle(member, forState: UIControlState.Normal)
                 Btn.backgroundColor = UIColor.whiteColor()
                 Btn.setTitleColor(UIColor.blackColor(), forState: .Normal)
                 Btn.layer.cornerRadius = 5
-                //Btn.layer.borderWidth = 1
-                //Btn.layer.borderColor = UIColor.blackColor().CGColor
-                Btn.layoutMargins = UIEdgeInsets(top: 0.5, left: 10.0, bottom: 0.5, right: 10.0)
+                Btn.layer.borderWidth = 1
+                Btn.layer.borderColor = UIColor.blackColor().CGColor
+                //Btn.layoutMargins = UIEdgeInsets(top: 0.5, left: 10.0, bottom: 0.5, right: 10.0)
                 
                 if(Btn.titleLabel?.text == "#")
                 {

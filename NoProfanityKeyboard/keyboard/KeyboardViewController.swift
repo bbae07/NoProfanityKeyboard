@@ -110,6 +110,7 @@ class KeyboardViewController: UIInputViewController {
            self.textDocumentProxy.deleteBackward()
         }
         self.textDocumentProxy.insertText(newStr)
+        self.textLength = 0
     }
 
     func keyboardShown(notification: NSNotification) {
@@ -176,10 +177,12 @@ class KeyboardViewController: UIInputViewController {
         if(label == "space")
         {
             self.textDocumentProxy.insertText(" ")
+            self.textLength = 0
         }
         else if(label == "return")
         {
             self.textDocumentProxy.insertText("\n")
+            self.textLength = 0
         }
         else if(label == "<-")
         {
@@ -230,6 +233,7 @@ class KeyboardViewController: UIInputViewController {
                 createKeyBoard()
             }
             if self.textDocumentProxy.hasText() {
+                NSLog(self.textDocumentProxy.documentContextBeforeInput!)
                 checkforSwear(self.textDocumentProxy.documentContextBeforeInput!,length: self.textLength)
             }
         }
@@ -237,7 +241,7 @@ class KeyboardViewController: UIInputViewController {
     
     func checkforSwear(text:String, length:Int)
     {
-        let range = Range(start: text.startIndex.advancedBy(length), end: text.endIndex.advancedBy(text.characters.count))
+        let range = Range(start: text.startIndex.advancedBy(length), end: text.endIndex)
         let subText = text.substringWithRange(range)
         currentText = subText
         

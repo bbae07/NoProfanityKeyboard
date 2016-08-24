@@ -111,8 +111,20 @@ class KeyboardViewController: UIInputViewController {
         }
         self.textDocumentProxy.insertText(newStr)
         self.textLength = 0
+        btnReset()
     }
 
+    func btnReset()
+    {
+        Btn_1.setTitle("", forState:  .Normal)
+        Btn_2.setTitle("", forState:  .Normal)
+        Btn_3.setTitle("", forState:  .Normal)
+        Btn_1.enabled = false
+        Btn_2.enabled = false
+        Btn_3.enabled = false
+    }
+    
+    
     func keyboardShown(notification: NSNotification) {
         let info  = notification.userInfo!
         let value: AnyObject = info[UIKeyboardFrameEndUserInfoKey]!
@@ -178,11 +190,13 @@ class KeyboardViewController: UIInputViewController {
         {
             self.textDocumentProxy.insertText(" ")
             self.textLength = 0
+            btnReset()
         }
         else if(label == "return")
         {
             self.textDocumentProxy.insertText("\n")
             self.textLength = 0
+            btnReset()
         }
         else if(label == "<-")
         {
@@ -233,7 +247,7 @@ class KeyboardViewController: UIInputViewController {
                 createKeyBoard()
             }
             if self.textDocumentProxy.hasText() {
-                NSLog(self.textDocumentProxy.documentContextBeforeInput!)
+                //NSLog(self.textDocumentProxy.documentContextBeforeInput!)
                 checkforSwear(self.textDocumentProxy.documentContextBeforeInput!,length: self.textLength)
             }
         }

@@ -45,7 +45,7 @@ class Manager{
     
     class func incrementChange(swear:String)
     {
-        var a =(Manager.defaults!.objectForKey(swear) as! [AnyObject!])[0] as! AnyObject!
+        var a = (Manager.defaults!.objectForKey(swear) as! [AnyObject!])[0] as! AnyObject!
     }
     
     

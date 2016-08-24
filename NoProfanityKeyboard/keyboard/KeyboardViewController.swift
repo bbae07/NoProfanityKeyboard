@@ -104,6 +104,12 @@ class KeyboardViewController: UIInputViewController {
     
     func switchWord(sender:UIButton)
     {
+        /*
+        currentText : 버튼 눌렀을 때의, 현재까지 입력된 (backward 반영된) 텍스트값
+        currentSwear : currentText에 의해 필터
+        */
+        self.textLength = (self.textDocumentProxy.documentContextBeforeInput?.characters.count)!
+
         let newStr = currentText.stringByReplacingOccurrencesOfString(currentSwear, withString: sender.titleLabel!.text!)
         for i in 0 ..< currentText.characters.count
         {
@@ -119,9 +125,9 @@ class KeyboardViewController: UIInputViewController {
         Btn_1.setTitle("", forState:  .Normal)
         Btn_2.setTitle("", forState:  .Normal)
         Btn_3.setTitle("", forState:  .Normal)
-        Btn_1.enabled = false
-        Btn_2.enabled = false
-        Btn_3.enabled = false
+        //Btn_1.enabled = false
+        //Btn_2.enabled = false
+        //Btn_3.enabled = false
     }
     
     
@@ -265,7 +271,7 @@ class KeyboardViewController: UIInputViewController {
             if(subText.containsString(word))
             {
                 currentSwear = word
-                self.textLength = (self.textDocumentProxy.documentContextBeforeInput?.characters.count)!
+                //self.textLength = (self.textDocumentProxy.documentContextBeforeInput?.characters.count)!
                 Btn_1.setTitle(((Manager.defaults!.objectForKey(word) as! [AnyObject!])[0] as! [AnyObject!])[0] as! String , forState: .Normal)
                 Btn_2.setTitle(((Manager.defaults!.objectForKey(word) as! [AnyObject!])[0] as! [AnyObject!])[1] as! String , forState: .Normal)
                 Btn_3.setTitle(((Manager.defaults!.objectForKey(word) as! [AnyObject!])[0] as! [AnyObject!])[2] as! String , forState: .Normal)

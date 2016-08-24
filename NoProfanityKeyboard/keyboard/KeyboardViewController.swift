@@ -167,6 +167,7 @@ class KeyboardViewController: UIInputViewController {
                     let doubleTap:UITapGestureRecognizer = UITapGestureRecognizer()
                     doubleTap.numberOfTapsRequired = 2
                     doubleTap.numberOfTouchesRequired = 1
+                    doubleTap.delaysTouchesEnded = false
 
                     doubleTap.addTarget(self, action: #selector(capsLock(_:)))
                     Btn.addGestureRecognizer(doubleTap)

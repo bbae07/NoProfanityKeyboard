@@ -72,6 +72,14 @@ class KeyboardViewController: UIInputViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        //Set Dictionary if container app haven't been opened
+        
+        if(Manager.defaults!.objectForKey("swear") == nil)
+        {
+            Manager.initWordBank()
+        }
+        //End
+        
         NSNotificationCenter.defaultCenter().addObserver(self,selector: #selector(KeyboardViewController.keyboardShown(_:)), name: UIKeyboardDidShowNotification, object: nil)
         
         mainview.frame = CGRect(x:0,y:40,width: UIScreen.mainScreen().bounds.size.width, height: keyboardHeight)

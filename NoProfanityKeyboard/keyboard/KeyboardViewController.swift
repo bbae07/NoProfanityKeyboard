@@ -63,12 +63,46 @@ class KeyboardViewController: UIInputViewController {
         // button is actually tapped
         NSLog("This button was clicked in the subview!")
     }
+    
+    //Customize Keyboard Height
+    
+    var heightConstraint: NSLayoutConstraint!
+    
     override func updateViewConstraints() {
         super.updateViewConstraints()
     
         // Add custom view sizing constraints here
+        if (view.frame.size.width == 0 || view.frame.size.height == 0) {
+            return
+        }
+        
+        //setUpHeightConstraint()
+    }
+    
+    
+    func setUpHeightConstraint()
+    {
+        let customHeight = 300.0 as CGFloat
+        
+        if heightConstraint == nil {
+            heightConstraint = NSLayoutConstraint(item: self.view,
+                                                  attribute: .Height,
+                                                  relatedBy: .Equal,
+                                                  toItem: nil,
+                                                  attribute: .NotAnAttribute,
+                                                  multiplier: 1,
+                                                  constant: customHeight)
+            heightConstraint.priority = UILayoutPriority(UILayoutPriorityRequired)
+            
+            view.addConstraint(heightConstraint)
+        }
+        else {
+            heightConstraint.constant = customHeight
+        }
     }
 
+    //Keyboard Height done
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -109,6 +143,22 @@ class KeyboardViewController: UIInputViewController {
         self.view.addSubview(suggestionView)
 
     }
+    
+    override func viewDidAppear(animated: Bool) {
+        let expandedHeight:CGFloat = 300
+        let heightConstraint = NSLayoutConstraint(item:self.view,
+                                                  attribute: .Height,
+                                                  relatedBy: .Equal,
+                                                  toItem: nil,
+                                                  attribute: .NotAnAttribute,
+                                                  multiplier: 1.0,
+                                                  constant: expandedHeight)
+        heightConstraint.priority = 999
+        heightConstraint.active = true
+        self.view.addConstraint(heightConstraint)
+        self.view.updateConstraints()
+    }
+    
     
     func switchWord(sender:UIButton)
     {
@@ -321,5 +371,7 @@ class KeyboardViewController: UIInputViewController {
             textColor = UIColor.blackColor()
         }
     }
+    
+    
 
 }

@@ -160,7 +160,7 @@ class KeyboardViewController: UIInputViewController {
             var count:CGFloat = 0
             for member in array
             {
-                let Btn = UIButton(frame:CGRect(x:count,y:y,width:(UIScreen.mainScreen().bounds.size.width)/CGFloat(array.count),height:keyboardHeight/4))
+                let Btn = UIButton(frame:CGRect(x:count+CGFloat(10),y:y,width:((UIScreen.mainScreen().bounds.size.width)/CGFloat(array.count))-10,height:keyboardHeight/4))
                 Btn.setTitle(member, forState: UIControlState.Normal)
                 Btn.backgroundColor = UIColor.whiteColor()
                 Btn.setTitleColor(UIColor.blackColor(), forState: .Normal)
@@ -182,7 +182,9 @@ class KeyboardViewController: UIInputViewController {
                 Btn.addTarget(self, action: #selector(handleBtn(_:)), forControlEvents: .TouchUpInside)
 
                 mainview.addSubview(Btn)
-                count+=Btn.bounds.size.width
+                count += Btn.bounds.size.width+10
+                NSLog(String(format:"%.f",count))
+
             }
             y+=keyboardHeight/4
         }

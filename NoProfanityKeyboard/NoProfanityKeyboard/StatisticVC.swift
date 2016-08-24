@@ -12,8 +12,11 @@ class StatisticVC: UITableViewController {
 
     let swears:[String] = Manager.defaults!.arrayForKey("swear") as! [String]
 
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.tabBarController?.navigationItem.title = "No Profanity Keyboard"
 
         self.tableView.registerNib(UINib(nibName: "CustomCell", bundle: nil), forCellReuseIdentifier: "identifier")
 

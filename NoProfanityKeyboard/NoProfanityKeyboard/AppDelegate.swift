@@ -15,6 +15,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
    기능: 
         1. 통계 (욕 쓴 횟수, 바꾼 횟수) --> 수치, 그래프
         2. 자기 목표 설정 기능
+            
 */
 
     var window: UIWindow?
@@ -30,12 +31,24 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
 
         let tabBar      = UITabBarController()
+//        let statPage    = StatisticVC(nibName: "Stats", bundle: nil)
+//        let graphPage   = GraphVC(nibName: "Graphs", bundle: nil)
         let statPage    = StatisticVC()
         let graphPage   = GraphVC()
+        
 
         let controllers:[UIViewController] = [statPage,graphPage]
         tabBar.viewControllers = controllers;
-        self.window?.rootViewController = tabBar;
+        
+        
+        
+        let nav = UINavigationController.init(rootViewController: tabBar)
+        nav.navigationBar.topItem?.title = "No Profanity Keyboard"
+        let search = UIBarButtonItem(barButtonSystemItem: .Search, target: self, action: nil)
+        nav.navigationItem.rightBarButtonItem = search
+        
+        self.window?.rootViewController = nav;
+        
         return true
     }
     

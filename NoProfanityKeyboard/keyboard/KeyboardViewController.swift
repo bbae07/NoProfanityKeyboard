@@ -2,9 +2,6 @@
 //  KeyboardViewController.swift
 //  keyboard
 //
-//  Created by 이경문 on 2016. 8. 13..
-//  Copyright © 2016년 이경문. All rights reserved.
-//
 
 import UIKit
 
@@ -35,7 +32,7 @@ class KeyboardViewController: UIInputViewController {
     var footerShiftCharacterList:[String] = ["##","Z","X","C","V","B","N","M","<-"] // 9개
     var bottomShiftCharacterList:[String] = ["123","@@","space","return"] // 4개
 
-
+    
     //var buttons:[UIButton]? = nil
 
     lazy var CharacterList: [[String]] = [self.topCharacterList,self.upperCharacterList,self.footerCharacterList,self.bottomCharacterList]

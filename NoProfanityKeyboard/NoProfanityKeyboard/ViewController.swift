@@ -8,26 +8,34 @@
 
 import UIKit
 
-class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, ScoreProtocol {
+
+    var scoreBoardView:ScoreBoard?
+    var stat_view:UITableView?
+
+    func reloadScore() {
+
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let temp_view = ScoreBoard(frame:CGRect(x:0,y:CGFloat(self.navigationController!.navigationBar.frame.size.height),width: UIScreen.mainScreen().bounds.size.width,height:310.0))
-        self.view.addSubview(temp_view)
-        
-        
-        
-        let tableViewStartingY = CGFloat(temp_view.frame.origin.y+temp_view.bounds.size.height)
-        let stat_view = UITableView(frame:CGRect(x:0,y:tableViewStartingY,width:UIScreen.mainScreen().bounds.size.width,height:UIScreen.mainScreen().bounds.size.height - tableViewStartingY))
-        self.view.addSubview(stat_view)
+        self.scoreBoardView = ScoreBoard(frame:CGRect(x:0,y:CGFloat(self.navigationController!.navigationBar.frame.size.height),width: UIScreen.mainScreen().bounds.size.width,height:310.0))
+        self.scoreBoardView?.delegate = self
+        self.view.addSubview(self.scoreBoardView!)
+
+
+
+        let tableViewStartingY = CGFloat(self.scoreBoardView!.frame.origin.y+self.scoreBoardView!.bounds.size.height)
+        self.stat_view = UITableView(frame:CGRect(x:0,y:tableViewStartingY,width:UIScreen.mainScreen().bounds.size.width,height:UIScreen.mainScreen().bounds.size.height - tableViewStartingY))
+        self.view.addSubview(self.stat_view!)
 
         self.tabBarController?.navigationItem.title = "No Profanity Keyboard"
 
-        stat_view.registerNib(UINib(nibName: "CustomCell", bundle: nil), forCellReuseIdentifier: "identifier")
-        stat_view.allowsSelection = false
-        stat_view.delegate = self
-        stat_view.dataSource = self
+        self.stat_view!.registerNib(UINib(nibName: "CustomCell", bundle: nil), forCellReuseIdentifier: "identifier")
+        self.stat_view!.allowsSelection = false
+        self.stat_view!.delegate = self
+        self.stat_view!.dataSource = self
 
         let Nam1BarBtnVar = UIBarButtonItem(barButtonSystemItem: .Edit, target: self, action: #selector(Nam1BarBtnKlkFnc(_:)))
         self.navigationItem.setRightBarButtonItems([Nam1BarBtnVar], animated: true)
@@ -36,6 +44,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     func Nam1BarBtnKlkFnc(BtnPsgVar: UIBarButtonItem)
     {
         NSLog("Nam1BarBtnKlk")
+        //reloadScore()
+        self.viewDidLoad()
     }
 
     override func didReceiveMemoryWarning() {
@@ -69,7 +79,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         cell.awakeFromNib()
         return cell
     }
-    
+
     func tableView(tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
        
         let header = UIView()
@@ -94,7 +104,5 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     func tableView(tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         return 40.0
     }
-    
-    
 }
 

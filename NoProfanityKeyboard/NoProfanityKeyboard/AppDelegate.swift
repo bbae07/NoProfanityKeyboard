@@ -34,20 +34,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 Manager.initWordBank()
             }
         }
-
-        let tabBar      = UITabBarController()
-//        let statPage    = StatisticVC(nibName: "Stats", bundle: nil)
-//        let graphPage   = GraphVC(nibName: "Graphs", bundle: nil)
-        let statPage    = StatisticVC()
-        let graphPage   = GraphVC()
-        
-
-        let controllers:[UIViewController] = [statPage,graphPage]
-        tabBar.viewControllers = controllers;
-        
-        
-        
-        let nav = UINavigationController.init(rootViewController: tabBar)
+        let statPage = StatisticVC()
+        let nav = UINavigationController.init(rootViewController: statPage)
         nav.navigationBar.topItem?.title = "No Profanity Keyboard"
         let search = UIBarButtonItem(barButtonSystemItem: .Search, target: self, action: nil)
         nav.navigationItem.rightBarButtonItem = search

@@ -34,6 +34,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
 
         self.stat_view!.registerNib(UINib(nibName: "CustomCell", bundle: nil), forCellReuseIdentifier: "identifier")
         self.stat_view!.allowsSelection = false
+        self.stat_view?.bounces = false
         self.stat_view!.delegate = self
         self.stat_view!.dataSource = self
 
@@ -73,7 +74,9 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
         if(indexPath.row%2 == 1)
         {
-            cell.backgroundColor = UIColor(red: 231.0/255.0, green: 231.0/255.0, blue: 231.0/255.0, alpha: 1.0)
+            cell.backgroundColor = UIColor(red: 231.0/255.0, green: 231.0/255.0, blue: 231.0/255.0, alpha: 0.7)
+        }else{
+            cell.backgroundColor = UIColor.whiteColor()
         }
         // Configure the cell...
         cell.awakeFromNib()

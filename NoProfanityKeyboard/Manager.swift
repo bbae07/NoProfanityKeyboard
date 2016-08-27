@@ -15,12 +15,22 @@ class Manager{
     
     class func initWordBank()
     {
-        let swears:[String]     = ["LKM","BCS","hello"]
-        let s_count:[NSInteger] = [0,0,0]
+        let swears:[String]     = ["LKM","BCS","hello","LKM","BCS","hello","LKM","BCS","hello","LKM","BCS"]
+        let s_count:[NSInteger] = [0,0,0,0,0,0,0,0,0,0,0]
         let array_1 = ["이경문","KyungMoon","Mark", 0]
         let array_2 = ["배찬서","Chanseo","Brian",0]
         let array_3 = ["안녕","Bonjour","",0]
-        let array = [array_1,array_2,array_3]
+        let array_4 = ["이경문","KyungMoon","Mark", 0]
+        let array_5 = ["배찬서","Chanseo","Brian",0]
+        let array_6 = ["안녕","Bonjour","",0]
+        let array_7 = ["이경문","KyungMoon","Mark", 0]
+        let array_8 = ["배찬서","Chanseo","Brian",0]
+        let array_9 = ["안녕","Bonjour","",0]
+        let array_10 = ["이경문","KyungMoon","Mark", 0]
+        let array_11 = ["배찬서","Chanseo","Brian",0]
+
+        let array = [array_1,array_2,array_3,array_4,array_5,array_6,array_7,array_8,
+                     array_9,array_10,array_11]
         
         for i in 0 ..< swears.count
         {

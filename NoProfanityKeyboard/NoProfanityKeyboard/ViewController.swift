@@ -9,8 +9,6 @@
 import UIKit
 
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
-    
-    let swears:[String] = Manager.defaults!.arrayForKey("swear") as! [String]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,7 +21,13 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         let tableViewStartingY = CGFloat(temp_view.frame.origin.y+temp_view.bounds.size.height)
         let stat_view = UITableView(frame:CGRect(x:0,y:tableViewStartingY,width:UIScreen.mainScreen().bounds.size.width,height:UIScreen.mainScreen().bounds.size.height - tableViewStartingY))
         self.view.addSubview(stat_view)
-<<<<<<< HEAD
+
+        self.tabBarController?.navigationItem.title = "No Profanity Keyboard"
+
+        stat_view.registerNib(UINib(nibName: "CustomCell", bundle: nil), forCellReuseIdentifier: "identifier")
+        stat_view.allowsSelection = false
+        stat_view.delegate = self
+        stat_view.dataSource = self
 
         let Nam1BarBtnVar = UIBarButtonItem(barButtonSystemItem: .Edit, target: self, action: #selector(Nam1BarBtnKlkFnc(_:)))
         self.navigationItem.setRightBarButtonItems([Nam1BarBtnVar], animated: true)
@@ -31,17 +35,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
 
     func Nam1BarBtnKlkFnc(BtnPsgVar: UIBarButtonItem)
     {
-        print("Nam1BarBtnKlk")
-=======
-        
-        self.tabBarController?.navigationItem.title = "No Profanity Keyboard"
-        
-        stat_view.registerNib(UINib(nibName: "CustomCell", bundle: nil), forCellReuseIdentifier: "identifier")
-        stat_view.allowsSelection = false
-        stat_view.delegate = self
-        stat_view.dataSource = self
-        
->>>>>>> master
+        NSLog("Nam1BarBtnKlk")
     }
 
     override func didReceiveMemoryWarning() {
@@ -54,16 +48,18 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return (Manager.defaults!.objectForKey("swear")?.count)! + 1
+        return (Manager.defaults!.objectForKey("swear")?.count)!
     }
     
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("identifier", forIndexPath: indexPath) as! CustomCell
-            var x = Manager.defaults!.arrayForKey(swears[indexPath.row]) as! [AnyObject!]
-            cell.swearStr = swears[indexPath.row]
-            cell.noStr = (x[1] as! NSNumber).stringValue
-            cell.yesStr = ((x[0] as! [AnyObject!])[3] as! NSNumber).stringValue
+        let swears:[String] = Manager.defaults!.arrayForKey("swear") as! [String]
+
+        var x = Manager.defaults!.arrayForKey(swears[indexPath.row]) as! [AnyObject!]
+        cell.swearStr = swears[indexPath.row]
+        cell.noStr = (x[1] as! NSNumber).stringValue
+        cell.yesStr = ((x[0] as! [AnyObject!])[3] as! NSNumber).stringValue
         // Configure the cell...
         cell.awakeFromNib()
         return cell

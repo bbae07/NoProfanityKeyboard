@@ -15,6 +15,13 @@ class ViewController: UIViewController {
         
         let temp_view = ScoreBoard(frame:CGRect(x:0,y:CGFloat(self.navigationController!.navigationBar.frame.size.height),width: UIScreen.mainScreen().bounds.size.width,height:310.0))
         self.view.addSubview(temp_view)
+        
+        
+        
+        
+        
+        let stat_view = UITableView()
+        
     }
 
     override func didReceiveMemoryWarning() {

@@ -12,11 +12,9 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-
         
-
-        // Do any additional setup after loading the view, typically from a nib.
+        let temp_view = ScoreBoard.instanceFromNib()
+        self.view.addSubview(temp_view)
     }
 
     override func didReceiveMemoryWarning() {

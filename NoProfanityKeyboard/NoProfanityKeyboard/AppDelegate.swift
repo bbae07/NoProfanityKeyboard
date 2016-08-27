@@ -35,7 +35,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             }
         }
         let statPage = StatisticVC()
-        let nav = UINavigationController.init(rootViewController: statPage)
+        let viewPage = ViewController()
+        let nav = UINavigationController.init(rootViewController: viewPage)
         nav.navigationBar.topItem?.title = "No Profanity Keyboard"
         let search = UIBarButtonItem(barButtonSystemItem: .Search, target: self, action: nil)
         nav.navigationItem.rightBarButtonItem = search

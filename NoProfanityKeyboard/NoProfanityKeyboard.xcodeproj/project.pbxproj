@@ -11,7 +11,6 @@
 		2361534E1D69C57500C6A2AF /* Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2361534C1D69C48800C6A2AF /* Manager.swift */; };
 		238450C31D71A5D8008E430D /* ScoreBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 238450C21D71A5D8008E430D /* ScoreBoard.swift */; };
 		238450C51D71A616008E430D /* ScoreBoard.xib in Resources */ = {isa = PBXBuildFile; fileRef = 238450C41D71A616008E430D /* ScoreBoard.xib */; };
-		238450C71D71AEB8008E430D /* ContainerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 238450C61D71AEB8008E430D /* ContainerVC.swift */; };
 		595A017F1D5EA22500F826F3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 595A017E1D5EA22500F826F3 /* AppDelegate.swift */; };
 		595A01811D5EA22500F826F3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 595A01801D5EA22500F826F3 /* ViewController.swift */; };
 		595A01841D5EA22500F826F3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 595A01821D5EA22500F826F3 /* Main.storyboard */; };
@@ -19,7 +18,6 @@
 		595A01891D5EA22500F826F3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 595A01871D5EA22500F826F3 /* LaunchScreen.storyboard */; };
 		595A01971D5EA25500F826F3 /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 595A01961D5EA25500F826F3 /* KeyboardViewController.swift */; };
 		595A019B1D5EA25500F826F3 /* keyboard.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 595A01941D5EA25500F826F3 /* keyboard.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		59D3D18B1D60816A00172EFE /* StatisticVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59D3D18A1D60816A00172EFE /* StatisticVC.swift */; };
 		59D3D1921D608D6C00172EFE /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59D3D1901D608D6C00172EFE /* CustomCell.swift */; };
 		59D3D1931D608D6C00172EFE /* CustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 59D3D1911D608D6C00172EFE /* CustomCell.xib */; };
 /* End PBXBuildFile section */
@@ -54,7 +52,6 @@
 		2361534C1D69C48800C6A2AF /* Manager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Manager.swift; sourceTree = "<group>"; };
 		238450C21D71A5D8008E430D /* ScoreBoard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScoreBoard.swift; sourceTree = "<group>"; };
 		238450C41D71A616008E430D /* ScoreBoard.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScoreBoard.xib; sourceTree = "<group>"; };
-		238450C61D71AEB8008E430D /* ContainerVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContainerVC.swift; sourceTree = "<group>"; };
 		595A017B1D5EA22500F826F3 /* NoProfanityKeyboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NoProfanityKeyboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		595A017E1D5EA22500F826F3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		595A01801D5EA22500F826F3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -65,7 +62,6 @@
 		595A01941D5EA25500F826F3 /* keyboard.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = keyboard.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		595A01961D5EA25500F826F3 /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
 		595A01981D5EA25500F826F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		59D3D18A1D60816A00172EFE /* StatisticVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatisticVC.swift; sourceTree = "<group>"; };
 		59D3D1901D608D6C00172EFE /* CustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CustomCell.swift; path = ../CustomCell.swift; sourceTree = "<group>"; };
 		59D3D1911D608D6C00172EFE /* CustomCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CustomCell.xib; path = ../CustomCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -147,8 +143,6 @@
 			isa = PBXGroup;
 			children = (
 				595A01801D5EA22500F826F3 /* ViewController.swift */,
-				59D3D18A1D60816A00172EFE /* StatisticVC.swift */,
-				238450C61D71AEB8008E430D /* ContainerVC.swift */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -268,8 +262,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				59D3D18B1D60816A00172EFE /* StatisticVC.swift in Sources */,
-				238450C71D71AEB8008E430D /* ContainerVC.swift in Sources */,
 				2361534E1D69C57500C6A2AF /* Manager.swift in Sources */,
 				595A01811D5EA22500F826F3 /* ViewController.swift in Sources */,
 				238450C31D71A5D8008E430D /* ScoreBoard.swift in Sources */,

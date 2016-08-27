@@ -37,7 +37,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         self.stat_view!.delegate = self
         self.stat_view!.dataSource = self
 
-        let Nam1BarBtnVar = UIBarButtonItem(barButtonSystemItem: .Edit, target: self, action: #selector(Nam1BarBtnKlkFnc(_:)))
+        let Nam1BarBtnVar = UIBarButtonItem(barButtonSystemItem: .Refresh, target: self, action: #selector(Nam1BarBtnKlkFnc(_:)))
         self.navigationItem.setRightBarButtonItems([Nam1BarBtnVar], animated: true)
     }
 

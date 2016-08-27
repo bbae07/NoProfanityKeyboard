@@ -60,22 +60,41 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         cell.swearStr = swears[indexPath.row]
         cell.noStr = (x[1] as! NSNumber).stringValue
         cell.yesStr = ((x[0] as! [AnyObject!])[3] as! NSNumber).stringValue
+        
+        if(indexPath.row%2 == 1)
+        {
+            cell.backgroundColor = UIColor(red: 231.0/255.0, green: 231.0/255.0, blue: 231.0/255.0, alpha: 1.0)
+        }
         // Configure the cell...
         cell.awakeFromNib()
         return cell
     }
     
-//    func tableView(tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-//        
-//        // Dequeue with the reuse identifier
-//        let cell = tableView.dequeueReusableHeaderFooterViewWithIdentifier("identifier") as! CustomCell
-//        cell.swearStr = "WORDS"
-//        cell.noStr = "SAME"
-//        cell.yesStr = "CHANGE"
-//        
-//        return cell
-//    }
+    func tableView(tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+       
+        let header = UIView()
+        // Dequeue with the reuse identifier
+        let cell = tableView.dequeueReusableCellWithIdentifier("identifier") as! CustomCell
+        
+        cell.swearStr = "WORDS"
+        cell.noStr = "SAME"
+        cell.yesStr = "CHANGE"
+        cell.frame = CGRect(x: 0, y: 0, width: UIScreen.mainScreen().bounds.size.width, height: 40.0)
+        cell.backgroundColor = UIColor(red: 180.0/255.0, green: 181.0/255.0, blue: 180.0/255.0, alpha: 1.0)
+        cell.swear.textColor = UIColor.whiteColor()
+        cell.noChange.textColor = UIColor.whiteColor()
+        cell.yesChange.textColor = UIColor.whiteColor()
+        cell.Line1.backgroundColor = UIColor.whiteColor()
+        cell.Line2.backgroundColor = UIColor.whiteColor()
+        header.addSubview(cell)
+        
+        return header
+    }
 
-
+    func tableView(tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 40.0
+    }
+    
+    
 }
 

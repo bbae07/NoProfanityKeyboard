@@ -16,6 +16,8 @@ class CustomCell: UITableViewCell {
 
     var swearStr = "WORD"
     var noStr    = "SAME"
+    @IBOutlet weak var Line2: UIView!
+    @IBOutlet weak var Line1: UIView!
     var yesStr   = "CHANGE"
     
     override func awakeFromNib() {

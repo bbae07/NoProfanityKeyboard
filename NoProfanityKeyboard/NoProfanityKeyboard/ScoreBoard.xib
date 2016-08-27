@@ -13,23 +13,23 @@
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="iN0-l3-epB">
-            <rect key="frame" x="0.0" y="0.0" width="414" height="232"/>
+            <rect key="frame" x="0.0" y="0.0" width="336" height="232"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="67" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uln-U9-cUt">
-                    <rect key="frame" x="136" y="8" width="143" height="115"/>
+                    <rect key="frame" x="8" y="8" width="320" height="115"/>
                     <fontDescription key="fontDescription" name="Farah" family="Farah" pointSize="200"/>
                     <color key="textColor" red="0.0" green="0.25098040700000002" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="POINTS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vM8-08-O6L">
-                    <rect key="frame" x="126" y="131" width="162" height="35"/>
+                    <rect key="frame" x="87" y="131" width="162" height="35"/>
                     <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="30"/>
                     <color key="textColor" red="0.0" green="0.63439270502564105" blue="0.63439270502564105" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="YOU'RE DOING GREAT!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TdS-Gp-PVu">
-                    <rect key="frame" x="47" y="174" width="320" height="50"/>
+                    <rect key="frame" x="8" y="174" width="320" height="50"/>
                     <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="22"/>
                     <color key="textColor" red="0.49803921579999999" green="0.49803921579999999" blue="0.49803921579999999" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
@@ -37,11 +37,18 @@
             </subviews>
             <color key="backgroundColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
             <constraints>
-                <constraint firstItem="vM8-08-O6L" firstAttribute="top" secondItem="Uln-U9-cUt" secondAttribute="bottom" constant="8" id="PR7-Vh-yAk"/>
-                <constraint firstItem="vM8-08-O6L" firstAttribute="top" secondItem="Uln-U9-cUt" secondAttribute="bottom" constant="8" id="Rcj-lQ-qwO"/>
-                <constraint firstAttribute="bottom" secondItem="TdS-Gp-PVu" secondAttribute="bottom" constant="8" id="S3P-HB-Kv6"/>
-                <constraint firstItem="Uln-U9-cUt" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="m42-f6-fVX"/>
-                <constraint firstItem="TdS-Gp-PVu" firstAttribute="top" secondItem="vM8-08-O6L" secondAttribute="bottom" constant="8" id="qQY-tc-v2u"/>
+                <constraint firstItem="vM8-08-O6L" firstAttribute="top" secondItem="Uln-U9-cUt" secondAttribute="bottom" constant="8" id="7tk-TG-gkP"/>
+                <constraint firstAttribute="trailing" secondItem="vM8-08-O6L" secondAttribute="trailing" constant="87" id="8FW-cZ-D3w"/>
+                <constraint firstItem="vM8-08-O6L" firstAttribute="top" secondItem="Uln-U9-cUt" secondAttribute="bottom" constant="8" id="B1l-Uk-jqh"/>
+                <constraint firstAttribute="bottom" secondItem="TdS-Gp-PVu" secondAttribute="bottom" constant="8" id="MIU-cG-Nr6"/>
+                <constraint firstItem="TdS-Gp-PVu" firstAttribute="top" secondItem="vM8-08-O6L" secondAttribute="bottom" constant="8" id="SZY-k3-Y8m"/>
+                <constraint firstItem="TdS-Gp-PVu" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="SsE-fr-3cl"/>
+                <constraint firstItem="TdS-Gp-PVu" firstAttribute="top" secondItem="vM8-08-O6L" secondAttribute="bottom" constant="8" id="VNH-JP-P9c"/>
+                <constraint firstItem="vM8-08-O6L" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="87" id="W46-Ff-FHz"/>
+                <constraint firstItem="Uln-U9-cUt" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="YC5-jD-tM1"/>
+                <constraint firstAttribute="trailing" secondItem="TdS-Gp-PVu" secondAttribute="trailing" constant="8" id="aYU-12-po0"/>
+                <constraint firstItem="Uln-U9-cUt" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="ejP-ka-QqW"/>
+                <constraint firstAttribute="trailing" secondItem="Uln-U9-cUt" secondAttribute="trailing" constant="8" id="tH8-cw-Ct8"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <point key="canvasLocation" x="280" y="-220"/>

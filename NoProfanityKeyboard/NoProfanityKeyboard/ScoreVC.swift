@@ -1,19 +1,17 @@
 //
-//  GraphVC.swift
+//  ScoreVC.swift
 //  NoProfanityKeyboard
 //
-//  Created by 이경문 on 2016. 8. 14..
+//  Created by Brian Bae on 2016. 8. 27..
 //  Copyright © 2016년 이경문. All rights reserved.
 //
 
 import UIKit
 
-class GraphVC: UIViewController {
+class ScoreVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-       
-        
 
         // Do any additional setup after loading the view.
     }

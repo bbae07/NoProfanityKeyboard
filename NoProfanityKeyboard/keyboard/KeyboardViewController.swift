@@ -63,14 +63,56 @@ class KeyboardViewController: UIInputViewController {
         // button is actually tapped
         NSLog("This button was clicked in the subview!")
     }
+    
+    //Customize Keyboard Height
+    
+    var heightConstraint: NSLayoutConstraint!
+    
     override func updateViewConstraints() {
         super.updateViewConstraints()
     
         // Add custom view sizing constraints here
+        if (view.frame.size.width == 0 || view.frame.size.height == 0) {
+            return
+        }
+        
+        //setUpHeightConstraint()
+    }
+    
+    
+    func setUpHeightConstraint()
+    {
+        let customHeight = 300.0 as CGFloat
+        
+        if heightConstraint == nil {
+            heightConstraint = NSLayoutConstraint(item: self.view,
+                                                  attribute: .Height,
+                                                  relatedBy: .Equal,
+                                                  toItem: nil,
+                                                  attribute: .NotAnAttribute,
+                                                  multiplier: 1,
+                                                  constant: customHeight)
+            heightConstraint.priority = UILayoutPriority(UILayoutPriorityRequired)
+            
+            view.addConstraint(heightConstraint)
+        }
+        else {
+            heightConstraint.constant = customHeight
+        }
     }
 
+    //Keyboard Height done
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //Set Dictionary if container app haven't been opened
+        
+        if(Manager.defaults!.objectForKey("swear") == nil)
+        {
+            Manager.initWordBank()
+        }
+        //End
         
         NSNotificationCenter.defaultCenter().addObserver(self,selector: #selector(KeyboardViewController.keyboardShown(_:)), name: UIKeyboardDidShowNotification, object: nil)
         
@@ -101,6 +143,22 @@ class KeyboardViewController: UIInputViewController {
         self.view.addSubview(suggestionView)
 
     }
+    
+    override func viewDidAppear(animated: Bool) {
+        let expandedHeight:CGFloat = 300
+        let heightConstraint = NSLayoutConstraint(item:self.view,
+                                                  attribute: .Height,
+                                                  relatedBy: .Equal,
+                                                  toItem: nil,
+                                                  attribute: .NotAnAttribute,
+                                                  multiplier: 1.0,
+                                                  constant: expandedHeight)
+        heightConstraint.priority = 999
+        heightConstraint.active = true
+        self.view.addConstraint(heightConstraint)
+        self.view.updateConstraints()
+    }
+    
     
     func switchWord(sender:UIButton)
     {
@@ -160,14 +218,14 @@ class KeyboardViewController: UIInputViewController {
             var count:CGFloat = 0
             for member in array
             {
-                let Btn = UIButton(frame:CGRect(x:count,y:y,width:(UIScreen.mainScreen().bounds.size.width - 100)/CGFloat(array.count),height:keyboardHeight/4))
+                let Btn = UIButton(frame:CGRect(x:count,y:y,width:(UIScreen.mainScreen().bounds.size.width)/CGFloat(array.count),height:keyboardHeight/4))
                 Btn.setTitle(member, forState: UIControlState.Normal)
                 Btn.backgroundColor = UIColor.whiteColor()
                 Btn.setTitleColor(UIColor.blackColor(), forState: .Normal)
                 Btn.layer.cornerRadius = 5
-                //Btn.layer.borderWidth = 1
-                //Btn.layer.borderColor = UIColor.blackColor().CGColor
-                Btn.layoutMargins = UIEdgeInsets(top: 0.5, left: 10.0, bottom: 0.5, right: 10.0)
+                Btn.layer.borderWidth = 1
+                Btn.layer.borderColor = UIColor.blackColor().CGColor
+                //Btn.layoutMargins = UIEdgeInsets(top: 0.5, left: 10.0, bottom: 0.5, right: 10.0)
                 
                 if(Btn.titleLabel?.text == "#")
                 {
@@ -313,5 +371,7 @@ class KeyboardViewController: UIInputViewController {
             textColor = UIColor.blackColor()
         }
     }
+    
+    
 
 }

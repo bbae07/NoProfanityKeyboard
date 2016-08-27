@@ -24,10 +24,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
 
+        
+        
         if(!NSUserDefaults.standardUserDefaults().boolForKey("HasLaunchedOnce"))
         {
-            NSUserDefaults.standardUserDefaults().setBool(true, forKey: "HasLaunchedOnce")
-            Manager.initWordBank()
+            if(Manager.defaults!.objectForKey("swear") == nil)
+            {
+                NSUserDefaults.standardUserDefaults().setBool(true, forKey: "HasLaunchedOnce")
+                Manager.initWordBank()
+            }
         }
 
         let tabBar      = UITabBarController()

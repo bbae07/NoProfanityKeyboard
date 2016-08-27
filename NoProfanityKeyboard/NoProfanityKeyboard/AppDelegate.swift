@@ -34,6 +34,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 Manager.initWordBank()
             }
         }
+        
 //        let statPage = StatisticVC()
         let viewPage = ViewController()
 //        viewPage.view.frame = CGRect(x: 0, y: 40, width: UIScreen.mainScreen().bounds.size.width, height: 100)

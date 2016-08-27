@@ -35,7 +35,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             }
         }
 //        let statPage = StatisticVC()
-//        let viewPage = ViewController()
+        let viewPage = ViewController()
 //        viewPage.view.frame = CGRect(x: 0, y: 40, width: UIScreen.mainScreen().bounds.size.width, height: 100)
 //        statPage.view.frame = CGRect(x: 0, y: 140, width: UIScreen.mainScreen().bounds.size.width, height: UIScreen.mainScreen().bounds.size.height - 240)
 //        let container = ContainerVC()
@@ -44,7 +44,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //        container.view.addSubview(viewPage.view)
 //        container.view.addSubview(statPage.view)
 //        container.loadViewIfNeeded()
-        let nav = UINavigationController.init(rootViewController: container)
+        let nav = UINavigationController.init(rootViewController: viewPage)
 
         nav.navigationBar.topItem?.title = "No Profanity Keyboard"
 

@@ -206,32 +206,26 @@ class KeyboardViewController: UIInputViewController {
         {
             subview.removeFromSuperview()
         }
-
-        //self.view.
-
-        //UITapGestureRecognizer *doubleTap = [[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(doDoubleTap)] autorelease];
-        //doubleTap.numberOfTapsRequired = 2;
-        //[self.view addGestureRecognizer:doubleTap];
         var y:CGFloat = 0
         for array in CharacterList
         {
             var count:CGFloat = 0
             for member in array
             {
-                let Btn = UIButton(frame:CGRect(x:count,y:y,width:(UIScreen.mainScreen().bounds.size.width)/CGFloat(array.count),height:keyboardHeight/4))
+                let Btn = UIButton(frame:CGRect(x:count+CGFloat(10*array.count/(array.count+1)),y:y,width:((UIScreen.mainScreen().bounds.size.width)/CGFloat(array.count))-10,height:keyboardHeight/4))
                 Btn.setTitle(member, forState: UIControlState.Normal)
                 Btn.backgroundColor = UIColor.whiteColor()
                 Btn.setTitleColor(UIColor.blackColor(), forState: .Normal)
                 Btn.layer.cornerRadius = 5
                 Btn.layer.borderWidth = 1
                 Btn.layer.borderColor = UIColor.blackColor().CGColor
-                //Btn.layoutMargins = UIEdgeInsets(top: 0.5, left: 10.0, bottom: 0.5, right: 10.0)
-                
+
                 if(Btn.titleLabel?.text == "#")
                 {
                     let doubleTap:UITapGestureRecognizer = UITapGestureRecognizer()
                     doubleTap.numberOfTapsRequired = 2
                     doubleTap.numberOfTouchesRequired = 1
+                    doubleTap.delaysTouchesEnded = false
 
                     doubleTap.addTarget(self, action: #selector(capsLock(_:)))
                     Btn.addGestureRecognizer(doubleTap)
@@ -240,7 +234,7 @@ class KeyboardViewController: UIInputViewController {
                 Btn.addTarget(self, action: #selector(handleBtn(_:)), forControlEvents: .TouchUpInside)
 
                 mainview.addSubview(Btn)
-                count+=Btn.bounds.size.width
+                count += Btn.bounds.size.width+CGFloat(10*array.count/(array.count+1))
             }
             y+=keyboardHeight/4
         }
@@ -318,7 +312,6 @@ class KeyboardViewController: UIInputViewController {
                 createKeyBoard()
             }
             if self.textDocumentProxy.hasText() {
-                //NSLog(self.textDocumentProxy.documentContextBeforeInput!)
                 checkforSwear(self.textDocumentProxy.documentContextBeforeInput!,length: self.textLength)
             }
         }

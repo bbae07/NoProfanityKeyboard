@@ -16,10 +16,18 @@ class ScoreBoard: UIView {
 
     @IBOutlet weak var commentLabel: UILabel!
     @IBOutlet weak var scoreLabel: UILabel!
+
+    var scoreString:String = ""
+    var commentString:String = ""
+
     var delegate:ScoreProtocol?
 
     func reloadScore(){
-
+        /*
+         알고리즘의 결과로 점수(Int 또는 String)과 해당 점수에 맞는 코멘트 String이 넘어와야함
+         */
+        self.scoreString = ((1+random() % 100) as NSNumber).stringValue //"100"
+        self.commentString = "YOU'RE DOING GREAT!"
     }
 
     override init(frame: CGRect) {
@@ -36,6 +44,9 @@ class ScoreBoard: UIView {
         let view = NSBundle.mainBundle().loadNibNamed("ScoreBoard", owner: self, options: nil).first as! UIView
         
         view.frame = self.bounds
+        self.reloadScore()
+        commentLabel.text = self.commentString
+        scoreLabel.text = self.scoreString
         self.addSubview(view)
     }
 

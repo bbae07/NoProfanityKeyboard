@@ -15,6 +15,13 @@ class ViewController: UIViewController {
         
         let temp_view = ScoreBoard.instanceFromNib()
         self.view.addSubview(temp_view)
+        
+        
+        
+        
+        
+        let stat_view = UITableView()
+        
     }
 
     override func didReceiveMemoryWarning() {

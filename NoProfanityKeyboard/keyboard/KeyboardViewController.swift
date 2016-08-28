@@ -140,15 +140,10 @@ class KeyboardViewController: UIInputViewController {
         Btn_2.addTarget(self, action: #selector(switchWord(_:)), forControlEvents: .TouchUpInside)
         Btn_3.addTarget(self, action: #selector(switchWord(_:)), forControlEvents: .TouchUpInside)
 
-        var imageView:UIImageView = UIImageView(frame:CGRect(x:0,y:0,width: (UIScreen.mainScreen().bounds.size.width-3)/3, height:40))
-        imageView.image = UIImage.fontAwesomeIconWithName(.Github, textColor: UIColor.blackColor(), size: CGSizeMake(30, 30))
-        Btn_1.setImage(UIImage.fontAwesomeIconWithName(.Github, textColor: UIColor.blackColor(), size: CGSizeMake(30, 30)), forState: .Normal)
-
         Line_1.backgroundColor = UIColor.whiteColor()
         Line_2.backgroundColor = UIColor.whiteColor()
         
         suggestionView.addSubview(Btn_1)
-        //suggestionView.addSubview(imageView)
         suggestionView.addSubview(Btn_2)
         suggestionView.addSubview(Btn_3)
         suggestionView.addSubview(Line_1)
@@ -238,9 +233,29 @@ class KeyboardViewController: UIInputViewController {
                     let doubleTap:UITapGestureRecognizer = UITapGestureRecognizer()
                     doubleTap.numberOfTapsRequired = 2
                     doubleTap.numberOfTouchesRequired = 1
-                    
+
                     doubleTap.addTarget(self, action: #selector(capsLock(_:)))
                     Btn.addGestureRecognizer(doubleTap)
+                    Btn.setImage(UIImage.fontAwesomeIconWithName(.CircleO, textColor: UIColor.blackColor(), size: CGSizeMake(Btn.bounds.size.width, Btn.bounds.size.height)), forState: .Normal)
+                }
+                if(Btn.titleLabel?.text == "##")
+                {
+                    Btn.setImage(UIImage.fontAwesomeIconWithName(.Circle, textColor: UIColor.blackColor(), size: CGSizeMake(Btn.bounds.size.width, Btn.bounds.size.height)), forState: .Normal)
+                    //Btn.titleLabel?.text = ""
+                    //CircleO
+                }
+                if(Btn.titleLabel?.text == "###")
+                {
+                    Btn.setImage(UIImage.fontAwesomeIconWithName(.DotCircleO, textColor: UIColor.blackColor(), size: CGSizeMake(Btn.bounds.size.width, Btn.bounds.size.height)), forState: .Normal)
+                    //Btn.titleLabel?.text = ""
+                    //dot-circle-o
+                }
+                if (Btn.titleLabel?.text == "@@") {
+                    Btn.setImage(UIImage.fontAwesomeIconWithName(.Globe, textColor: UIColor.blackColor(), size: CGSizeMake(Btn.bounds.size.width, Btn.bounds.size.height)), forState: .Normal)
+                    //Btn.titleLabel?.text = ""fa-caret-square-o-left
+                }
+                if (Btn.titleLabel?.text == "<-"){
+                    Btn.setImage(UIImage.fontAwesomeIconWithName(.CaretLeft, textColor: UIColor.blackColor(), size: CGSizeMake(Btn.bounds.size.width, Btn.bounds.size.height)), forState: .Normal)
                 }
 
                 Btn.addTarget(self, action: #selector(handleBtn(_:)), forControlEvents: .TouchUpInside)

@@ -7,10 +7,14 @@
 //
 
 import Foundation
+import UIKit
 
 class Manager{
     static let groupID = "group.chanseobae.npkeyboard"
     static let defaults = NSUserDefaults(suiteName: groupID)
+
+    
+
     
     
     class func initWordBank()
@@ -39,6 +43,8 @@ class Manager{
         Manager.defaults!.setObject(swears, forKey: "swear")
         Manager.defaults!.synchronize()
     }
+    
+   
     
     class func allSwears() -> [String]
     {

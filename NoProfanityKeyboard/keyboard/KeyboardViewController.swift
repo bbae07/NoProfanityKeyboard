@@ -42,18 +42,18 @@ class KeyboardViewController: UIInputViewController {
     var mainview = UIView()
     
     
-    var suggestionView = UIView(frame:CGRect(x: 0, y: 0, width: UIScreen.mainScreen().bounds.size.width, height: 40.0))
+    var suggestionView = UIView(frame:CGRect(x: 0, y: 0, width: UIScreen.mainScreen().bounds.size.width, height: 30.0))
     
-    var Btn_1 = UIButton(frame: CGRect(x:0,y:0,width: (UIScreen.mainScreen().bounds.size.width-3)/3, height:40))
+    var Btn_1 = UIButton(frame: CGRect(x:0,y:0,width: (UIScreen.mainScreen().bounds.size.width-3)/3, height:30))
     
-    var Line_1 = UIView(frame: CGRect(x: (UIScreen.mainScreen().bounds.size.width-3)/3, y:0, width: 1.5, height: 40))
+    var Line_1 = UIView(frame: CGRect(x: (UIScreen.mainScreen().bounds.size.width-3)/3, y:0, width: 1.5, height: 30))
     
-    var Btn_2 = UIButton(frame: CGRect(x:(UIScreen.mainScreen().bounds.size.width-3)/3+1.5,y:0,width: (UIScreen.mainScreen().bounds.size.width-3)/3, height:40))
+    var Btn_2 = UIButton(frame: CGRect(x:(UIScreen.mainScreen().bounds.size.width-3)/3+1.5,y:0,width: (UIScreen.mainScreen().bounds.size.width-3)/3, height:30))
     
-    var Btn_3 = UIButton(frame: CGRect(x:(UIScreen.mainScreen().bounds.size.width-3)/3*2+3,y:0,width: (UIScreen.mainScreen().bounds.size.width-3)/3, height:40))
-    var Line_2 = UIView(frame: CGRect(x: (UIScreen.mainScreen().bounds.size.width-3)/3*2+1.5, y:0, width: 1.5, height: 40))
+    var Btn_3 = UIButton(frame: CGRect(x:(UIScreen.mainScreen().bounds.size.width-3)/3*2+3,y:0,width: (UIScreen.mainScreen().bounds.size.width-3)/3, height:30))
+    var Line_2 = UIView(frame: CGRect(x: (UIScreen.mainScreen().bounds.size.width-3)/3*2+1.5, y:0, width: 1.5, height: 30))
 
-    var keyboardHeight = 176.0 as CGFloat // 184.0 as CGFloat
+    var keyboardHeight = 186.0 as CGFloat // 184.0 as CGFloat
 
     var textLength:Int = 0
     var currentText = ""
@@ -111,7 +111,7 @@ class KeyboardViewController: UIInputViewController {
         let device = Device()
         if device == .iPhone6Plus{
             NSLog("iPhone6Plus")
-            self.keyboardHeight = 184.0 as CGFloat
+            self.keyboardHeight = 194.0 as CGFloat
         }//if(device==.iPhone)
 
         
@@ -219,7 +219,8 @@ class KeyboardViewController: UIInputViewController {
         for array in CharacterList
         {
             var count:CGFloat = 2
-            var count1:CGFloat = 23
+            var count1:CGFloat = 20
+            
             for member in array
             {
                 var Btn:UIButton = UIButton()
@@ -229,15 +230,25 @@ class KeyboardViewController: UIInputViewController {
                 }
                 else if(array == CharacterList[1])
                 {
-                    if(member == array[0])
+                    if(array[0] == "a" || array[0] == "A")
                     {
-                        Btn = UIButton(frame:CGRect(x:20+CGFloat(6*array.count/(array.count+1)),y:y,width:((UIScreen.mainScreen().bounds.size.width)/CGFloat(10.0))-6,height:keyboardHeight/4 - 8))
+                        if(member == array[0])
+                        {
+                            Btn = UIButton(frame:CGRect(x:20+CGFloat(6*array.count/(array.count+1)),y:y,width:((UIScreen.mainScreen().bounds.size.width)/CGFloat(10.0))-6,height:keyboardHeight/4 - 8))
+                        }
+                            
+                        else
+                        {
+                            Btn = UIButton(frame:CGRect(x:count1+CGFloat(6*array.count/(array.count+1)),y:y,width:((UIScreen.mainScreen().bounds.size.width)/CGFloat(10.0))-6,height:keyboardHeight/4 - 8))
+                        }
+    
                     }
-                    
+                        
                     else
                     {
-                        Btn = UIButton(frame:CGRect(x:count1+CGFloat(6*array.count/(array.count+1)),y:y,width:((UIScreen.mainScreen().bounds.size.width)/CGFloat(10.0))-6,height:keyboardHeight/4 - 8))
+                        Btn = UIButton(frame:CGRect(x:count+CGFloat(6*array.count/(array.count+1)),y:y,width:((UIScreen.mainScreen().bounds.size.width)/CGFloat(array.count))-6,height:keyboardHeight/4 - 8))
                     }
+                    
                 }
                 else if(array  == CharacterList[2])
                 {

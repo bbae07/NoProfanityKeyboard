@@ -284,17 +284,19 @@ class KeyboardViewController: UIInputViewController {
 
                 if(Btn.titleLabel?.text == "#1")
                 {
-                    let doubleTap:UITapGestureRecognizer = UITapGestureRecognizer()
+                    /*let doubleTap:UITapGestureRecognizer = UITapGestureRecognizer()
                     doubleTap.numberOfTapsRequired = 2
                     doubleTap.numberOfTouchesRequired = 1
                     doubleTap.delaysTouchesBegan = false
 
                     doubleTap.addTarget(self, action: #selector(capsLock(_:)))
-                    Btn.addGestureRecognizer(doubleTap)
-                    Btn.setImage(UIImage.fontAwesomeIconWithName(.CircleO, textColor: UIColor.blackColor(), size: CGSizeMake(Btn.bounds.size.width-3, Btn.bounds.size.height-3)), forState: .Normal)
+
+                    Btn.addGestureRecognizer(doubleTap)*/
+                    Btn.setImage(UIImage.fontAwesomeIconWithName(.CircleO, textColor: UIColor.blackColor(), size: CGSizeMake(Btn.bounds.size.width, Btn.bounds.size.height)), forState: .Normal)
                 }
                 if(Btn.titleLabel?.text == "##")
                 {
+                    Btn.addTarget(self, action: #selector(capsLock(_:)), forControlEvents: .TouchDownRepeat)
                     Btn.setImage(UIImage.fontAwesomeIconWithName(.Circle, textColor: UIColor.blackColor(), size: CGSizeMake(Btn.bounds.size.width, Btn.bounds.size.height)), forState: .Normal)
                 }
                 if(Btn.titleLabel?.text == "###")

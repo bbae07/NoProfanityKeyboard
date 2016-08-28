@@ -6,6 +6,7 @@
 import UIKit
 import DeviceKit
 
+
 class KeyboardViewController: UIInputViewController {
 
     var topCharacterList:[String] = ["q","w","e","r","t","y","u","i","o","p"] // 10개
@@ -214,19 +215,61 @@ class KeyboardViewController: UIInputViewController {
         {
             subview.removeFromSuperview()
         }
-        var y:CGFloat = 0
+        var y:CGFloat = 2
         for array in CharacterList
         {
-            var count:CGFloat = 0
+            var count:CGFloat = 2
+            var count1:CGFloat = 23
             for member in array
             {
-                let Btn = UIButton(frame:CGRect(x:count+CGFloat(10*array.count/(array.count+1)),y:y,width:((UIScreen.mainScreen().bounds.size.width)/CGFloat(array.count))-10,height:keyboardHeight/4))
+                var Btn:UIButton = UIButton()
+                if(array == CharacterList[0])
+                {
+                    Btn = UIButton(frame:CGRect(x:count+CGFloat(6*array.count/(array.count+1)),y:y,width:((UIScreen.mainScreen().bounds.size.width)/CGFloat(array.count))-6,height:keyboardHeight/4 - 8))
+                }
+                else if(array == CharacterList[1])
+                {
+                    if(member == array[0])
+                    {
+                        Btn = UIButton(frame:CGRect(x:20+CGFloat(6*array.count/(array.count+1)),y:y,width:((UIScreen.mainScreen().bounds.size.width)/CGFloat(10.0))-6,height:keyboardHeight/4 - 8))
+                    }
+                    
+                    else
+                    {
+                        Btn = UIButton(frame:CGRect(x:count1+CGFloat(6*array.count/(array.count+1)),y:y,width:((UIScreen.mainScreen().bounds.size.width)/CGFloat(10.0))-6,height:keyboardHeight/4 - 8))
+                    }
+                }
+                else if(array  == CharacterList[2])
+                {
+                    Btn = UIButton(frame:CGRect(x:count+CGFloat(6*array.count/(array.count+1)),y:y,width:((UIScreen.mainScreen().bounds.size.width)/CGFloat(array.count))-6,height:keyboardHeight/4 - 8))
+                }
+                else if(array == CharacterList[3])
+                {
+                    if(member == array[0])
+                    {
+                        Btn = UIButton(frame:CGRect(x:5,y:y,width:(UIScreen.mainScreen().bounds.size.width - 20)/8,height:keyboardHeight/4 - 8))
+                    }
+                    else if(member == array[1])
+                    {
+                        //padding 3,2,3,3
+                        Btn = UIButton(frame:CGRect(x:10+(UIScreen.mainScreen().bounds.size.width - 25)/8 ,y:y,width:(UIScreen.mainScreen().bounds.size.width - 25)/8,height:keyboardHeight/4 - 8))
+                    }
+                    else if(member == array[2])
+                    {
+                        Btn = UIButton(frame:CGRect(x:15+(UIScreen.mainScreen().bounds.size.width - 25)/4,y:y,width:(UIScreen.mainScreen().bounds.size.width - 25)/2,height:keyboardHeight/4 - 8))
+                    }
+                    else if(member == array[3])
+                    {
+                        Btn = UIButton(frame:CGRect(x:20+(UIScreen.mainScreen().bounds.size.width - 25)*3/4,y:y,width:(UIScreen.mainScreen().bounds.size.width - 25)/4,height:keyboardHeight/4 - 8))
+                    }
+                }
+                
                 Btn.setTitle(member, forState: UIControlState.Normal)
                 Btn.backgroundColor = UIColor.whiteColor()
                 Btn.setTitleColor(UIColor.blackColor(), forState: .Normal)
                 Btn.layer.cornerRadius = 5
-                Btn.layer.borderWidth = 1
-                Btn.layer.borderColor = UIColor.blackColor().CGColor
+                //Btn.layer.borderWidth = 1
+                //Btn.layer.borderColor = UIColor.blackColor().CGColor
 
                 if(Btn.titleLabel?.text == "#")
                 {
@@ -242,7 +285,8 @@ class KeyboardViewController: UIInputViewController {
                 Btn.addTarget(self, action: #selector(handleBtn(_:)), forControlEvents: .TouchUpInside)
 
                 mainview.addSubview(Btn)
-                count += Btn.bounds.size.width+CGFloat(10*array.count/(array.count+1))
+                count += Btn.bounds.size.width+CGFloat(6*array.count/(array.count+1))
+                count1 += Btn.bounds.size.width+CGFloat(6*array.count/(array.count+1))
             }
             y+=keyboardHeight/4
         }

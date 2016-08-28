@@ -26,7 +26,22 @@ class ScoreBoard: UIView {
         /*
          알고리즘의 결과로 점수(Int 또는 String)과 해당 점수에 맞는 코멘트 String이 넘어와야함
          */
-        self.scoreString = ((1+random() % 100) as NSNumber).stringValue //"100"
+        var total_s_count:Double = 0;
+        var total_change:Double = 0;
+        for swear in Manager.allSwears(){
+            var x = Manager.defaults!.arrayForKey(swear) as! [AnyObject!]
+            total_s_count += x[1] as! Double
+            total_change += (x[0] as! [AnyObject!])[3] as! Double
+        }
+        
+        
+        var number = NSNumber.init(double: round(total_change / total_s_count * 100 as Double))
+        if(total_change == 0) {
+            number = 0 as NSNumber
+        }
+        
+        
+        self.scoreString = number.stringValue
         self.commentString = "YOU'RE DOING GREAT!"
     }
 

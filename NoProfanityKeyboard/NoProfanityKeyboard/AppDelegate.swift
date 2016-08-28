@@ -20,8 +20,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
+    @objc func resetData()
+    {
+        //        let notification = UILocalNotification()
+        //        notification.alertTitle = "Weekly Update"
+        //        notification.alertBody = "No Profanity Keyboard has just been refreshed"
+        //NSLog("Timer Works")
+        Manager.initWordBank()
+        //UIApplication.sharedApplication().scheduleLocalNotification(notification)
+    }
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+        
+        var timer = NSTimer.scheduledTimerWithTimeInterval(1209600.0, target: self, selector: #selector(AppDelegate.resetData), userInfo: nil, repeats: true)
+        
+
         // Override point for customization after application launch.
 
         
@@ -35,16 +48,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             }
         }
         
-//        let statPage = StatisticVC()
         let viewPage = ViewController()
-//        viewPage.view.frame = CGRect(x: 0, y: 40, width: UIScreen.mainScreen().bounds.size.width, height: 100)
-//        statPage.view.frame = CGRect(x: 0, y: 140, width: UIScreen.mainScreen().bounds.size.width, height: UIScreen.mainScreen().bounds.size.height - 240)
-//        let container = ContainerVC()
-//        container.addChildViewController(viewPage)
-//        container.addChildViewController(statPage)
-//        container.view.addSubview(viewPage.view)
-//        container.view.addSubview(statPage.view)
-//        container.loadViewIfNeeded()
         let nav = UINavigationController.init(rootViewController: viewPage)
 
         nav.navigationBar.topItem?.title = "No Profanity Keyboard"

@@ -94,8 +94,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         let cell = tableView.dequeueReusableCellWithIdentifier("identifier") as! CustomCell
         
         cell.swearStr = "WORDS"
-        cell.noStr = "SAME"
-        cell.yesStr = "CHANGE"
+        cell.noStr = "USED"
+        cell.yesStr = "CHANGED"
         cell.frame = CGRect(x: 0, y: 0, width: UIScreen.mainScreen().bounds.size.width, height: 40.0)
         cell.backgroundColor = UIColor(red: 180.0/255.0, green: 181.0/255.0, blue: 180.0/255.0, alpha: 1.0)
         cell.swear.textColor = UIColor.whiteColor()

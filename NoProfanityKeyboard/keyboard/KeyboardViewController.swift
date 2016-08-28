@@ -107,13 +107,12 @@ class KeyboardViewController: UIInputViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        //    var keyboardHeight = 176.0 as CGFloat // 184.0 as CGFloat
+
         let device = Device()
         if device == .iPhone6Plus{
             NSLog("iPhone6Plus")
             self.keyboardHeight = 184.0 as CGFloat
-        }//if(device==.iPhone)
-
+        }
         
         //Set Dictionary if container app haven't been opened
         
@@ -242,18 +241,13 @@ class KeyboardViewController: UIInputViewController {
                 if(Btn.titleLabel?.text == "##")
                 {
                     Btn.setImage(UIImage.fontAwesomeIconWithName(.Circle, textColor: UIColor.blackColor(), size: CGSizeMake(Btn.bounds.size.width, Btn.bounds.size.height)), forState: .Normal)
-                    //Btn.titleLabel?.text = ""
-                    //CircleO
                 }
                 if(Btn.titleLabel?.text == "###")
                 {
                     Btn.setImage(UIImage.fontAwesomeIconWithName(.DotCircleO, textColor: UIColor.blackColor(), size: CGSizeMake(Btn.bounds.size.width, Btn.bounds.size.height)), forState: .Normal)
-                    //Btn.titleLabel?.text = ""
-                    //dot-circle-o
                 }
                 if (Btn.titleLabel?.text == "@@") {
                     Btn.setImage(UIImage.fontAwesomeIconWithName(.Globe, textColor: UIColor.blackColor(), size: CGSizeMake(Btn.bounds.size.width, Btn.bounds.size.height)), forState: .Normal)
-                    //Btn.titleLabel?.text = ""fa-caret-square-o-left
                 }
                 if (Btn.titleLabel?.text == "<-"){
                     Btn.setImage(UIImage.fontAwesomeIconWithName(.CaretLeft, textColor: UIColor.blackColor(), size: CGSizeMake(Btn.bounds.size.width, Btn.bounds.size.height)), forState: .Normal)
@@ -298,7 +292,6 @@ class KeyboardViewController: UIInputViewController {
         else if(label == "#")
         {
             CharacterList = [topShiftCharacterList,upperShiftCharacterList,footerShiftCharacterList,bottomShiftCharacterList]
-            //self.buttons![0].titleLabel!.text = topShiftCharacterList[0]
             createKeyBoard()
         }
         else if(label == "##")

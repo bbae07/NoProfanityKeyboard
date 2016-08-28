@@ -9,5 +9,6 @@ end
 
 target 'keyboard' do
 pod 'DeviceKit', '~> 0.3.4'
+pod 'FontAwesome-iOS'
 end
 

@@ -7,129 +7,165 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		01F6E5D1DDF4C03CA345B630423FBACF /* Pods-keyboard-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C26DBB6CAC79D4426F29681291864E35 /* Pods-keyboard-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		079C88EB120535A87150C01F807DF8BC /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = D426A023F02ACC7074CE4BBE3E3AA78E /* Device.swift */; };
-		090BBB29EA49E7E8F46EA9BAFE2D16E3 /* SVProgressHUD-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 546CD3511BC0C390B9126565E8F602F6 /* SVProgressHUD-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		09AE5C9545A0A9E2C4B53FB191811B74 /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C1D2B87A7915F330E9FFC4BDD14EE38 /* SVProgressHUD.m */; };
-		0A84DEFB36DB61E3E3D70064038169E2 /* SVRadialGradientLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 361DDB5433AA97C721CE8965F20CE072 /* SVRadialGradientLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		11B88E92E9F2C652383E2D26B87147D6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90AAE8973B935FD4979EEDFB8B1E12AC /* Foundation.framework */; };
-		1CF252F23F8448B7B9EFD6391AB8A600 /* SVProgressHUD.h in Headers */ = {isa = PBXBuildFile; fileRef = 25B6432F5CA45518BAA9769CCA05F493 /* SVProgressHUD.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		201B548C8C3574E90AA21B32A3516ED4 /* SVIndefiniteAnimatedView.h in Headers */ = {isa = PBXBuildFile; fileRef = 7BC4BE99EF1E0C261BF235F7C72DF4F5 /* SVIndefiniteAnimatedView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2175B683C58E0780477B5CF54CAF561B /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB0B5C34B0704CE42DB8ACE437DB6B71 /* QuartzCore.framework */; };
-		2FF064A8900F4906454B97F4D1D4DA11 /* DeviceKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C2D49312363707390EC3E562628D599A /* DeviceKit-dummy.m */; };
-		3AC906A83EBA51CD5F2E2CA66D065CF8 /* SVProgressAnimatedView.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F30D5F0CA580C363FE0D087B53415A1 /* SVProgressAnimatedView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		582970D245AEC523E70A3F4C12BA6951 /* Pods-keyboard-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AFDBBD3653C999BF7E9F928B2B806235 /* Pods-keyboard-dummy.m */; };
-		6BDE160C5E8776491A19934DCCE5806C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90AAE8973B935FD4979EEDFB8B1E12AC /* Foundation.framework */; };
-		6E0AA1F234DEF011D609D735B547598D /* DeviceKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7C8F49EB611478DB90229CC63A02FFDA /* DeviceKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7D78B79641AAA45CAE7FEB12484D56B4 /* Pods-NoProfanityKeyboard-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BF02C9B49C4140CE0A7DA8BBD356446A /* Pods-NoProfanityKeyboard-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AD4399854748612188D8D47DD4952ABA /* SVIndefiniteAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = FCA0585DE298339C331FAA9F6187D23E /* SVIndefiniteAnimatedView.m */; };
+		079C88EB120535A87150C01F807DF8BC /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C5C547B89020E0F48C1553A7A00A01E /* Device.swift */; };
+		1E4B3F3EE9FB549D28E815E43D476FFD /* SVRadialGradientLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = AA8AD8158A96C36788D8F2029DE429EA /* SVRadialGradientLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2131CC8CD0912C4C6705114B3C32D2BA /* FontAwesome-iOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 340051A9DE789B36536762E2C50416B6 /* FontAwesome-iOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2493508E276D0AF9942E08203350A42A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90AAE8973B935FD4979EEDFB8B1E12AC /* Foundation.framework */; };
+		28EE32E546814B2A0FBAE437976053F9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90AAE8973B935FD4979EEDFB8B1E12AC /* Foundation.framework */; };
+		297D1410932FC7241E914A53EEE1427F /* SVIndefiniteAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 897FC69C3F64ACDFE4CDF905B64B5787 /* SVIndefiniteAnimatedView.m */; };
+		2A8BDAE23DDAFBE1B68603AD6A303F13 /* SVProgressHUD-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AD3106986636D353BEA738CC58508682 /* SVProgressHUD-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2FF064A8900F4906454B97F4D1D4DA11 /* DeviceKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CBA91F5D81C14534B8B79C46F2821397 /* DeviceKit-dummy.m */; };
+		37770A818E59750C202C5AD709E4EDC8 /* Pods-NoProfanityKeyboard-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BF02C9B49C4140CE0A7DA8BBD356446A /* Pods-NoProfanityKeyboard-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		42D925F246584C0984216A1F9A31DEC7 /* SVIndefiniteAnimatedView.h in Headers */ = {isa = PBXBuildFile; fileRef = 7175658B6A09EEE4506CC5FF3E628AAB /* SVIndefiniteAnimatedView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4C4672FF81D3749DA0FADDF6CA345420 /* NSString+FontAwesome.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CADC3616A2447CF05FF9077B5A421AF /* NSString+FontAwesome.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		53085E2F96E8604FBE78AC40391A1DCD /* Pods-NoProfanityKeyboard-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EF1BCD7AF7F478DDF32E868873D39EA /* Pods-NoProfanityKeyboard-dummy.m */; };
+		6741F9C08B02D54F79CE4318E2079E0E /* SVProgressAnimatedView.h in Headers */ = {isa = PBXBuildFile; fileRef = C5CDF00AF6F84155C157C906C3573570 /* SVProgressAnimatedView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6E0AA1F234DEF011D609D735B547598D /* DeviceKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 85F43CC8C762E4D5BEC2C7D99E4576CD /* DeviceKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		84428ECD38F959A3AE274E280E821C70 /* Pods-keyboard-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C26DBB6CAC79D4426F29681291864E35 /* Pods-keyboard-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8BD6508BD28AC2B10919EE538F41949F /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = BD2BDF14875B4B32D9DB8A223D8CF767 /* SVProgressHUD.m */; };
+		961B58AA936C6E0D6FE69E964CBC62F0 /* NSString+FontAwesome.h in Headers */ = {isa = PBXBuildFile; fileRef = C37CC83071E558EDD50D01DF42F04BB9 /* NSString+FontAwesome.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A820A6F5196A639A6A10EBC99547F7EE /* FontAwesome-iOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BB9B3D0240890320D941EB19F37C7758 /* FontAwesome-iOS-dummy.m */; };
 		AE0144BE483E13F8E21ECF365DD32E08 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90AAE8973B935FD4979EEDFB8B1E12AC /* Foundation.framework */; };
-		B5964E7A8AFC0560FA9133347EBABA07 /* SVProgressAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 949285C48DEC888E1E423D322D0FF1ED /* SVProgressAnimatedView.m */; };
-		C21489E10981D94B29E5D2466BE0946B /* Pods-NoProfanityKeyboard-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EF1BCD7AF7F478DDF32E868873D39EA /* Pods-NoProfanityKeyboard-dummy.m */; };
-		CB7AEF04DCDA56BEDFC3184EFA79E041 /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B544AF2CADFE917411A7AFCC39DC24F1 /* SVProgressHUD.bundle */; };
-		DB67E0E4E001EE239C72A995620C53B3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90AAE8973B935FD4979EEDFB8B1E12AC /* Foundation.framework */; };
-		F12AD0FD2C7AAEC227A1658975C5C982 /* SVRadialGradientLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A683C3103440EE26E069F95E349CEFA /* SVRadialGradientLayer.m */; };
-		FFC0CB5B59EEE1B1F558847CC38C9B15 /* SVProgressHUD-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CBD2B7C15C2193C4CB9AF0B27A98D703 /* SVProgressHUD-dummy.m */; };
+		B93B0E6F91C0FE1DF1818FEC146BD540 /* SVProgressAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = ECF77030955899AC25CDA0C7559CC5B5 /* SVProgressAnimatedView.m */; };
+		CDA9052EC5A95642C9AA732FBD126F6E /* SVProgressHUD.h in Headers */ = {isa = PBXBuildFile; fileRef = DA63AE6A86ACE555A3395CA6BF3FF8EF /* SVProgressHUD.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D3714011F2DD0F072DDD77FDBDD9B298 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90AAE8973B935FD4979EEDFB8B1E12AC /* Foundation.framework */; };
+		E675AEA2C4160CBB85A83F7FD739E695 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90AAE8973B935FD4979EEDFB8B1E12AC /* Foundation.framework */; };
+		E91F7B36ED7E4136F77A09B4427DDE04 /* SVRadialGradientLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A33CA46E2ABDE5E59F10F70D397553A /* SVRadialGradientLayer.m */; };
+		ED6855D89138B7337FCD952E2223FF3D /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D5C6A307F45F21E6B8FD9D606790A9B3 /* SVProgressHUD.bundle */; };
+		EF97F3B3CD2D9EF0096B4B497F79D0F0 /* SVProgressHUD-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C6D922A43266DDEA8E731247E0A54BC /* SVProgressHUD-dummy.m */; };
+		F228150C60D7B4C04CF3F4D5112013DD /* Pods-keyboard-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AFDBBD3653C999BF7E9F928B2B806235 /* Pods-keyboard-dummy.m */; };
+		F25C373CF1524FE8E8313EE221E49DED /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB0B5C34B0704CE42DB8ACE437DB6B71 /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		4A5206A0AFEC2A88B0829355FDD5C1D4 /* PBXContainerItemProxy */ = {
+		1B993656C2AA9A5BE4E973CDE6C965EF /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = EF78824223C74AA13AE655CD2ACF32A3;
 			remoteInfo = DeviceKit;
 		};
-		84DA1A1B254A47D1A2A974CECFBE6E7C /* PBXContainerItemProxy */ = {
+		A0B638E81C133B44B08084C80EE4B41C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 4ECAF5497FE791C6A40EB65F641A6ADD;
+			remoteGlobalIDString = 326B13F11CA3E111904FEA4C0B0EAB38;
 			remoteInfo = SVProgressHUD;
 		};
-		DA2B38DB7700D9B9F581924D2439BF67 /* PBXContainerItemProxy */ = {
+		A89C7EFACC34DCA61D2EBA68E343CD29 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = EF78824223C74AA13AE655CD2ACF32A3;
 			remoteInfo = DeviceKit;
+		};
+		ABFC8AAECF649374C7E89706B2F3EE76 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 48369B33BCA4EE7CE5B05F02DB32CB72;
+			remoteInfo = "FontAwesome-iOS";
+		};
+		EFB6B169B8C1535AA7990FBA3845132B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 48369B33BCA4EE7CE5B05F02DB32CB72;
+			remoteInfo = "FontAwesome-iOS";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		07E47E9752F6B25DD21E2C05B10A65E0 /* Pods-keyboard-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-keyboard-acknowledgements.markdown"; sourceTree = "<group>"; };
-		0F30D5F0CA580C363FE0D087B53415A1 /* SVProgressAnimatedView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVProgressAnimatedView.h; path = SVProgressHUD/SVProgressAnimatedView.h; sourceTree = "<group>"; };
+		0CADC3616A2447CF05FF9077B5A421AF /* NSString+FontAwesome.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSString+FontAwesome.m"; sourceTree = "<group>"; };
+		0D244A1DD5D333424C6A2F93C6ACC5ED /* DeviceKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DeviceKit.xcconfig; sourceTree = "<group>"; };
 		18E0EC6E6CFF493196C51DDD52CBD627 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		25B6432F5CA45518BAA9769CCA05F493 /* SVProgressHUD.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVProgressHUD.h; path = SVProgressHUD/SVProgressHUD.h; sourceTree = "<group>"; };
+		1D07FB126AD45686349B4B3A6E01AB51 /* DeviceKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DeviceKit-prefix.pch"; sourceTree = "<group>"; };
 		2613DC7DAFEFE39E6D4F5C6415783263 /* Pods-NoProfanityKeyboard-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-NoProfanityKeyboard-acknowledgements.markdown"; sourceTree = "<group>"; };
+		2A33CA46E2ABDE5E59F10F70D397553A /* SVRadialGradientLayer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVRadialGradientLayer.m; path = SVProgressHUD/SVRadialGradientLayer.m; sourceTree = "<group>"; };
+		340051A9DE789B36536762E2C50416B6 /* FontAwesome-iOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FontAwesome-iOS-umbrella.h"; sourceTree = "<group>"; };
 		344778A9C7744A01895351E61C392CB5 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		361DDB5433AA97C721CE8965F20CE072 /* SVRadialGradientLayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVRadialGradientLayer.h; path = SVProgressHUD/SVRadialGradientLayer.h; sourceTree = "<group>"; };
+		4625EB818F461870FEE5DFE56FF162BA /* FontAwesome-iOS-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FontAwesome-iOS-prefix.pch"; sourceTree = "<group>"; };
 		478746B3A10F8C140D03E237B88D1AA5 /* Pods-NoProfanityKeyboard-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-NoProfanityKeyboard-frameworks.sh"; sourceTree = "<group>"; };
-		483046F33B5B7991AA8492E9E3A2033D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		537917484A7BDA94F812175BDE329B5C /* DeviceKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DeviceKit.xcconfig; sourceTree = "<group>"; };
 		53912A5A870FFB37FCE06475C7EC4C62 /* Pods-NoProfanityKeyboard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NoProfanityKeyboard.debug.xcconfig"; sourceTree = "<group>"; };
-		546CD3511BC0C390B9126565E8F602F6 /* SVProgressHUD-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SVProgressHUD-umbrella.h"; sourceTree = "<group>"; };
-		547EA93F659B0C5D6E619FB027823B60 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5509220C5256CAB8A1435AC631CEB569 /* Pods-NoProfanityKeyboard-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-NoProfanityKeyboard-resources.sh"; sourceTree = "<group>"; };
+		577961349D9729C04D0C9641049254BC /* SVProgressHUD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SVProgressHUD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A2647800A76642AFD8F54CEF4CED130 /* Pods-keyboard-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-keyboard-acknowledgements.plist"; sourceTree = "<group>"; };
-		5C1DFD59005058D454B20BCA01984F36 /* SVProgressHUD.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SVProgressHUD.xcconfig; sourceTree = "<group>"; };
+		5C2F732B76B76E05528F087462405F99 /* DeviceKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DeviceKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		618B9D2B597124ED9BC3CC7852F0DF23 /* FontAwesome_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FontAwesome_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6680C8524E6106AEDE24C80AD0596089 /* Pods-keyboard.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-keyboard.modulemap"; sourceTree = "<group>"; };
-		6C23169C66A625B5BE613ED8764D9DBE /* DeviceKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DeviceKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		7A683C3103440EE26E069F95E349CEFA /* SVRadialGradientLayer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVRadialGradientLayer.m; path = SVProgressHUD/SVRadialGradientLayer.m; sourceTree = "<group>"; };
-		7BC4BE99EF1E0C261BF235F7C72DF4F5 /* SVIndefiniteAnimatedView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVIndefiniteAnimatedView.h; path = SVProgressHUD/SVIndefiniteAnimatedView.h; sourceTree = "<group>"; };
-		7C8F49EB611478DB90229CC63A02FFDA /* DeviceKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DeviceKit-umbrella.h"; sourceTree = "<group>"; };
+		6C73D6B71FAC7A34A7D0B1C82374BF35 /* SVProgressHUD-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SVProgressHUD-prefix.pch"; sourceTree = "<group>"; };
+		6EF5DB6CAB47EDC5804AEDF27420DE08 /* DeviceKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = DeviceKit.modulemap; sourceTree = "<group>"; };
+		7175658B6A09EEE4506CC5FF3E628AAB /* SVIndefiniteAnimatedView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVIndefiniteAnimatedView.h; path = SVProgressHUD/SVIndefiniteAnimatedView.h; sourceTree = "<group>"; };
+		771E79AC2D462659FDB700DA24ED6C8B /* FontAwesome-iOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "FontAwesome-iOS.modulemap"; sourceTree = "<group>"; };
+		7BFBB97204A0F90848D4EBAAA85D8517 /* FontAwesome-iOS.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "FontAwesome-iOS.xcconfig"; sourceTree = "<group>"; };
+		84932CA9B791E9867F2FC4161CD2BC1B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		84B1C54A582C809A06232611E9C31806 /* Pods-NoProfanityKeyboard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NoProfanityKeyboard.release.xcconfig"; sourceTree = "<group>"; };
+		85F43CC8C762E4D5BEC2C7D99E4576CD /* DeviceKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DeviceKit-umbrella.h"; sourceTree = "<group>"; };
+		897FC69C3F64ACDFE4CDF905B64B5787 /* SVIndefiniteAnimatedView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVIndefiniteAnimatedView.m; path = SVProgressHUD/SVIndefiniteAnimatedView.m; sourceTree = "<group>"; };
+		8C5C547B89020E0F48C1553A7A00A01E /* Device.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Device.swift; path = Source/Device.swift; sourceTree = "<group>"; };
 		8EF1BCD7AF7F478DDF32E868873D39EA /* Pods-NoProfanityKeyboard-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-NoProfanityKeyboard-dummy.m"; sourceTree = "<group>"; };
 		90AAE8973B935FD4979EEDFB8B1E12AC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		91D9D76713E103CF89189B95F9B249AC /* SVProgressHUD.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SVProgressHUD.modulemap; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		949285C48DEC888E1E423D322D0FF1ED /* SVProgressAnimatedView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVProgressAnimatedView.m; path = SVProgressHUD/SVProgressAnimatedView.m; sourceTree = "<group>"; };
-		9A8CB3DF10B5935B348EB83E8A37A7DD /* SVProgressHUD-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SVProgressHUD-prefix.pch"; sourceTree = "<group>"; };
-		9C1D2B87A7915F330E9FFC4BDD14EE38 /* SVProgressHUD.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVProgressHUD.m; path = SVProgressHUD/SVProgressHUD.m; sourceTree = "<group>"; };
-		A4B328E7ADF1FE287766B92685B8C389 /* Pods_keyboard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_keyboard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A94BFF6BD10B2ADCC712EC8E0C50F96A /* SVProgressHUD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SVProgressHUD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C6D922A43266DDEA8E731247E0A54BC /* SVProgressHUD-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SVProgressHUD-dummy.m"; sourceTree = "<group>"; };
+		9FECD30B45CBC9D4261CFAAEEAFEDE14 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AA8AD8158A96C36788D8F2029DE429EA /* SVRadialGradientLayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVRadialGradientLayer.h; path = SVProgressHUD/SVRadialGradientLayer.h; sourceTree = "<group>"; };
+		AD3106986636D353BEA738CC58508682 /* SVProgressHUD-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SVProgressHUD-umbrella.h"; sourceTree = "<group>"; };
 		AFDBBD3653C999BF7E9F928B2B806235 /* Pods-keyboard-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-keyboard-dummy.m"; sourceTree = "<group>"; };
-		B0A59B9BF9D7F70DEE5B40ACCA1E75FE /* DeviceKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = DeviceKit.modulemap; sourceTree = "<group>"; };
-		B544AF2CADFE917411A7AFCC39DC24F1 /* SVProgressHUD.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = SVProgressHUD.bundle; path = SVProgressHUD/SVProgressHUD.bundle; sourceTree = "<group>"; };
+		B7949045F937CEA90595489CE82D1F3E /* SVProgressHUD.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SVProgressHUD.modulemap; sourceTree = "<group>"; };
+		BB9B3D0240890320D941EB19F37C7758 /* FontAwesome-iOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FontAwesome-iOS-dummy.m"; sourceTree = "<group>"; };
+		BD2BDF14875B4B32D9DB8A223D8CF767 /* SVProgressHUD.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVProgressHUD.m; path = SVProgressHUD/SVProgressHUD.m; sourceTree = "<group>"; };
 		BF02C9B49C4140CE0A7DA8BBD356446A /* Pods-NoProfanityKeyboard-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-NoProfanityKeyboard-umbrella.h"; sourceTree = "<group>"; };
 		C07413B2587F5BA4CF92C9A7111D13BD /* Pods-keyboard-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-keyboard-resources.sh"; sourceTree = "<group>"; };
 		C26DBB6CAC79D4426F29681291864E35 /* Pods-keyboard-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-keyboard-umbrella.h"; sourceTree = "<group>"; };
-		C2D49312363707390EC3E562628D599A /* DeviceKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DeviceKit-dummy.m"; sourceTree = "<group>"; };
-		C34AFCEA85557980F7A7EBDA86A293DE /* DeviceKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DeviceKit-prefix.pch"; sourceTree = "<group>"; };
-		CBD2B7C15C2193C4CB9AF0B27A98D703 /* SVProgressHUD-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SVProgressHUD-dummy.m"; sourceTree = "<group>"; };
+		C37CC83071E558EDD50D01DF42F04BB9 /* NSString+FontAwesome.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSString+FontAwesome.h"; sourceTree = "<group>"; };
+		C5CDF00AF6F84155C157C906C3573570 /* SVProgressAnimatedView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVProgressAnimatedView.h; path = SVProgressHUD/SVProgressAnimatedView.h; sourceTree = "<group>"; };
+		CBA91F5D81C14534B8B79C46F2821397 /* DeviceKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DeviceKit-dummy.m"; sourceTree = "<group>"; };
 		CEE124015BF114B4FCA67AC0C498F074 /* Pods-NoProfanityKeyboard-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NoProfanityKeyboard-acknowledgements.plist"; sourceTree = "<group>"; };
-		D426A023F02ACC7074CE4BBE3E3AA78E /* Device.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Device.swift; path = Source/Device.swift; sourceTree = "<group>"; };
+		D3CC0A79440CF0F5C8C377031D787C4B /* SVProgressHUD.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SVProgressHUD.xcconfig; sourceTree = "<group>"; };
 		D53A48DD6113D2572B386F0E7BE13481 /* Pods-keyboard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-keyboard.debug.xcconfig"; sourceTree = "<group>"; };
-		E8DE9D0DAD40F1CBCE999D92FF874390 /* Pods_NoProfanityKeyboard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NoProfanityKeyboard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5C6A307F45F21E6B8FD9D606790A9B3 /* SVProgressHUD.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = SVProgressHUD.bundle; path = SVProgressHUD/SVProgressHUD.bundle; sourceTree = "<group>"; };
+		DA63AE6A86ACE555A3395CA6BF3FF8EF /* SVProgressHUD.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVProgressHUD.h; path = SVProgressHUD/SVProgressHUD.h; sourceTree = "<group>"; };
+		DF68F3DD75D7F4498903A9068B95543D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E2013374F03C526324EF6195B82C74DA /* Pods_keyboard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_keyboard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA9A6894639AFA3AC09D4F6C7C225617 /* Pods-keyboard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-keyboard.release.xcconfig"; sourceTree = "<group>"; };
 		EB0B5C34B0704CE42DB8ACE437DB6B71 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
 		EB18F2D8B611325750B4F18A2508BA62 /* Pods-NoProfanityKeyboard.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-NoProfanityKeyboard.modulemap"; sourceTree = "<group>"; };
-		FCA0585DE298339C331FAA9F6187D23E /* SVIndefiniteAnimatedView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVIndefiniteAnimatedView.m; path = SVProgressHUD/SVIndefiniteAnimatedView.m; sourceTree = "<group>"; };
+		ECF77030955899AC25CDA0C7559CC5B5 /* SVProgressAnimatedView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVProgressAnimatedView.m; path = SVProgressHUD/SVProgressAnimatedView.m; sourceTree = "<group>"; };
+		F0A2725647E156562F8E13462AB45CFF /* Pods_NoProfanityKeyboard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NoProfanityKeyboard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		5FE2F7ACDDCCF4841AF9CE9F82B40A6A /* Frameworks */ = {
+		1E576B066E4FF0022145DFE694273E78 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6BDE160C5E8776491A19934DCCE5806C /* Foundation.framework in Frameworks */,
-				2175B683C58E0780477B5CF54CAF561B /* QuartzCore.framework in Frameworks */,
+				28EE32E546814B2A0FBAE437976053F9 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C72512AFE9D4B2A8AE483F73FDAAA5A7 /* Frameworks */ = {
+		A173EA1C4B71952FD7BF0158883C96D7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DB67E0E4E001EE239C72A995620C53B3 /* Foundation.framework in Frameworks */,
+				2493508E276D0AF9942E08203350A42A /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FAF93F1AFA8DFB79763A390ABE2A0424 /* Frameworks */ = {
+		BDDE355B8D44575CB81976C2C5F76D8A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				11B88E92E9F2C652383E2D26B87147D6 /* Foundation.framework in Frameworks */,
+				D3714011F2DD0F072DDD77FDBDD9B298 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D156500D5E6CF88C01D3546618DE2449 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E675AEA2C4160CBB85A83F7FD739E695 /* Foundation.framework in Frameworks */,
+				F25C373CF1524FE8E8313EE221E49DED /* QuartzCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,39 +180,45 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1E6D697E1E96A48F123EB688220F7ED1 /* DeviceKit */ = {
+		12A1AF0625743F26CD8C242FE2BBD481 /* SVProgressHUD */ = {
 			isa = PBXGroup;
 			children = (
-				D426A023F02ACC7074CE4BBE3E3AA78E /* Device.swift */,
-				CD0F42D40FAAB60CC0E393F62663CB45 /* Support Files */,
-			);
-			path = DeviceKit;
-			sourceTree = "<group>";
-		};
-		1ED1F4F4A53ED3903578509F26C3B7B5 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				1E6D697E1E96A48F123EB688220F7ED1 /* DeviceKit */,
-				27DF5E5E2E847E241CABEE103BB10077 /* SVProgressHUD */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		27DF5E5E2E847E241CABEE103BB10077 /* SVProgressHUD */ = {
-			isa = PBXGroup;
-			children = (
-				7BC4BE99EF1E0C261BF235F7C72DF4F5 /* SVIndefiniteAnimatedView.h */,
-				FCA0585DE298339C331FAA9F6187D23E /* SVIndefiniteAnimatedView.m */,
-				0F30D5F0CA580C363FE0D087B53415A1 /* SVProgressAnimatedView.h */,
-				949285C48DEC888E1E423D322D0FF1ED /* SVProgressAnimatedView.m */,
-				25B6432F5CA45518BAA9769CCA05F493 /* SVProgressHUD.h */,
-				9C1D2B87A7915F330E9FFC4BDD14EE38 /* SVProgressHUD.m */,
-				361DDB5433AA97C721CE8965F20CE072 /* SVRadialGradientLayer.h */,
-				7A683C3103440EE26E069F95E349CEFA /* SVRadialGradientLayer.m */,
-				9F454614ABC944ECD48EFE30032E6C12 /* Resources */,
-				D3C0AF88EC44D992557A0F0E91DDEEC7 /* Support Files */,
+				7175658B6A09EEE4506CC5FF3E628AAB /* SVIndefiniteAnimatedView.h */,
+				897FC69C3F64ACDFE4CDF905B64B5787 /* SVIndefiniteAnimatedView.m */,
+				C5CDF00AF6F84155C157C906C3573570 /* SVProgressAnimatedView.h */,
+				ECF77030955899AC25CDA0C7559CC5B5 /* SVProgressAnimatedView.m */,
+				DA63AE6A86ACE555A3395CA6BF3FF8EF /* SVProgressHUD.h */,
+				BD2BDF14875B4B32D9DB8A223D8CF767 /* SVProgressHUD.m */,
+				AA8AD8158A96C36788D8F2029DE429EA /* SVRadialGradientLayer.h */,
+				2A33CA46E2ABDE5E59F10F70D397553A /* SVRadialGradientLayer.m */,
+				A6092FDB107152957B23845C741D5E60 /* Resources */,
+				3010FCB6F8DCADF3BF951C20FF97D1C9 /* Support Files */,
 			);
 			path = SVProgressHUD;
+			sourceTree = "<group>";
+		};
+		16F0F176BA22277FF5670583F3B1914C /* FontAwesome-iOS */ = {
+			isa = PBXGroup;
+			children = (
+				C37CC83071E558EDD50D01DF42F04BB9 /* NSString+FontAwesome.h */,
+				0CADC3616A2447CF05FF9077B5A421AF /* NSString+FontAwesome.m */,
+				72B565B4DE154C8EBAE1C37C68C32DE0 /* Support Files */,
+			);
+			path = "FontAwesome-iOS";
+			sourceTree = "<group>";
+		};
+		3010FCB6F8DCADF3BF951C20FF97D1C9 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				9FECD30B45CBC9D4261CFAAEEAFEDE14 /* Info.plist */,
+				B7949045F937CEA90595489CE82D1F3E /* SVProgressHUD.modulemap */,
+				D3CC0A79440CF0F5C8C377031D787C4B /* SVProgressHUD.xcconfig */,
+				9C6D922A43266DDEA8E731247E0A54BC /* SVProgressHUD-dummy.m */,
+				6C73D6B71FAC7A34A7D0B1C82374BF35 /* SVProgressHUD-prefix.pch */,
+				AD3106986636D353BEA738CC58508682 /* SVProgressHUD-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SVProgressHUD";
 			sourceTree = "<group>";
 		};
 		3B1437C0A373FB343A4834330A6CA019 /* Pods-keyboard */ = {
@@ -196,12 +238,48 @@
 			path = "Target Support Files/Pods-keyboard";
 			sourceTree = "<group>";
 		};
+		3C4B07D56D5641F79B04295399AE2511 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5E29F815AB532D8F4E99025FEF47905A /* DeviceKit */,
+				16F0F176BA22277FF5670583F3B1914C /* FontAwesome-iOS */,
+				12A1AF0625743F26CD8C242FE2BBD481 /* SVProgressHUD */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		40F00714B496BAFD30A6B77BAA414926 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5C2F732B76B76E05528F087462405F99 /* DeviceKit.framework */,
+				618B9D2B597124ED9BC3CC7852F0DF23 /* FontAwesome_iOS.framework */,
+				E2013374F03C526324EF6195B82C74DA /* Pods_keyboard.framework */,
+				F0A2725647E156562F8E13462AB45CFF /* Pods_NoProfanityKeyboard.framework */,
+				577961349D9729C04D0C9641049254BC /* SVProgressHUD.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				89F803C7E2D77E11F2120CB28FE0B795 /* iOS */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		45EDFBCF877009C9EDBBEEE522D033B6 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				6EF5DB6CAB47EDC5804AEDF27420DE08 /* DeviceKit.modulemap */,
+				0D244A1DD5D333424C6A2F93C6ACC5ED /* DeviceKit.xcconfig */,
+				CBA91F5D81C14534B8B79C46F2821397 /* DeviceKit-dummy.m */,
+				1D07FB126AD45686349B4B3A6E01AB51 /* DeviceKit-prefix.pch */,
+				85F43CC8C762E4D5BEC2C7D99E4576CD /* DeviceKit-umbrella.h */,
+				DF68F3DD75D7F4498903A9068B95543D /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/DeviceKit";
 			sourceTree = "<group>";
 		};
 		4839DB8EB3EDE5208483356FD7EB4633 /* Pods-NoProfanityKeyboard */ = {
@@ -222,15 +300,27 @@
 			path = "Target Support Files/Pods-NoProfanityKeyboard";
 			sourceTree = "<group>";
 		};
-		7D7DC2DB81B3DF5966803A255A8898E3 /* Products */ = {
+		5E29F815AB532D8F4E99025FEF47905A /* DeviceKit */ = {
 			isa = PBXGroup;
 			children = (
-				6C23169C66A625B5BE613ED8764D9DBE /* DeviceKit.framework */,
-				A4B328E7ADF1FE287766B92685B8C389 /* Pods_keyboard.framework */,
-				E8DE9D0DAD40F1CBCE999D92FF874390 /* Pods_NoProfanityKeyboard.framework */,
-				A94BFF6BD10B2ADCC712EC8E0C50F96A /* SVProgressHUD.framework */,
+				8C5C547B89020E0F48C1553A7A00A01E /* Device.swift */,
+				45EDFBCF877009C9EDBBEEE522D033B6 /* Support Files */,
 			);
-			name = Products;
+			path = DeviceKit;
+			sourceTree = "<group>";
+		};
+		72B565B4DE154C8EBAE1C37C68C32DE0 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				771E79AC2D462659FDB700DA24ED6C8B /* FontAwesome-iOS.modulemap */,
+				7BFBB97204A0F90848D4EBAAA85D8517 /* FontAwesome-iOS.xcconfig */,
+				BB9B3D0240890320D941EB19F37C7758 /* FontAwesome-iOS-dummy.m */,
+				4625EB818F461870FEE5DFE56FF162BA /* FontAwesome-iOS-prefix.pch */,
+				340051A9DE789B36536762E2C50416B6 /* FontAwesome-iOS-umbrella.h */,
+				84932CA9B791E9867F2FC4161CD2BC1B /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/FontAwesome-iOS";
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
@@ -238,8 +328,8 @@
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
-				1ED1F4F4A53ED3903578509F26C3B7B5 /* Pods */,
-				7D7DC2DB81B3DF5966803A255A8898E3 /* Products */,
+				3C4B07D56D5641F79B04295399AE2511 /* Pods */,
+				40F00714B496BAFD30A6B77BAA414926 /* Products */,
 				B909981F77E5758884E47798D8B72770 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
@@ -253,10 +343,10 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		9F454614ABC944ECD48EFE30032E6C12 /* Resources */ = {
+		A6092FDB107152957B23845C741D5E60 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				B544AF2CADFE917411A7AFCC39DC24F1 /* SVProgressHUD.bundle */,
+				D5C6A307F45F21E6B8FD9D606790A9B3 /* SVProgressHUD.bundle */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -270,46 +360,15 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		CD0F42D40FAAB60CC0E393F62663CB45 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				B0A59B9BF9D7F70DEE5B40ACCA1E75FE /* DeviceKit.modulemap */,
-				537917484A7BDA94F812175BDE329B5C /* DeviceKit.xcconfig */,
-				C2D49312363707390EC3E562628D599A /* DeviceKit-dummy.m */,
-				C34AFCEA85557980F7A7EBDA86A293DE /* DeviceKit-prefix.pch */,
-				7C8F49EB611478DB90229CC63A02FFDA /* DeviceKit-umbrella.h */,
-				483046F33B5B7991AA8492E9E3A2033D /* Info.plist */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/DeviceKit";
-			sourceTree = "<group>";
-		};
-		D3C0AF88EC44D992557A0F0E91DDEEC7 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				547EA93F659B0C5D6E619FB027823B60 /* Info.plist */,
-				91D9D76713E103CF89189B95F9B249AC /* SVProgressHUD.modulemap */,
-				5C1DFD59005058D454B20BCA01984F36 /* SVProgressHUD.xcconfig */,
-				CBD2B7C15C2193C4CB9AF0B27A98D703 /* SVProgressHUD-dummy.m */,
-				9A8CB3DF10B5935B348EB83E8A37A7DD /* SVProgressHUD-prefix.pch */,
-				546CD3511BC0C390B9126565E8F602F6 /* SVProgressHUD-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/SVProgressHUD";
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		09D9E76CC65B043A577D256DF68D52A4 /* Headers */ = {
+		40BC075DA72FF313FBA6FBEB383EC7DD /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				201B548C8C3574E90AA21B32A3516ED4 /* SVIndefiniteAnimatedView.h in Headers */,
-				3AC906A83EBA51CD5F2E2CA66D065CF8 /* SVProgressAnimatedView.h in Headers */,
-				090BBB29EA49E7E8F46EA9BAFE2D16E3 /* SVProgressHUD-umbrella.h in Headers */,
-				1CF252F23F8448B7B9EFD6391AB8A600 /* SVProgressHUD.h in Headers */,
-				0A84DEFB36DB61E3E3D70064038169E2 /* SVRadialGradientLayer.h in Headers */,
+				2131CC8CD0912C4C6705114B3C32D2BA /* FontAwesome-iOS-umbrella.h in Headers */,
+				961B58AA936C6E0D6FE69E964CBC62F0 /* NSString+FontAwesome.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -321,33 +380,45 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		57195D4A90F3F29881458391F6E17558 /* Headers */ = {
+		7227FB3BF762D1496AA166489F7C8B6A /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7D78B79641AAA45CAE7FEB12484D56B4 /* Pods-NoProfanityKeyboard-umbrella.h in Headers */,
+				37770A818E59750C202C5AD709E4EDC8 /* Pods-NoProfanityKeyboard-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BACFE1156599889F393F15FC2DAECC25 /* Headers */ = {
+		D3DD2D39AE7C467EC1CEABC931E4DFB4 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				01F6E5D1DDF4C03CA345B630423FBACF /* Pods-keyboard-umbrella.h in Headers */,
+				84428ECD38F959A3AE274E280E821C70 /* Pods-keyboard-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC255FBC50EA5C0C97DB3C152CD1F34C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42D925F246584C0984216A1F9A31DEC7 /* SVIndefiniteAnimatedView.h in Headers */,
+				6741F9C08B02D54F79CE4318E2079E0E /* SVProgressAnimatedView.h in Headers */,
+				2A8BDAE23DDAFBE1B68603AD6A303F13 /* SVProgressHUD-umbrella.h in Headers */,
+				CDA9052EC5A95642C9AA732FBD126F6E /* SVProgressHUD.h in Headers */,
+				1E4B3F3EE9FB549D28E815E43D476FFD /* SVRadialGradientLayer.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		4ECAF5497FE791C6A40EB65F641A6ADD /* SVProgressHUD */ = {
+		326B13F11CA3E111904FEA4C0B0EAB38 /* SVProgressHUD */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 704E101EC577E884CB7A49B3E12C2A7C /* Build configuration list for PBXNativeTarget "SVProgressHUD" */;
+			buildConfigurationList = 353CA49EBF23CF7342D778509A38D1C8 /* Build configuration list for PBXNativeTarget "SVProgressHUD" */;
 			buildPhases = (
-				794D8FF76177E5EFA29A2CE1140AF34C /* Sources */,
-				5FE2F7ACDDCCF4841AF9CE9F82B40A6A /* Frameworks */,
-				09D9E76CC65B043A577D256DF68D52A4 /* Headers */,
-				336EB41FDF2CF19715AAA90EA3FEBF20 /* Resources */,
+				31CD2D7E94B331DF30961690D6185AA7 /* Sources */,
+				D156500D5E6CF88C01D3546618DE2449 /* Frameworks */,
+				FC255FBC50EA5C0C97DB3C152CD1F34C /* Headers */,
+				81EB5B342C3FD17126848BE23A4870DD /* Resources */,
 			);
 			buildRules = (
 			);
@@ -355,44 +426,63 @@
 			);
 			name = SVProgressHUD;
 			productName = SVProgressHUD;
-			productReference = A94BFF6BD10B2ADCC712EC8E0C50F96A /* SVProgressHUD.framework */;
+			productReference = 577961349D9729C04D0C9641049254BC /* SVProgressHUD.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		C02DDEF6108F4DB8D66CF5751A6B897B /* Pods-keyboard */ = {
+		48369B33BCA4EE7CE5B05F02DB32CB72 /* FontAwesome-iOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = EB590344AB6D91FF2E781DF2DC8E46F4 /* Build configuration list for PBXNativeTarget "Pods-keyboard" */;
+			buildConfigurationList = ECB5B53CFA5F7E092EB3665B21174BD5 /* Build configuration list for PBXNativeTarget "FontAwesome-iOS" */;
 			buildPhases = (
-				3D88E9EC5C14E7FEFA812058D1956FEB /* Sources */,
-				C72512AFE9D4B2A8AE483F73FDAAA5A7 /* Frameworks */,
-				BACFE1156599889F393F15FC2DAECC25 /* Headers */,
+				D5900ED66D4173D70143119CB3CC39DB /* Sources */,
+				A173EA1C4B71952FD7BF0158883C96D7 /* Frameworks */,
+				40BC075DA72FF313FBA6FBEB383EC7DD /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				244EA81CA552D0F045C28104A0283B6D /* PBXTargetDependency */,
+			);
+			name = "FontAwesome-iOS";
+			productName = "FontAwesome-iOS";
+			productReference = 618B9D2B597124ED9BC3CC7852F0DF23 /* FontAwesome_iOS.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		51470ECCDBE98ADBE6780ECD9BB70C59 /* Pods-keyboard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C56D0201C6432BCA5EB00FD95C9478D9 /* Build configuration list for PBXNativeTarget "Pods-keyboard" */;
+			buildPhases = (
+				CE3DBA58EB30E2AFAA953B0AC35793F7 /* Sources */,
+				1E576B066E4FF0022145DFE694273E78 /* Frameworks */,
+				D3DD2D39AE7C467EC1CEABC931E4DFB4 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FAADA6635DC36213BADA983860310029 /* PBXTargetDependency */,
+				04F5B25E873D11D0D6056CF1765FC331 /* PBXTargetDependency */,
 			);
 			name = "Pods-keyboard";
 			productName = "Pods-keyboard";
-			productReference = A4B328E7ADF1FE287766B92685B8C389 /* Pods_keyboard.framework */;
+			productReference = E2013374F03C526324EF6195B82C74DA /* Pods_keyboard.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		CA29043DB23D5DA5AC1BB0816EA84528 /* Pods-NoProfanityKeyboard */ = {
+		7114084C1CCF4616568AADEC68F024FB /* Pods-NoProfanityKeyboard */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BC222E5E900CAB4A0E0DF117EF6BC814 /* Build configuration list for PBXNativeTarget "Pods-NoProfanityKeyboard" */;
+			buildConfigurationList = 23196B2442FE7F79CB421AEC13F7601C /* Build configuration list for PBXNativeTarget "Pods-NoProfanityKeyboard" */;
 			buildPhases = (
-				F94A07DC1190A34B1DA262ABCC3519C0 /* Sources */,
-				FAF93F1AFA8DFB79763A390ABE2A0424 /* Frameworks */,
-				57195D4A90F3F29881458391F6E17558 /* Headers */,
+				48671C326A8A2277DDF9B65A2F695545 /* Sources */,
+				BDDE355B8D44575CB81976C2C5F76D8A /* Frameworks */,
+				7227FB3BF762D1496AA166489F7C8B6A /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				7ACC5E4FC9ED4C6B7832B76F8DA3FD4C /* PBXTargetDependency */,
-				B7E188A57971111468FAB3CFAF5B18F1 /* PBXTargetDependency */,
+				4CE4405B3719E70F8E1BC4790CFF10E2 /* PBXTargetDependency */,
+				B1E3D70FBD81DE8CC3676324829658AA /* PBXTargetDependency */,
+				9F52BB368F58DACF3F556107C6897048 /* PBXTargetDependency */,
 			);
 			name = "Pods-NoProfanityKeyboard";
 			productName = "Pods-NoProfanityKeyboard";
-			productReference = E8DE9D0DAD40F1CBCE999D92FF874390 /* Pods_NoProfanityKeyboard.framework */;
+			productReference = F0A2725647E156562F8E13462AB45CFF /* Pods_NoProfanityKeyboard.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		EF78824223C74AA13AE655CD2ACF32A3 /* DeviceKit */ = {
@@ -409,7 +499,7 @@
 			);
 			name = DeviceKit;
 			productName = DeviceKit;
-			productReference = 6C23169C66A625B5BE613ED8764D9DBE /* DeviceKit.framework */;
+			productReference = 5C2F732B76B76E05528F087462405F99 /* DeviceKit.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -429,47 +519,48 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 7D7DC2DB81B3DF5966803A255A8898E3 /* Products */;
+			productRefGroup = 40F00714B496BAFD30A6B77BAA414926 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				EF78824223C74AA13AE655CD2ACF32A3 /* DeviceKit */,
-				C02DDEF6108F4DB8D66CF5751A6B897B /* Pods-keyboard */,
-				CA29043DB23D5DA5AC1BB0816EA84528 /* Pods-NoProfanityKeyboard */,
-				4ECAF5497FE791C6A40EB65F641A6ADD /* SVProgressHUD */,
+				48369B33BCA4EE7CE5B05F02DB32CB72 /* FontAwesome-iOS */,
+				51470ECCDBE98ADBE6780ECD9BB70C59 /* Pods-keyboard */,
+				7114084C1CCF4616568AADEC68F024FB /* Pods-NoProfanityKeyboard */,
+				326B13F11CA3E111904FEA4C0B0EAB38 /* SVProgressHUD */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		336EB41FDF2CF19715AAA90EA3FEBF20 /* Resources */ = {
+		81EB5B342C3FD17126848BE23A4870DD /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CB7AEF04DCDA56BEDFC3184EFA79E041 /* SVProgressHUD.bundle in Resources */,
+				ED6855D89138B7337FCD952E2223FF3D /* SVProgressHUD.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		3D88E9EC5C14E7FEFA812058D1956FEB /* Sources */ = {
+		31CD2D7E94B331DF30961690D6185AA7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				582970D245AEC523E70A3F4C12BA6951 /* Pods-keyboard-dummy.m in Sources */,
+				297D1410932FC7241E914A53EEE1427F /* SVIndefiniteAnimatedView.m in Sources */,
+				B93B0E6F91C0FE1DF1818FEC146BD540 /* SVProgressAnimatedView.m in Sources */,
+				EF97F3B3CD2D9EF0096B4B497F79D0F0 /* SVProgressHUD-dummy.m in Sources */,
+				8BD6508BD28AC2B10919EE538F41949F /* SVProgressHUD.m in Sources */,
+				E91F7B36ED7E4136F77A09B4427DDE04 /* SVRadialGradientLayer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		794D8FF76177E5EFA29A2CE1140AF34C /* Sources */ = {
+		48671C326A8A2277DDF9B65A2F695545 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AD4399854748612188D8D47DD4952ABA /* SVIndefiniteAnimatedView.m in Sources */,
-				B5964E7A8AFC0560FA9133347EBABA07 /* SVProgressAnimatedView.m in Sources */,
-				FFC0CB5B59EEE1B1F558847CC38C9B15 /* SVProgressHUD-dummy.m in Sources */,
-				09AE5C9545A0A9E2C4B53FB191811B74 /* SVProgressHUD.m in Sources */,
-				F12AD0FD2C7AAEC227A1658975C5C982 /* SVRadialGradientLayer.m in Sources */,
+				53085E2F96E8604FBE78AC40391A1DCD /* Pods-NoProfanityKeyboard-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -482,34 +573,55 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F94A07DC1190A34B1DA262ABCC3519C0 /* Sources */ = {
+		CE3DBA58EB30E2AFAA953B0AC35793F7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C21489E10981D94B29E5D2466BE0946B /* Pods-NoProfanityKeyboard-dummy.m in Sources */,
+				F228150C60D7B4C04CF3F4D5112013DD /* Pods-keyboard-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D5900ED66D4173D70143119CB3CC39DB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A820A6F5196A639A6A10EBC99547F7EE /* FontAwesome-iOS-dummy.m in Sources */,
+				4C4672FF81D3749DA0FADDF6CA345420 /* NSString+FontAwesome.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		244EA81CA552D0F045C28104A0283B6D /* PBXTargetDependency */ = {
+		04F5B25E873D11D0D6056CF1765FC331 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "FontAwesome-iOS";
+			target = 48369B33BCA4EE7CE5B05F02DB32CB72 /* FontAwesome-iOS */;
+			targetProxy = EFB6B169B8C1535AA7990FBA3845132B /* PBXContainerItemProxy */;
+		};
+		4CE4405B3719E70F8E1BC4790CFF10E2 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = DeviceKit;
 			target = EF78824223C74AA13AE655CD2ACF32A3 /* DeviceKit */;
-			targetProxy = DA2B38DB7700D9B9F581924D2439BF67 /* PBXContainerItemProxy */;
+			targetProxy = 1B993656C2AA9A5BE4E973CDE6C965EF /* PBXContainerItemProxy */;
 		};
-		7ACC5E4FC9ED4C6B7832B76F8DA3FD4C /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = DeviceKit;
-			target = EF78824223C74AA13AE655CD2ACF32A3 /* DeviceKit */;
-			targetProxy = 4A5206A0AFEC2A88B0829355FDD5C1D4 /* PBXContainerItemProxy */;
-		};
-		B7E188A57971111468FAB3CFAF5B18F1 /* PBXTargetDependency */ = {
+		9F52BB368F58DACF3F556107C6897048 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = SVProgressHUD;
-			target = 4ECAF5497FE791C6A40EB65F641A6ADD /* SVProgressHUD */;
-			targetProxy = 84DA1A1B254A47D1A2A974CECFBE6E7C /* PBXContainerItemProxy */;
+			target = 326B13F11CA3E111904FEA4C0B0EAB38 /* SVProgressHUD */;
+			targetProxy = A0B638E81C133B44B08084C80EE4B41C /* PBXContainerItemProxy */;
+		};
+		B1E3D70FBD81DE8CC3676324829658AA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "FontAwesome-iOS";
+			target = 48369B33BCA4EE7CE5B05F02DB32CB72 /* FontAwesome-iOS */;
+			targetProxy = ABFC8AAECF649374C7E89706B2F3EE76 /* PBXContainerItemProxy */;
+		};
+		FAADA6635DC36213BADA983860310029 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = DeviceKit;
+			target = EF78824223C74AA13AE655CD2ACF32A3 /* DeviceKit */;
+			targetProxy = A89C7EFACC34DCA61D2EBA68E343CD29 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -558,7 +670,7 @@
 			};
 			name = Debug;
 		};
-		04F807624EC9446FFFAEEE238EFCEE56 /* Debug */ = {
+		27BA574AB2C5831FB8693097531714C0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D53A48DD6113D2572B386F0E7BE13481 /* Pods-keyboard.debug.xcconfig */;
 			buildSettings = {
@@ -593,10 +705,45 @@
 			};
 			name = Debug;
 		};
-		0B3014343D3DB173F04FA2B401AB4E46 /* Debug */ = {
+		290765729A6694D8CFCBEC17E32175A5 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 53912A5A870FFB37FCE06475C7EC4C62 /* Pods-NoProfanityKeyboard.debug.xcconfig */;
+			baseConfigurationReference = EA9A6894639AFA3AC09D4F6C7C225617 /* Pods-keyboard.release.xcconfig */;
 			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-keyboard/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-keyboard/Pods-keyboard.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_keyboard;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		30303CE7E9BF9DFE6EE9E83D0387316C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7BFBB97204A0F90848D4EBAAA85D8517 /* FontAwesome-iOS.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
@@ -606,30 +753,54 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-NoProfanityKeyboard/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/FontAwesome-iOS/FontAwesome-iOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FontAwesome-iOS/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-NoProfanityKeyboard/Pods-NoProfanityKeyboard.modulemap";
+				MODULEMAP_FILE = "Target Support Files/FontAwesome-iOS/FontAwesome-iOS.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_NoProfanityKeyboard;
+				PRODUCT_NAME = FontAwesome_iOS;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
+		3A0067F7AD101967C769E8D034C3D608 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D3CC0A79440CF0F5C8C377031D787C4B /* SVProgressHUD.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SVProgressHUD/SVProgressHUD-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SVProgressHUD/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SVProgressHUD/SVProgressHUD.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = SVProgressHUD;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		3B680C80FEE470DBEDFC7C472D6C36CE /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 537917484A7BDA94F812175BDE329B5C /* DeviceKit.xcconfig */;
+			baseConfigurationReference = 0D244A1DD5D333424C6A2F93C6ACC5ED /* DeviceKit.xcconfig */;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -652,6 +823,35 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		4114CBCEDC68F82B10E84289E8F8B390 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D3CC0A79440CF0F5C8C377031D787C4B /* SVProgressHUD.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SVProgressHUD/SVProgressHUD-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SVProgressHUD/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SVProgressHUD/SVProgressHUD.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = SVProgressHUD;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -698,38 +898,9 @@
 			};
 			name = Release;
 		};
-		5955E60DB0F427BB49F6EA5AC2A7A3F0 /* Release */ = {
+		4C6887615C4D465C31E75A56FC084FE6 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5C1DFD59005058D454B20BCA01984F36 /* SVProgressHUD.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/SVProgressHUD/SVProgressHUD-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SVProgressHUD/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/SVProgressHUD/SVProgressHUD.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = SVProgressHUD;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		7BE34832CAF231A95614223E10E62550 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = EA9A6894639AFA3AC09D4F6C7C225617 /* Pods-keyboard.release.xcconfig */;
+			baseConfigurationReference = 7BFBB97204A0F90848D4EBAAA85D8517 /* FontAwesome-iOS.xcconfig */;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -741,18 +912,14 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-keyboard/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/FontAwesome-iOS/FontAwesome-iOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FontAwesome-iOS/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-keyboard/Pods-keyboard.modulemap";
+				MODULEMAP_FILE = "Target Support Files/FontAwesome-iOS/FontAwesome-iOS.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_keyboard;
+				PRODUCT_NAME = FontAwesome_iOS;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -761,66 +928,7 @@
 			};
 			name = Release;
 		};
-		8CF45D7EBB8B5AED47885057320454FA /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 537917484A7BDA94F812175BDE329B5C /* DeviceKit.xcconfig */;
-			buildSettings = {
-				APPLICATION_EXTENSION_API_ONLY = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/DeviceKit/DeviceKit-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/DeviceKit/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/DeviceKit/DeviceKit.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = DeviceKit;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		B6AE503E6A704BF2D0795CAE76E0FFF0 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5C1DFD59005058D454B20BCA01984F36 /* SVProgressHUD.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/SVProgressHUD/SVProgressHUD-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SVProgressHUD/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/SVProgressHUD/SVProgressHUD.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = SVProgressHUD;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		BC1CE3B73186E66E50DE9346BED23FCD /* Release */ = {
+		5C74BDCF4C76DBBBCD0160B0C168082B /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 84B1C54A582C809A06232611E9C31806 /* Pods-NoProfanityKeyboard.release.xcconfig */;
 			buildSettings = {
@@ -853,9 +961,82 @@
 			};
 			name = Release;
 		};
+		66A9FCA45E8540DF2705CFA231E3E86A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 53912A5A870FFB37FCE06475C7EC4C62 /* Pods-NoProfanityKeyboard.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-NoProfanityKeyboard/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-NoProfanityKeyboard/Pods-NoProfanityKeyboard.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_NoProfanityKeyboard;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8CF45D7EBB8B5AED47885057320454FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0D244A1DD5D333424C6A2F93C6ACC5ED /* DeviceKit.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/DeviceKit/DeviceKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/DeviceKit/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/DeviceKit/DeviceKit.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = DeviceKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		23196B2442FE7F79CB421AEC13F7601C /* Build configuration list for PBXNativeTarget "Pods-NoProfanityKeyboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				66A9FCA45E8540DF2705CFA231E3E86A /* Debug */,
+				5C74BDCF4C76DBBBCD0160B0C168082B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -865,20 +1046,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		704E101EC577E884CB7A49B3E12C2A7C /* Build configuration list for PBXNativeTarget "SVProgressHUD" */ = {
+		353CA49EBF23CF7342D778509A38D1C8 /* Build configuration list for PBXNativeTarget "SVProgressHUD" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B6AE503E6A704BF2D0795CAE76E0FFF0 /* Debug */,
-				5955E60DB0F427BB49F6EA5AC2A7A3F0 /* Release */,
+				4114CBCEDC68F82B10E84289E8F8B390 /* Debug */,
+				3A0067F7AD101967C769E8D034C3D608 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		BC222E5E900CAB4A0E0DF117EF6BC814 /* Build configuration list for PBXNativeTarget "Pods-NoProfanityKeyboard" */ = {
+		C56D0201C6432BCA5EB00FD95C9478D9 /* Build configuration list for PBXNativeTarget "Pods-keyboard" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0B3014343D3DB173F04FA2B401AB4E46 /* Debug */,
-				BC1CE3B73186E66E50DE9346BED23FCD /* Release */,
+				27BA574AB2C5831FB8693097531714C0 /* Debug */,
+				290765729A6694D8CFCBEC17E32175A5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -892,11 +1073,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		EB590344AB6D91FF2E781DF2DC8E46F4 /* Build configuration list for PBXNativeTarget "Pods-keyboard" */ = {
+		ECB5B53CFA5F7E092EB3665B21174BD5 /* Build configuration list for PBXNativeTarget "FontAwesome-iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				04F807624EC9446FFFAEEE238EFCEE56 /* Debug */,
-				7BE34832CAF231A95614223E10E62550 /* Release */,
+				30303CE7E9BF9DFE6EE9E83D0387316C /* Debug */,
+				4C6887615C4D465C31E75A56FC084FE6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

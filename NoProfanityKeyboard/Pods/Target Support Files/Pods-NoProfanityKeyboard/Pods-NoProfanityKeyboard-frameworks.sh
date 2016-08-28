@@ -86,8 +86,10 @@ strip_invalid_archs() {
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "$BUILT_PRODUCTS_DIR/SVProgressHUD/SVProgressHUD.framework"
   install_framework "$BUILT_PRODUCTS_DIR/DeviceKit/DeviceKit.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/FontAwesome-iOS/FontAwesome_iOS.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "$BUILT_PRODUCTS_DIR/SVProgressHUD/SVProgressHUD.framework"
   install_framework "$BUILT_PRODUCTS_DIR/DeviceKit/DeviceKit.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/FontAwesome-iOS/FontAwesome_iOS.framework"
 fi

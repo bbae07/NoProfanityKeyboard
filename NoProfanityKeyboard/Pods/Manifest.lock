@@ -1,15 +1,18 @@
 PODS:
   - DeviceKit (0.3.4)
+  - FontAwesome-iOS (0.0.4)
   - SVProgressHUD (2.0.3)
 
 DEPENDENCIES:
   - DeviceKit (~> 0.3.4)
+  - FontAwesome-iOS
   - SVProgressHUD
 
 SPEC CHECKSUMS:
   DeviceKit: b414b210c225ae19b77a47e64cb04f187c1c4f9a
+  FontAwesome-iOS: 0fd503f7ae46780e17c2dd98e70fed30b5f90322
   SVProgressHUD: b0830714205bea1317ea1a2ebc71e5633af334d4
 
-PODFILE CHECKSUM: 9ea59998906c2c8e705f1d61e17ffa645321b436
+PODFILE CHECKSUM: 3b21b339e40aafbe73273c37c2771e7df91fb2e2
 
 COCOAPODS: 1.1.0.beta.1

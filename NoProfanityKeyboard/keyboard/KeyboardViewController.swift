@@ -143,8 +143,7 @@ class KeyboardViewController: UIInputViewController {
         var imageView:UIImageView = UIImageView(frame:CGRect(x:0,y:0,width: (UIScreen.mainScreen().bounds.size.width-3)/3, height:40))
         imageView.image = UIImage.fontAwesomeIconWithName(.Github, textColor: UIColor.blackColor(), size: CGSizeMake(30, 30))
         Btn_1.setImage(UIImage.fontAwesomeIconWithName(.Github, textColor: UIColor.blackColor(), size: CGSizeMake(30, 30)), forState: .Normal)
-        
-        
+
         Line_1.backgroundColor = UIColor.whiteColor()
         Line_2.backgroundColor = UIColor.whiteColor()
         
@@ -239,8 +238,7 @@ class KeyboardViewController: UIInputViewController {
                     let doubleTap:UITapGestureRecognizer = UITapGestureRecognizer()
                     doubleTap.numberOfTapsRequired = 2
                     doubleTap.numberOfTouchesRequired = 1
-                    doubleTap.delaysTouchesEnded = false
-
+                    
                     doubleTap.addTarget(self, action: #selector(capsLock(_:)))
                     Btn.addGestureRecognizer(doubleTap)
                 }

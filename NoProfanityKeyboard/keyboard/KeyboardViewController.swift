@@ -146,6 +146,7 @@ class KeyboardViewController: UIInputViewController {
         suggestionView.addSubview(Btn_1)
         suggestionView.addSubview(Btn_2)
         suggestionView.addSubview(Btn_3)
+        btnReset()
         suggestionView.addSubview(Line_1)
         suggestionView.addSubview(Line_2)
         self.view.addSubview(suggestionView)

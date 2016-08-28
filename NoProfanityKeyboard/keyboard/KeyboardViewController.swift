@@ -304,7 +304,7 @@ class KeyboardViewController: UIInputViewController {
                     Btn.setImage(UIImage.fontAwesomeIconWithName(.DotCircleO, textColor: UIColor.blackColor(), size: CGSizeMake(Btn.bounds.size.width, Btn.bounds.size.height)), forState: .Normal)
                 }
                 if (Btn.titleLabel?.text == "@@") {
-                    Btn.setImage(UIImage.fontAwesomeIconWithName(.Globe, textColor: UIColor.blackColor(), size: CGSizeMake(Btn.bounds.size.width-5, Btn.bounds.size.height-5)), forState: .Normal)
+                    Btn.setImage(UIImage.fontAwesomeIconWithName(.Globe, textColor: UIColor.blackColor(), size: CGSizeMake(Btn.bounds.size.width, Btn.bounds.size.height)), forState: .Normal)
                     //UIImageIns
                 }
                 if (Btn.titleLabel?.text == "<-"){

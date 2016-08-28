@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SVProgressHUD
 
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, ScoreProtocol {
 
@@ -25,7 +26,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         self.view.addSubview(self.scoreBoardView!)
 
 
-
         let tableViewStartingY = CGFloat(self.scoreBoardView!.frame.origin.y+self.scoreBoardView!.bounds.size.height)
         self.stat_view = UITableView(frame:CGRect(x:0,y:tableViewStartingY,width:UIScreen.mainScreen().bounds.size.width,height:UIScreen.mainScreen().bounds.size.height - tableViewStartingY))
         self.view.addSubview(self.stat_view!)
@@ -34,17 +34,22 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
 
         self.stat_view!.registerNib(UINib(nibName: "CustomCell", bundle: nil), forCellReuseIdentifier: "identifier")
         self.stat_view!.allowsSelection = false
+        self.stat_view?.bounces = false
         self.stat_view!.delegate = self
         self.stat_view!.dataSource = self
 
-        let Nam1BarBtnVar = UIBarButtonItem(barButtonSystemItem: .Edit, target: self, action: #selector(Nam1BarBtnKlkFnc(_:)))
+        let Nam1BarBtnVar = UIBarButtonItem(barButtonSystemItem: .Refresh, target: self, action: #selector(Nam1BarBtnKlkFnc(_:)))
         self.navigationItem.setRightBarButtonItems([Nam1BarBtnVar], animated: true)
+
+        SVProgressHUD.dismiss()
     }
 
     func Nam1BarBtnKlkFnc(BtnPsgVar: UIBarButtonItem)
     {
         NSLog("Nam1BarBtnKlk")
         //reloadScore()
+        SVProgressHUD.show()
+
         self.viewDidLoad()
     }
 
@@ -73,7 +78,9 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
         if(indexPath.row%2 == 1)
         {
-            cell.backgroundColor = UIColor(red: 231.0/255.0, green: 231.0/255.0, blue: 231.0/255.0, alpha: 1.0)
+            cell.backgroundColor = UIColor(red: 231.0/255.0, green: 231.0/255.0, blue: 231.0/255.0, alpha: 0.7)
+        }else{
+            cell.backgroundColor = UIColor.whiteColor()
         }
         // Configure the cell...
         cell.awakeFromNib()

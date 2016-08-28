@@ -4,6 +4,7 @@
 //
 
 import UIKit
+import DeviceKit
 
 class KeyboardViewController: UIInputViewController {
 
@@ -51,7 +52,7 @@ class KeyboardViewController: UIInputViewController {
     var Btn_3 = UIButton(frame: CGRect(x:(UIScreen.mainScreen().bounds.size.width-3)/3*2+3,y:0,width: (UIScreen.mainScreen().bounds.size.width-3)/3, height:40))
     var Line_2 = UIView(frame: CGRect(x: (UIScreen.mainScreen().bounds.size.width-3)/3*2+1.5, y:0, width: 1.5, height: 40))
 
-    var keyboardHeight = 176.0 as CGFloat
+    var keyboardHeight = 176.0 as CGFloat // 184.0 as CGFloat
 
     var textLength:Int = 0
     var currentText = ""
@@ -105,6 +106,13 @@ class KeyboardViewController: UIInputViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        //    var keyboardHeight = 176.0 as CGFloat // 184.0 as CGFloat
+        let device = Device()
+        if device == .iPhone6Plus{
+            NSLog("iPhone6Plus")
+            self.keyboardHeight = 184.0 as CGFloat
+        }//if(device==.iPhone)
+
         
         //Set Dictionary if container app haven't been opened
         

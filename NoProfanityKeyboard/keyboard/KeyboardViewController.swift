@@ -5,13 +5,14 @@
 
 import UIKit
 import DeviceKit
+import FontAwesome_swift
 
 
 class KeyboardViewController: UIInputViewController {
 
     var topCharacterList:[String] = ["q","w","e","r","t","y","u","i","o","p"] // 10개
     var upperCharacterList:[String] = ["a","s","d","f","g","h","j","k","l"] // 9개
-    var footerCharacterList:[String] = ["#","z","x","c","v","b","n","m","<-"] // 9개
+    var footerCharacterList:[String] = ["#1","z","x","c","v","b","n","m","<-"] // 9개
     var bottomCharacterList:[String] = ["123","@@","space","return"] // 4개
 
     var topNumberList:[String] = ["1","2","3","4","5","6","7","8","9","0"]
@@ -107,14 +108,13 @@ class KeyboardViewController: UIInputViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        //    var keyboardHeight = 176.0 as CGFloat // 184.0 as CGFloat
+
         let device = Device()
         if device == .iPhone6Plus{
             NSLog("iPhone6Plus")
             self.keyboardHeight = 194.0 as CGFloat
         }//if(device==.iPhone)
 
-        
         //Set Dictionary if container app haven't been opened
         
         if(Manager.defaults!.objectForKey("swear") == nil)
@@ -139,14 +139,14 @@ class KeyboardViewController: UIInputViewController {
         Btn_1.addTarget(self, action: #selector(switchWord(_:)), forControlEvents: .TouchUpInside)
         Btn_2.addTarget(self, action: #selector(switchWord(_:)), forControlEvents: .TouchUpInside)
         Btn_3.addTarget(self, action: #selector(switchWord(_:)), forControlEvents: .TouchUpInside)
-        
-        
+
         Line_1.backgroundColor = UIColor.whiteColor()
         Line_2.backgroundColor = UIColor.whiteColor()
         
         suggestionView.addSubview(Btn_1)
         suggestionView.addSubview(Btn_2)
         suggestionView.addSubview(Btn_3)
+        btnReset()
         suggestionView.addSubview(Line_1)
         suggestionView.addSubview(Line_2)
         self.view.addSubview(suggestionView)
@@ -282,15 +282,30 @@ class KeyboardViewController: UIInputViewController {
                 //Btn.layer.borderWidth = 1
                 //Btn.layer.borderColor = UIColor.blackColor().CGColor
 
-                if(Btn.titleLabel?.text == "#")
+                if(Btn.titleLabel?.text == "#1")
                 {
                     let doubleTap:UITapGestureRecognizer = UITapGestureRecognizer()
                     doubleTap.numberOfTapsRequired = 2
                     doubleTap.numberOfTouchesRequired = 1
-                    doubleTap.delaysTouchesEnded = false
+                    doubleTap.delaysTouchesBegan = false
 
                     doubleTap.addTarget(self, action: #selector(capsLock(_:)))
                     Btn.addGestureRecognizer(doubleTap)
+                    Btn.setImage(UIImage.fontAwesomeIconWithName(.CircleO, textColor: UIColor.blackColor(), size: CGSizeMake(Btn.bounds.size.width, Btn.bounds.size.height)), forState: .Normal)
+                }
+                if(Btn.titleLabel?.text == "##")
+                {
+                    Btn.setImage(UIImage.fontAwesomeIconWithName(.Circle, textColor: UIColor.blackColor(), size: CGSizeMake(Btn.bounds.size.width, Btn.bounds.size.height)), forState: .Normal)
+                }
+                if(Btn.titleLabel?.text == "###")
+                {
+                    Btn.setImage(UIImage.fontAwesomeIconWithName(.DotCircleO, textColor: UIColor.blackColor(), size: CGSizeMake(Btn.bounds.size.width, Btn.bounds.size.height)), forState: .Normal)
+                }
+                if (Btn.titleLabel?.text == "@@") {
+                    Btn.setImage(UIImage.fontAwesomeIconWithName(.Globe, textColor: UIColor.blackColor(), size: CGSizeMake(Btn.bounds.size.width, Btn.bounds.size.height)), forState: .Normal)
+                }
+                if (Btn.titleLabel?.text == "<-"){
+                    Btn.setImage(UIImage.fontAwesomeIconWithName(.CaretLeft, textColor: UIColor.blackColor(), size: CGSizeMake(Btn.bounds.size.width, Btn.bounds.size.height)), forState: .Normal)
                 }
 
                 Btn.addTarget(self, action: #selector(handleBtn(_:)), forControlEvents: .TouchUpInside)
@@ -330,10 +345,9 @@ class KeyboardViewController: UIInputViewController {
         {
             self.textDocumentProxy.deleteBackward()
         }
-        else if(label == "#")
+        else if(label == "#1")
         {
             CharacterList = [topShiftCharacterList,upperShiftCharacterList,footerShiftCharacterList,bottomShiftCharacterList]
-            //self.buttons![0].titleLabel!.text = topShiftCharacterList[0]
             createKeyBoard()
         }
         else if(label == "##")

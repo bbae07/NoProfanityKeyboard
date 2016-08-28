@@ -205,7 +205,7 @@ class KeyboardViewController: UIInputViewController {
         
         let rawFrame = value.CGRectValue
         let keyboardFrame = view.convertRect(rawFrame, fromView: nil)
-        keyboardHeight = keyboardFrame.size.width - 40
+        keyboardHeight = keyboardFrame.size.width - 35
     }
     
     

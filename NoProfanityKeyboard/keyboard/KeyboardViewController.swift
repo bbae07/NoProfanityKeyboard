@@ -11,7 +11,7 @@ class KeyboardViewController: UIInputViewController {
 
     var topCharacterList:[String] = ["q","w","e","r","t","y","u","i","o","p"] // 10개
     var upperCharacterList:[String] = ["a","s","d","f","g","h","j","k","l"] // 9개
-    var footerCharacterList:[String] = ["#","z","x","c","v","b","n","m","<-"] // 9개
+    var footerCharacterList:[String] = ["#1","z","x","c","v","b","n","m","<-"] // 9개
     var bottomCharacterList:[String] = ["123","@@","space","return"] // 4개
 
     var topNumberList:[String] = ["1","2","3","4","5","6","7","8","9","0"]
@@ -228,7 +228,7 @@ class KeyboardViewController: UIInputViewController {
                 Btn.layer.borderWidth = 1
                 Btn.layer.borderColor = UIColor.blackColor().CGColor
 
-                if(Btn.titleLabel?.text == "#")
+                if(Btn.titleLabel?.text == "#1")
                 {
                     let doubleTap:UITapGestureRecognizer = UITapGestureRecognizer()
                     doubleTap.numberOfTapsRequired = 2
@@ -289,7 +289,7 @@ class KeyboardViewController: UIInputViewController {
         {
             self.textDocumentProxy.deleteBackward()
         }
-        else if(label == "#")
+        else if(label == "#1")
         {
             CharacterList = [topShiftCharacterList,upperShiftCharacterList,footerShiftCharacterList,bottomShiftCharacterList]
             createKeyBoard()

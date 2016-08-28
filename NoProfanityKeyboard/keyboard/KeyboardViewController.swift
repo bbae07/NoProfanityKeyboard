@@ -43,18 +43,18 @@ class KeyboardViewController: UIInputViewController {
     var mainview = UIView()
     
     
-    var suggestionView = UIView(frame:CGRect(x: 0, y: 0, width: UIScreen.mainScreen().bounds.size.width, height: 30.0))
+    var suggestionView = UIView(frame:CGRect(x: 0, y: 0, width: UIScreen.mainScreen().bounds.size.width, height: 35.0))
     
-    var Btn_1 = UIButton(frame: CGRect(x:0,y:0,width: (UIScreen.mainScreen().bounds.size.width-3)/3, height:30))
+    var Btn_1 = UIButton(frame: CGRect(x:0,y:0,width: (UIScreen.mainScreen().bounds.size.width-3)/3, height:35))
     
-    var Line_1 = UIView(frame: CGRect(x: (UIScreen.mainScreen().bounds.size.width-3)/3, y:0, width: 1.5, height: 30))
+    var Line_1 = UIView(frame: CGRect(x: (UIScreen.mainScreen().bounds.size.width-3)/3, y:0, width: 1.5, height: 35))
     
-    var Btn_2 = UIButton(frame: CGRect(x:(UIScreen.mainScreen().bounds.size.width-3)/3+1.5,y:0,width: (UIScreen.mainScreen().bounds.size.width-3)/3, height:30))
+    var Btn_2 = UIButton(frame: CGRect(x:(UIScreen.mainScreen().bounds.size.width-3)/3+1.5,y:0,width: (UIScreen.mainScreen().bounds.size.width-3)/3, height:35))
     
-    var Btn_3 = UIButton(frame: CGRect(x:(UIScreen.mainScreen().bounds.size.width-3)/3*2+3,y:0,width: (UIScreen.mainScreen().bounds.size.width-3)/3, height:30))
-    var Line_2 = UIView(frame: CGRect(x: (UIScreen.mainScreen().bounds.size.width-3)/3*2+1.5, y:0, width: 1.5, height: 30))
+    var Btn_3 = UIButton(frame: CGRect(x:(UIScreen.mainScreen().bounds.size.width-3)/3*2+3,y:0,width: (UIScreen.mainScreen().bounds.size.width-3)/3, height:35))
+    var Line_2 = UIView(frame: CGRect(x: (UIScreen.mainScreen().bounds.size.width-3)/3*2+1.5, y:0, width: 1.5, height: 35))
 
-    var keyboardHeight = 186.0 as CGFloat // 184.0 as CGFloat
+    var keyboardHeight = 181.0 as CGFloat // 184.0 as CGFloat
 
     var textLength:Int = 0
     var currentText = ""
@@ -112,7 +112,7 @@ class KeyboardViewController: UIInputViewController {
         let device = Device()
         if device == .iPhone6Plus{
             NSLog("iPhone6Plus")
-            self.keyboardHeight = 194.0 as CGFloat
+            self.keyboardHeight = 189.0 as CGFloat
         }//if(device==.iPhone)
 
         //Set Dictionary if container app haven't been opened
@@ -125,7 +125,7 @@ class KeyboardViewController: UIInputViewController {
         
         NSNotificationCenter.defaultCenter().addObserver(self,selector: #selector(KeyboardViewController.keyboardShown(_:)), name: UIKeyboardDidShowNotification, object: nil)
         
-        mainview.frame = CGRect(x:0,y:40,width: UIScreen.mainScreen().bounds.size.width, height: keyboardHeight)
+        mainview.frame = CGRect(x:0,y:35,width: UIScreen.mainScreen().bounds.size.width, height: keyboardHeight)
 
         createKeyBoard()
         self.view.addSubview(mainview)
@@ -291,7 +291,7 @@ class KeyboardViewController: UIInputViewController {
 
                     doubleTap.addTarget(self, action: #selector(capsLock(_:)))
                     Btn.addGestureRecognizer(doubleTap)
-                    Btn.setImage(UIImage.fontAwesomeIconWithName(.CircleO, textColor: UIColor.blackColor(), size: CGSizeMake(Btn.bounds.size.width, Btn.bounds.size.height)), forState: .Normal)
+                    Btn.setImage(UIImage.fontAwesomeIconWithName(.CircleO, textColor: UIColor.blackColor(), size: CGSizeMake(Btn.bounds.size.width-3, Btn.bounds.size.height-3)), forState: .Normal)
                 }
                 if(Btn.titleLabel?.text == "##")
                 {
@@ -302,7 +302,8 @@ class KeyboardViewController: UIInputViewController {
                     Btn.setImage(UIImage.fontAwesomeIconWithName(.DotCircleO, textColor: UIColor.blackColor(), size: CGSizeMake(Btn.bounds.size.width, Btn.bounds.size.height)), forState: .Normal)
                 }
                 if (Btn.titleLabel?.text == "@@") {
-                    Btn.setImage(UIImage.fontAwesomeIconWithName(.Globe, textColor: UIColor.blackColor(), size: CGSizeMake(Btn.bounds.size.width, Btn.bounds.size.height)), forState: .Normal)
+                    Btn.setImage(UIImage.fontAwesomeIconWithName(.Globe, textColor: UIColor.blackColor(), size: CGSizeMake(Btn.bounds.size.width-5, Btn.bounds.size.height-5)), forState: .Normal)
+                    //UIImageIns
                 }
                 if (Btn.titleLabel?.text == "<-"){
                     Btn.setImage(UIImage.fontAwesomeIconWithName(.CaretLeft, textColor: UIColor.blackColor(), size: CGSizeMake(Btn.bounds.size.width, Btn.bounds.size.height)), forState: .Normal)

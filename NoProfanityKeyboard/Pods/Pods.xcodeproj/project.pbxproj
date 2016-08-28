@@ -7,165 +7,192 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		079C88EB120535A87150C01F807DF8BC /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C5C547B89020E0F48C1553A7A00A01E /* Device.swift */; };
-		1E4B3F3EE9FB549D28E815E43D476FFD /* SVRadialGradientLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = AA8AD8158A96C36788D8F2029DE429EA /* SVRadialGradientLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2131CC8CD0912C4C6705114B3C32D2BA /* FontAwesome-iOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 340051A9DE789B36536762E2C50416B6 /* FontAwesome-iOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2493508E276D0AF9942E08203350A42A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90AAE8973B935FD4979EEDFB8B1E12AC /* Foundation.framework */; };
-		28EE32E546814B2A0FBAE437976053F9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90AAE8973B935FD4979EEDFB8B1E12AC /* Foundation.framework */; };
-		297D1410932FC7241E914A53EEE1427F /* SVIndefiniteAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 897FC69C3F64ACDFE4CDF905B64B5787 /* SVIndefiniteAnimatedView.m */; };
-		2A8BDAE23DDAFBE1B68603AD6A303F13 /* SVProgressHUD-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AD3106986636D353BEA738CC58508682 /* SVProgressHUD-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2FF064A8900F4906454B97F4D1D4DA11 /* DeviceKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CBA91F5D81C14534B8B79C46F2821397 /* DeviceKit-dummy.m */; };
-		37770A818E59750C202C5AD709E4EDC8 /* Pods-NoProfanityKeyboard-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BF02C9B49C4140CE0A7DA8BBD356446A /* Pods-NoProfanityKeyboard-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		42D925F246584C0984216A1F9A31DEC7 /* SVIndefiniteAnimatedView.h in Headers */ = {isa = PBXBuildFile; fileRef = 7175658B6A09EEE4506CC5FF3E628AAB /* SVIndefiniteAnimatedView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4C4672FF81D3749DA0FADDF6CA345420 /* NSString+FontAwesome.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CADC3616A2447CF05FF9077B5A421AF /* NSString+FontAwesome.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		53085E2F96E8604FBE78AC40391A1DCD /* Pods-NoProfanityKeyboard-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EF1BCD7AF7F478DDF32E868873D39EA /* Pods-NoProfanityKeyboard-dummy.m */; };
-		6741F9C08B02D54F79CE4318E2079E0E /* SVProgressAnimatedView.h in Headers */ = {isa = PBXBuildFile; fileRef = C5CDF00AF6F84155C157C906C3573570 /* SVProgressAnimatedView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6E0AA1F234DEF011D609D735B547598D /* DeviceKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 85F43CC8C762E4D5BEC2C7D99E4576CD /* DeviceKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		84428ECD38F959A3AE274E280E821C70 /* Pods-keyboard-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C26DBB6CAC79D4426F29681291864E35 /* Pods-keyboard-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8BD6508BD28AC2B10919EE538F41949F /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = BD2BDF14875B4B32D9DB8A223D8CF767 /* SVProgressHUD.m */; };
-		961B58AA936C6E0D6FE69E964CBC62F0 /* NSString+FontAwesome.h in Headers */ = {isa = PBXBuildFile; fileRef = C37CC83071E558EDD50D01DF42F04BB9 /* NSString+FontAwesome.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A820A6F5196A639A6A10EBC99547F7EE /* FontAwesome-iOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BB9B3D0240890320D941EB19F37C7758 /* FontAwesome-iOS-dummy.m */; };
-		AE0144BE483E13F8E21ECF365DD32E08 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90AAE8973B935FD4979EEDFB8B1E12AC /* Foundation.framework */; };
-		B93B0E6F91C0FE1DF1818FEC146BD540 /* SVProgressAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = ECF77030955899AC25CDA0C7559CC5B5 /* SVProgressAnimatedView.m */; };
-		CDA9052EC5A95642C9AA732FBD126F6E /* SVProgressHUD.h in Headers */ = {isa = PBXBuildFile; fileRef = DA63AE6A86ACE555A3395CA6BF3FF8EF /* SVProgressHUD.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D3714011F2DD0F072DDD77FDBDD9B298 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90AAE8973B935FD4979EEDFB8B1E12AC /* Foundation.framework */; };
-		E675AEA2C4160CBB85A83F7FD739E695 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90AAE8973B935FD4979EEDFB8B1E12AC /* Foundation.framework */; };
-		E91F7B36ED7E4136F77A09B4427DDE04 /* SVRadialGradientLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A33CA46E2ABDE5E59F10F70D397553A /* SVRadialGradientLayer.m */; };
-		ED6855D89138B7337FCD952E2223FF3D /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D5C6A307F45F21E6B8FD9D606790A9B3 /* SVProgressHUD.bundle */; };
-		EF97F3B3CD2D9EF0096B4B497F79D0F0 /* SVProgressHUD-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C6D922A43266DDEA8E731247E0A54BC /* SVProgressHUD-dummy.m */; };
-		F228150C60D7B4C04CF3F4D5112013DD /* Pods-keyboard-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AFDBBD3653C999BF7E9F928B2B806235 /* Pods-keyboard-dummy.m */; };
-		F25C373CF1524FE8E8313EE221E49DED /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB0B5C34B0704CE42DB8ACE437DB6B71 /* QuartzCore.framework */; };
+		079C88EB120535A87150C01F807DF8BC /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8DC1FE6B90795704298FE6B750F60DC /* Device.swift */; };
+		0D16A70449028E9D91094197843A2FA3 /* SVProgressHUD-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F146A8DF05ABAF5BAA9EB8BCEB8B662F /* SVProgressHUD-dummy.m */; };
+		114481DA0C1BC74413C23AA935A67A8A /* Pods-keyboard-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C26DBB6CAC79D4426F29681291864E35 /* Pods-keyboard-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		12D1D54665B1EDC301F4E9A900C42DC3 /* Enum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45C6402D15FA4CB8C4E766575D6FF7D2 /* Enum.swift */; };
+		173C40AAC2CA93C533995703A1EA9B62 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BF9550434131391A4BB0DD0365BD207 /* QuartzCore.framework */; };
+		1A57F69A9D4CCDF6252FEB03DE7E024D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA68CB1D3DA0E719CA76BF65D46A0E32 /* Foundation.framework */; };
+		2694F04E06F49B9865FB2C5D2AB3D1E5 /* Pods-NoProfanityKeyboard-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BF02C9B49C4140CE0A7DA8BBD356446A /* Pods-NoProfanityKeyboard-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		27967FFAE1AD1B478141BDE32EF090CF /* FontAwesomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 857D01562B980A4F8206E1A245CB5D0C /* FontAwesomeView.swift */; };
+		2A2DF7253D3B451EE773C69EDA05BBDE /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BF466C68C3192BABDE456F8AD03A3BA /* SVProgressHUD.m */; };
+		2B5B0438D1610EB58B544EC341C9EE63 /* SVIndefiniteAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DF4CDAAC004D12AD3403A497C70E9F3 /* SVIndefiniteAnimatedView.m */; };
+		2FF064A8900F4906454B97F4D1D4DA11 /* DeviceKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7250AB6083049C1D9F3B62EF4543A2DF /* DeviceKit-dummy.m */; };
+		36D0840081763631BA091C3E454CD917 /* SVProgressHUD.h in Headers */ = {isa = PBXBuildFile; fileRef = CC775A4A0976B8EE181095885F66869A /* SVProgressHUD.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3DDE96C1DBE8B94559B5F57A31D4C791 /* FontAwesome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02400061D166D101FA144F9FA9E611F5 /* FontAwesome.swift */; };
+		40F7FFF91DCD01D0F4CAD9F100844A7A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA68CB1D3DA0E719CA76BF65D46A0E32 /* Foundation.framework */; };
+		4FFA6651790C1B6890BC8AF9BCE67AD4 /* FontAwesome.otf in Resources */ = {isa = PBXBuildFile; fileRef = A99CE1EA3C1F25CC72E04283672EE3D2 /* FontAwesome.otf */; };
+		53D61C7ADDA0D962732C15EC9D74471E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B6B226BCC287AD2905D591A5951BFC9 /* UIKit.framework */; };
+		5F776C92FAE60806DA49A1C20D0D3C39 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA68CB1D3DA0E719CA76BF65D46A0E32 /* Foundation.framework */; };
+		6506FD1E05C82BBBECFA0964237AEAF2 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDEC88C6EF2924E7EE6531D7F53E4D59 /* CoreText.framework */; };
+		6CDF796C4D2E01A4C6069A509C0545B6 /* SVProgressAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = BDD0CEBA0F63D63ADA56A7FDCF367520 /* SVProgressAnimatedView.m */; };
+		6E0AA1F234DEF011D609D735B547598D /* DeviceKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F613A120A7F9895135BF0E4C6368EDF /* DeviceKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		79883B6D5AAF278C5BF8FC7411CD54E9 /* SVProgressAnimatedView.h in Headers */ = {isa = PBXBuildFile; fileRef = DC3A2E87B933BEA226F516E4F83A2C84 /* SVProgressAnimatedView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7E0FF38015598EA6829043991F3C0F3B /* SVIndefiniteAnimatedView.h in Headers */ = {isa = PBXBuildFile; fileRef = B9FD7B209C88BE1395D2278CA306FC66 /* SVIndefiniteAnimatedView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		82B8518F0A770C9EEAEA495F984F9113 /* SVRadialGradientLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 402B74B2907D3DBD3B5347BA602291AE /* SVRadialGradientLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		88F809E5E9ED0375FF06C2EAA8B7821A /* SVProgressHUD-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6DB4EC51C98A543277B477CE38A50795 /* SVProgressHUD-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8F60935C1607113C4E51565B8F790D73 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA68CB1D3DA0E719CA76BF65D46A0E32 /* Foundation.framework */; };
+		912B3481233904ECEFD517E00A20EB52 /* Pods-NoProfanityKeyboard-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EF1BCD7AF7F478DDF32E868873D39EA /* Pods-NoProfanityKeyboard-dummy.m */; };
+		977893CD9D5483CEDEC34CC89B83CAA7 /* FontAwesome.swift.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C862E09C11D121DCA303681B679270B2 /* FontAwesome.swift.bundle */; };
+		9BA89E90D08F82EC682B2BC6622669E0 /* FontAwesome.swift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8319B1FB5D3CA0EA641277B35362E5E6 /* FontAwesome.swift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9CC28C07B7C491191D650E8B315319CC /* Pods-keyboard-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AFDBBD3653C999BF7E9F928B2B806235 /* Pods-keyboard-dummy.m */; };
+		9E049E4F35E4F58F6E8294F9921CB316 /* SVRadialGradientLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 437075BE43D80372C82B29EB56B9B85F /* SVRadialGradientLayer.m */; };
+		AE0144BE483E13F8E21ECF365DD32E08 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA68CB1D3DA0E719CA76BF65D46A0E32 /* Foundation.framework */; };
+		CF0F718C9F8E2818B98012CDDA4C6805 /* FontAwesome.swift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 42F0E6C938E081AA8C7C59F3DC0EED73 /* FontAwesome.swift-dummy.m */; };
+		EBD1C618BF31B1B545B418F19BB96912 /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 768E6497F74EC3D3552930A5A7AD4981 /* SVProgressHUD.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		1B993656C2AA9A5BE4E973CDE6C965EF /* PBXContainerItemProxy */ = {
+		192DAE8239CEDF28426AC10F45C42C62 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = EF78824223C74AA13AE655CD2ACF32A3;
-			remoteInfo = DeviceKit;
+			remoteGlobalIDString = EF4F067C2D0E135B80299B089E168BDA;
+			remoteInfo = "FontAwesome.swift-FontAwesome.swift";
 		};
-		A0B638E81C133B44B08084C80EE4B41C /* PBXContainerItemProxy */ = {
+		3F965F5029DE14EBC8EB9FA328EC68EB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 326B13F11CA3E111904FEA4C0B0EAB38;
+			remoteGlobalIDString = 1FE2578FF0805299395CF2A0206BB671;
+			remoteInfo = FontAwesome.swift;
+		};
+		42FD80DEE7F1744E963D11207C2E52FF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D811DE2D95D7A27AE53FE28C83D82DB7;
 			remoteInfo = SVProgressHUD;
 		};
-		A89C7EFACC34DCA61D2EBA68E343CD29 /* PBXContainerItemProxy */ = {
+		C4729860C6EDC38195DA89325BDA6497 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1FE2578FF0805299395CF2A0206BB671;
+			remoteInfo = FontAwesome.swift;
+		};
+		E20D78014F5A3E0109266600716E1993 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = EF78824223C74AA13AE655CD2ACF32A3;
 			remoteInfo = DeviceKit;
 		};
-		ABFC8AAECF649374C7E89706B2F3EE76 /* PBXContainerItemProxy */ = {
+		FBFC32913DE3328363CDC8224B4C3D97 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 48369B33BCA4EE7CE5B05F02DB32CB72;
-			remoteInfo = "FontAwesome-iOS";
-		};
-		EFB6B169B8C1535AA7990FBA3845132B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 48369B33BCA4EE7CE5B05F02DB32CB72;
-			remoteInfo = "FontAwesome-iOS";
+			remoteGlobalIDString = EF78824223C74AA13AE655CD2ACF32A3;
+			remoteInfo = DeviceKit;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		02400061D166D101FA144F9FA9E611F5 /* FontAwesome.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FontAwesome.swift; path = FontAwesome/FontAwesome.swift; sourceTree = "<group>"; };
 		07E47E9752F6B25DD21E2C05B10A65E0 /* Pods-keyboard-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-keyboard-acknowledgements.markdown"; sourceTree = "<group>"; };
-		0CADC3616A2447CF05FF9077B5A421AF /* NSString+FontAwesome.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSString+FontAwesome.m"; sourceTree = "<group>"; };
-		0D244A1DD5D333424C6A2F93C6ACC5ED /* DeviceKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DeviceKit.xcconfig; sourceTree = "<group>"; };
+		0BF466C68C3192BABDE456F8AD03A3BA /* SVProgressHUD.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVProgressHUD.m; path = SVProgressHUD/SVProgressHUD.m; sourceTree = "<group>"; };
 		18E0EC6E6CFF493196C51DDD52CBD627 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1D07FB126AD45686349B4B3A6E01AB51 /* DeviceKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DeviceKit-prefix.pch"; sourceTree = "<group>"; };
 		2613DC7DAFEFE39E6D4F5C6415783263 /* Pods-NoProfanityKeyboard-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-NoProfanityKeyboard-acknowledgements.markdown"; sourceTree = "<group>"; };
-		2A33CA46E2ABDE5E59F10F70D397553A /* SVRadialGradientLayer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVRadialGradientLayer.m; path = SVProgressHUD/SVRadialGradientLayer.m; sourceTree = "<group>"; };
-		340051A9DE789B36536762E2C50416B6 /* FontAwesome-iOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FontAwesome-iOS-umbrella.h"; sourceTree = "<group>"; };
+		3016C35E76B75B4F5C57ABA61AAC2FF9 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		344778A9C7744A01895351E61C392CB5 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4625EB818F461870FEE5DFE56FF162BA /* FontAwesome-iOS-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FontAwesome-iOS-prefix.pch"; sourceTree = "<group>"; };
+		4004ED8C58586DBB38A14BE741451CF8 /* FontAwesome.swift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FontAwesome.swift.xcconfig; sourceTree = "<group>"; };
+		402B74B2907D3DBD3B5347BA602291AE /* SVRadialGradientLayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVRadialGradientLayer.h; path = SVProgressHUD/SVRadialGradientLayer.h; sourceTree = "<group>"; };
+		42F0E6C938E081AA8C7C59F3DC0EED73 /* FontAwesome.swift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FontAwesome.swift-dummy.m"; sourceTree = "<group>"; };
+		437075BE43D80372C82B29EB56B9B85F /* SVRadialGradientLayer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVRadialGradientLayer.m; path = SVProgressHUD/SVRadialGradientLayer.m; sourceTree = "<group>"; };
+		45C6402D15FA4CB8C4E766575D6FF7D2 /* Enum.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Enum.swift; path = FontAwesome/Enum.swift; sourceTree = "<group>"; };
 		478746B3A10F8C140D03E237B88D1AA5 /* Pods-NoProfanityKeyboard-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-NoProfanityKeyboard-frameworks.sh"; sourceTree = "<group>"; };
+		4ED505F9BA7C8CF334C7483372C8C197 /* FontAwesome.swift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FontAwesome.swift-prefix.pch"; sourceTree = "<group>"; };
+		521A9491F0458C61EE127A58F1429227 /* SVProgressHUD-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SVProgressHUD-prefix.pch"; sourceTree = "<group>"; };
 		53912A5A870FFB37FCE06475C7EC4C62 /* Pods-NoProfanityKeyboard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NoProfanityKeyboard.debug.xcconfig"; sourceTree = "<group>"; };
 		5509220C5256CAB8A1435AC631CEB569 /* Pods-NoProfanityKeyboard-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-NoProfanityKeyboard-resources.sh"; sourceTree = "<group>"; };
-		577961349D9729C04D0C9641049254BC /* SVProgressHUD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SVProgressHUD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A2647800A76642AFD8F54CEF4CED130 /* Pods-keyboard-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-keyboard-acknowledgements.plist"; sourceTree = "<group>"; };
-		5C2F732B76B76E05528F087462405F99 /* DeviceKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DeviceKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		618B9D2B597124ED9BC3CC7852F0DF23 /* FontAwesome_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FontAwesome_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D2D789E0D9A3A6A73B550A4AF591438 /* SVProgressHUD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SVProgressHUD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5DF4CDAAC004D12AD3403A497C70E9F3 /* SVIndefiniteAnimatedView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVIndefiniteAnimatedView.m; path = SVProgressHUD/SVIndefiniteAnimatedView.m; sourceTree = "<group>"; };
+		5F613A120A7F9895135BF0E4C6368EDF /* DeviceKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DeviceKit-umbrella.h"; sourceTree = "<group>"; };
+		64DDE61A6DE61AA93851DB05061D56B5 /* SVProgressHUD.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SVProgressHUD.modulemap; sourceTree = "<group>"; };
 		6680C8524E6106AEDE24C80AD0596089 /* Pods-keyboard.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-keyboard.modulemap"; sourceTree = "<group>"; };
-		6C73D6B71FAC7A34A7D0B1C82374BF35 /* SVProgressHUD-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SVProgressHUD-prefix.pch"; sourceTree = "<group>"; };
-		6EF5DB6CAB47EDC5804AEDF27420DE08 /* DeviceKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = DeviceKit.modulemap; sourceTree = "<group>"; };
-		7175658B6A09EEE4506CC5FF3E628AAB /* SVIndefiniteAnimatedView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVIndefiniteAnimatedView.h; path = SVProgressHUD/SVIndefiniteAnimatedView.h; sourceTree = "<group>"; };
-		771E79AC2D462659FDB700DA24ED6C8B /* FontAwesome-iOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "FontAwesome-iOS.modulemap"; sourceTree = "<group>"; };
-		7BFBB97204A0F90848D4EBAAA85D8517 /* FontAwesome-iOS.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "FontAwesome-iOS.xcconfig"; sourceTree = "<group>"; };
-		84932CA9B791E9867F2FC4161CD2BC1B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		68AEE626E49594F7E675CEC35564AEDC /* DeviceKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DeviceKit-prefix.pch"; sourceTree = "<group>"; };
+		6BF9550434131391A4BB0DD0365BD207 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		6D3DFDA96702B75F48BCCCED439CEEFE /* ResourceBundle-FontAwesome.swift-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-FontAwesome.swift-Info.plist"; sourceTree = "<group>"; };
+		6DB4EC51C98A543277B477CE38A50795 /* SVProgressHUD-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SVProgressHUD-umbrella.h"; sourceTree = "<group>"; };
+		7250AB6083049C1D9F3B62EF4543A2DF /* DeviceKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DeviceKit-dummy.m"; sourceTree = "<group>"; };
+		768E6497F74EC3D3552930A5A7AD4981 /* SVProgressHUD.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = SVProgressHUD.bundle; path = SVProgressHUD/SVProgressHUD.bundle; sourceTree = "<group>"; };
+		8319B1FB5D3CA0EA641277B35362E5E6 /* FontAwesome.swift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FontAwesome.swift-umbrella.h"; sourceTree = "<group>"; };
+		834556313BEF7DC011629E2922AF27F4 /* FontAwesome_swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FontAwesome_swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		84B1C54A582C809A06232611E9C31806 /* Pods-NoProfanityKeyboard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NoProfanityKeyboard.release.xcconfig"; sourceTree = "<group>"; };
-		85F43CC8C762E4D5BEC2C7D99E4576CD /* DeviceKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DeviceKit-umbrella.h"; sourceTree = "<group>"; };
-		897FC69C3F64ACDFE4CDF905B64B5787 /* SVIndefiniteAnimatedView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVIndefiniteAnimatedView.m; path = SVProgressHUD/SVIndefiniteAnimatedView.m; sourceTree = "<group>"; };
-		8C5C547B89020E0F48C1553A7A00A01E /* Device.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Device.swift; path = Source/Device.swift; sourceTree = "<group>"; };
+		857D01562B980A4F8206E1A245CB5D0C /* FontAwesomeView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FontAwesomeView.swift; path = FontAwesome/FontAwesomeView.swift; sourceTree = "<group>"; };
 		8EF1BCD7AF7F478DDF32E868873D39EA /* Pods-NoProfanityKeyboard-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-NoProfanityKeyboard-dummy.m"; sourceTree = "<group>"; };
-		90AAE8973B935FD4979EEDFB8B1E12AC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9C6D922A43266DDEA8E731247E0A54BC /* SVProgressHUD-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SVProgressHUD-dummy.m"; sourceTree = "<group>"; };
-		9FECD30B45CBC9D4261CFAAEEAFEDE14 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AA8AD8158A96C36788D8F2029DE429EA /* SVRadialGradientLayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVRadialGradientLayer.h; path = SVProgressHUD/SVRadialGradientLayer.h; sourceTree = "<group>"; };
-		AD3106986636D353BEA738CC58508682 /* SVProgressHUD-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SVProgressHUD-umbrella.h"; sourceTree = "<group>"; };
+		9B6B226BCC287AD2905D591A5951BFC9 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		A33F64BFC3F4CDB6B536322A90C79876 /* SVProgressHUD.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SVProgressHUD.xcconfig; sourceTree = "<group>"; };
+		A99CE1EA3C1F25CC72E04283672EE3D2 /* FontAwesome.otf */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; name = FontAwesome.otf; path = FontAwesome/FontAwesome.otf; sourceTree = "<group>"; };
 		AFDBBD3653C999BF7E9F928B2B806235 /* Pods-keyboard-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-keyboard-dummy.m"; sourceTree = "<group>"; };
-		B7949045F937CEA90595489CE82D1F3E /* SVProgressHUD.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SVProgressHUD.modulemap; sourceTree = "<group>"; };
-		BB9B3D0240890320D941EB19F37C7758 /* FontAwesome-iOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FontAwesome-iOS-dummy.m"; sourceTree = "<group>"; };
-		BD2BDF14875B4B32D9DB8A223D8CF767 /* SVProgressHUD.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVProgressHUD.m; path = SVProgressHUD/SVProgressHUD.m; sourceTree = "<group>"; };
+		AFE56D92EC0A95B00E30E1804DCBF774 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B315B4027AECC7C2A71E603D5B43AED3 /* DeviceKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DeviceKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B9FD7B209C88BE1395D2278CA306FC66 /* SVIndefiniteAnimatedView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVIndefiniteAnimatedView.h; path = SVProgressHUD/SVIndefiniteAnimatedView.h; sourceTree = "<group>"; };
+		BA0F790F04AE36783997EED6A08DB2E1 /* DeviceKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = DeviceKit.modulemap; sourceTree = "<group>"; };
+		BDD0CEBA0F63D63ADA56A7FDCF367520 /* SVProgressAnimatedView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVProgressAnimatedView.m; path = SVProgressHUD/SVProgressAnimatedView.m; sourceTree = "<group>"; };
 		BF02C9B49C4140CE0A7DA8BBD356446A /* Pods-NoProfanityKeyboard-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-NoProfanityKeyboard-umbrella.h"; sourceTree = "<group>"; };
 		C07413B2587F5BA4CF92C9A7111D13BD /* Pods-keyboard-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-keyboard-resources.sh"; sourceTree = "<group>"; };
 		C26DBB6CAC79D4426F29681291864E35 /* Pods-keyboard-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-keyboard-umbrella.h"; sourceTree = "<group>"; };
-		C37CC83071E558EDD50D01DF42F04BB9 /* NSString+FontAwesome.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSString+FontAwesome.h"; sourceTree = "<group>"; };
-		C5CDF00AF6F84155C157C906C3573570 /* SVProgressAnimatedView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVProgressAnimatedView.h; path = SVProgressHUD/SVProgressAnimatedView.h; sourceTree = "<group>"; };
-		CBA91F5D81C14534B8B79C46F2821397 /* DeviceKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DeviceKit-dummy.m"; sourceTree = "<group>"; };
+		C27863F9F40E34B5CB4C9CAFFED71253 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C862E09C11D121DCA303681B679270B2 /* FontAwesome.swift.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FontAwesome.swift.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC775A4A0976B8EE181095885F66869A /* SVProgressHUD.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVProgressHUD.h; path = SVProgressHUD/SVProgressHUD.h; sourceTree = "<group>"; };
+		CC93A9BCFDD338F094F34D69FF114960 /* Pods_NoProfanityKeyboard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NoProfanityKeyboard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEE124015BF114B4FCA67AC0C498F074 /* Pods-NoProfanityKeyboard-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NoProfanityKeyboard-acknowledgements.plist"; sourceTree = "<group>"; };
-		D3CC0A79440CF0F5C8C377031D787C4B /* SVProgressHUD.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SVProgressHUD.xcconfig; sourceTree = "<group>"; };
 		D53A48DD6113D2572B386F0E7BE13481 /* Pods-keyboard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-keyboard.debug.xcconfig"; sourceTree = "<group>"; };
-		D5C6A307F45F21E6B8FD9D606790A9B3 /* SVProgressHUD.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = SVProgressHUD.bundle; path = SVProgressHUD/SVProgressHUD.bundle; sourceTree = "<group>"; };
-		DA63AE6A86ACE555A3395CA6BF3FF8EF /* SVProgressHUD.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVProgressHUD.h; path = SVProgressHUD/SVProgressHUD.h; sourceTree = "<group>"; };
-		DF68F3DD75D7F4498903A9068B95543D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E2013374F03C526324EF6195B82C74DA /* Pods_keyboard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_keyboard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC3A2E87B933BEA226F516E4F83A2C84 /* SVProgressAnimatedView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVProgressAnimatedView.h; path = SVProgressHUD/SVProgressAnimatedView.h; sourceTree = "<group>"; };
+		DDEC88C6EF2924E7EE6531D7F53E4D59 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/CoreText.framework; sourceTree = DEVELOPER_DIR; };
+		E632B4A65C23F04E9F2A0D63C21D3138 /* Pods_keyboard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_keyboard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA68CB1D3DA0E719CA76BF65D46A0E32 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		EA9A6894639AFA3AC09D4F6C7C225617 /* Pods-keyboard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-keyboard.release.xcconfig"; sourceTree = "<group>"; };
-		EB0B5C34B0704CE42DB8ACE437DB6B71 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
 		EB18F2D8B611325750B4F18A2508BA62 /* Pods-NoProfanityKeyboard.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-NoProfanityKeyboard.modulemap"; sourceTree = "<group>"; };
-		ECF77030955899AC25CDA0C7559CC5B5 /* SVProgressAnimatedView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVProgressAnimatedView.m; path = SVProgressHUD/SVProgressAnimatedView.m; sourceTree = "<group>"; };
-		F0A2725647E156562F8E13462AB45CFF /* Pods_NoProfanityKeyboard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NoProfanityKeyboard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F146A8DF05ABAF5BAA9EB8BCEB8B662F /* SVProgressHUD-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SVProgressHUD-dummy.m"; sourceTree = "<group>"; };
+		F58FBFA9A232B50BB4A26C0920E6F77E /* DeviceKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DeviceKit.xcconfig; sourceTree = "<group>"; };
+		F8DC1FE6B90795704298FE6B750F60DC /* Device.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Device.swift; path = Source/Device.swift; sourceTree = "<group>"; };
+		FD7B6AFA114CB5C9A6CC386487C11D40 /* FontAwesome.swift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = FontAwesome.swift.modulemap; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		1E576B066E4FF0022145DFE694273E78 /* Frameworks */ = {
+		5578ABFFBCB65D3EBF4D0CD1D5A77EB2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				28EE32E546814B2A0FBAE437976053F9 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A173EA1C4B71952FD7BF0158883C96D7 /* Frameworks */ = {
+		86EBEB7A5BC84E3C24D67ADD82B00EA6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2493508E276D0AF9942E08203350A42A /* Foundation.framework in Frameworks */,
+				6506FD1E05C82BBBECFA0964237AEAF2 /* CoreText.framework in Frameworks */,
+				8F60935C1607113C4E51565B8F790D73 /* Foundation.framework in Frameworks */,
+				53D61C7ADDA0D962732C15EC9D74471E /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BDDE355B8D44575CB81976C2C5F76D8A /* Frameworks */ = {
+		9976784512E0617FD92B51C0CCDE13C2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D3714011F2DD0F072DDD77FDBDD9B298 /* Foundation.framework in Frameworks */,
+				5F776C92FAE60806DA49A1C20D0D3C39 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D156500D5E6CF88C01D3546618DE2449 /* Frameworks */ = {
+		A272F4FE328CE96C3F0E6A5A2EC9E32B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E675AEA2C4160CBB85A83F7FD739E695 /* Foundation.framework in Frameworks */,
-				F25C373CF1524FE8E8313EE221E49DED /* QuartzCore.framework in Frameworks */,
+				40F7FFF91DCD01D0F4CAD9F100844A7A /* Foundation.framework in Frameworks */,
+				173C40AAC2CA93C533995703A1EA9B62 /* QuartzCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A3128E0934F6E0E85AB6017029749B56 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A57F69A9D4CCDF6252FEB03DE7E024D /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -180,45 +207,43 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		12A1AF0625743F26CD8C242FE2BBD481 /* SVProgressHUD */ = {
+		01370D1CA7BEAC45A1A3AC3906150FE3 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				7175658B6A09EEE4506CC5FF3E628AAB /* SVIndefiniteAnimatedView.h */,
-				897FC69C3F64ACDFE4CDF905B64B5787 /* SVIndefiniteAnimatedView.m */,
-				C5CDF00AF6F84155C157C906C3573570 /* SVProgressAnimatedView.h */,
-				ECF77030955899AC25CDA0C7559CC5B5 /* SVProgressAnimatedView.m */,
-				DA63AE6A86ACE555A3395CA6BF3FF8EF /* SVProgressHUD.h */,
-				BD2BDF14875B4B32D9DB8A223D8CF767 /* SVProgressHUD.m */,
-				AA8AD8158A96C36788D8F2029DE429EA /* SVRadialGradientLayer.h */,
-				2A33CA46E2ABDE5E59F10F70D397553A /* SVRadialGradientLayer.m */,
-				A6092FDB107152957B23845C741D5E60 /* Resources */,
-				3010FCB6F8DCADF3BF951C20FF97D1C9 /* Support Files */,
-			);
-			path = SVProgressHUD;
-			sourceTree = "<group>";
-		};
-		16F0F176BA22277FF5670583F3B1914C /* FontAwesome-iOS */ = {
-			isa = PBXGroup;
-			children = (
-				C37CC83071E558EDD50D01DF42F04BB9 /* NSString+FontAwesome.h */,
-				0CADC3616A2447CF05FF9077B5A421AF /* NSString+FontAwesome.m */,
-				72B565B4DE154C8EBAE1C37C68C32DE0 /* Support Files */,
-			);
-			path = "FontAwesome-iOS";
-			sourceTree = "<group>";
-		};
-		3010FCB6F8DCADF3BF951C20FF97D1C9 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				9FECD30B45CBC9D4261CFAAEEAFEDE14 /* Info.plist */,
-				B7949045F937CEA90595489CE82D1F3E /* SVProgressHUD.modulemap */,
-				D3CC0A79440CF0F5C8C377031D787C4B /* SVProgressHUD.xcconfig */,
-				9C6D922A43266DDEA8E731247E0A54BC /* SVProgressHUD-dummy.m */,
-				6C73D6B71FAC7A34A7D0B1C82374BF35 /* SVProgressHUD-prefix.pch */,
-				AD3106986636D353BEA738CC58508682 /* SVProgressHUD-umbrella.h */,
+				BA0F790F04AE36783997EED6A08DB2E1 /* DeviceKit.modulemap */,
+				F58FBFA9A232B50BB4A26C0920E6F77E /* DeviceKit.xcconfig */,
+				7250AB6083049C1D9F3B62EF4543A2DF /* DeviceKit-dummy.m */,
+				68AEE626E49594F7E675CEC35564AEDC /* DeviceKit-prefix.pch */,
+				5F613A120A7F9895135BF0E4C6368EDF /* DeviceKit-umbrella.h */,
+				C27863F9F40E34B5CB4C9CAFFED71253 /* Info.plist */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/SVProgressHUD";
+			path = "../Target Support Files/DeviceKit";
+			sourceTree = "<group>";
+		};
+		14B8B9B15ECBE87983FF987239AB2D7B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9880118C168553BFC1AEC05049869368 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3631C287289299239A601F07E5A7CD76 /* SVProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				B9FD7B209C88BE1395D2278CA306FC66 /* SVIndefiniteAnimatedView.h */,
+				5DF4CDAAC004D12AD3403A497C70E9F3 /* SVIndefiniteAnimatedView.m */,
+				DC3A2E87B933BEA226F516E4F83A2C84 /* SVProgressAnimatedView.h */,
+				BDD0CEBA0F63D63ADA56A7FDCF367520 /* SVProgressAnimatedView.m */,
+				CC775A4A0976B8EE181095885F66869A /* SVProgressHUD.h */,
+				0BF466C68C3192BABDE456F8AD03A3BA /* SVProgressHUD.m */,
+				402B74B2907D3DBD3B5347BA602291AE /* SVRadialGradientLayer.h */,
+				437075BE43D80372C82B29EB56B9B85F /* SVRadialGradientLayer.m */,
+				DE906E4CD9AA7CF9BD9DF32FCF069DBF /* Resources */,
+				9FF28F502903227FFA357A4F11514EEB /* Support Files */,
+			);
+			path = SVProgressHUD;
 			sourceTree = "<group>";
 		};
 		3B1437C0A373FB343A4834330A6CA019 /* Pods-keyboard */ = {
@@ -236,50 +261,6 @@
 			);
 			name = "Pods-keyboard";
 			path = "Target Support Files/Pods-keyboard";
-			sourceTree = "<group>";
-		};
-		3C4B07D56D5641F79B04295399AE2511 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				5E29F815AB532D8F4E99025FEF47905A /* DeviceKit */,
-				16F0F176BA22277FF5670583F3B1914C /* FontAwesome-iOS */,
-				12A1AF0625743F26CD8C242FE2BBD481 /* SVProgressHUD */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		40F00714B496BAFD30A6B77BAA414926 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				5C2F732B76B76E05528F087462405F99 /* DeviceKit.framework */,
-				618B9D2B597124ED9BC3CC7852F0DF23 /* FontAwesome_iOS.framework */,
-				E2013374F03C526324EF6195B82C74DA /* Pods_keyboard.framework */,
-				F0A2725647E156562F8E13462AB45CFF /* Pods_NoProfanityKeyboard.framework */,
-				577961349D9729C04D0C9641049254BC /* SVProgressHUD.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				89F803C7E2D77E11F2120CB28FE0B795 /* iOS */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		45EDFBCF877009C9EDBBEEE522D033B6 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				6EF5DB6CAB47EDC5804AEDF27420DE08 /* DeviceKit.modulemap */,
-				0D244A1DD5D333424C6A2F93C6ACC5ED /* DeviceKit.xcconfig */,
-				CBA91F5D81C14534B8B79C46F2821397 /* DeviceKit-dummy.m */,
-				1D07FB126AD45686349B4B3A6E01AB51 /* DeviceKit-prefix.pch */,
-				85F43CC8C762E4D5BEC2C7D99E4576CD /* DeviceKit-umbrella.h */,
-				DF68F3DD75D7F4498903A9068B95543D /* Info.plist */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/DeviceKit";
 			sourceTree = "<group>";
 		};
 		4839DB8EB3EDE5208483356FD7EB4633 /* Pods-NoProfanityKeyboard */ = {
@@ -300,55 +281,65 @@
 			path = "Target Support Files/Pods-NoProfanityKeyboard";
 			sourceTree = "<group>";
 		};
-		5E29F815AB532D8F4E99025FEF47905A /* DeviceKit */ = {
-			isa = PBXGroup;
-			children = (
-				8C5C547B89020E0F48C1553A7A00A01E /* Device.swift */,
-				45EDFBCF877009C9EDBBEEE522D033B6 /* Support Files */,
-			);
-			path = DeviceKit;
-			sourceTree = "<group>";
-		};
-		72B565B4DE154C8EBAE1C37C68C32DE0 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				771E79AC2D462659FDB700DA24ED6C8B /* FontAwesome-iOS.modulemap */,
-				7BFBB97204A0F90848D4EBAAA85D8517 /* FontAwesome-iOS.xcconfig */,
-				BB9B3D0240890320D941EB19F37C7758 /* FontAwesome-iOS-dummy.m */,
-				4625EB818F461870FEE5DFE56FF162BA /* FontAwesome-iOS-prefix.pch */,
-				340051A9DE789B36536762E2C50416B6 /* FontAwesome-iOS-umbrella.h */,
-				84932CA9B791E9867F2FC4161CD2BC1B /* Info.plist */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/FontAwesome-iOS";
-			sourceTree = "<group>";
-		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
-				3C4B07D56D5641F79B04295399AE2511 /* Pods */,
-				40F00714B496BAFD30A6B77BAA414926 /* Products */,
+				14B8B9B15ECBE87983FF987239AB2D7B /* Frameworks */,
+				8FF443E5E26D444CEBE86556E24CEDDC /* Pods */,
+				D0E61E2ADA124F5D0A1DE2456B3A1D97 /* Products */,
 				B909981F77E5758884E47798D8B72770 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		89F803C7E2D77E11F2120CB28FE0B795 /* iOS */ = {
+		8FF443E5E26D444CEBE86556E24CEDDC /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				90AAE8973B935FD4979EEDFB8B1E12AC /* Foundation.framework */,
-				EB0B5C34B0704CE42DB8ACE437DB6B71 /* QuartzCore.framework */,
+				F7DA133BAF443B995ED4E76B35229F4A /* DeviceKit */,
+				D2B127930143CA53571F8C814272EBE6 /* FontAwesome.swift */,
+				3631C287289299239A601F07E5A7CD76 /* SVProgressHUD */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		9880118C168553BFC1AEC05049869368 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				DDEC88C6EF2924E7EE6531D7F53E4D59 /* CoreText.framework */,
+				EA68CB1D3DA0E719CA76BF65D46A0E32 /* Foundation.framework */,
+				6BF9550434131391A4BB0DD0365BD207 /* QuartzCore.framework */,
+				9B6B226BCC287AD2905D591A5951BFC9 /* UIKit.framework */,
 			);
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		A6092FDB107152957B23845C741D5E60 /* Resources */ = {
+		9FF28F502903227FFA357A4F11514EEB /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				D5C6A307F45F21E6B8FD9D606790A9B3 /* SVProgressHUD.bundle */,
+				AFE56D92EC0A95B00E30E1804DCBF774 /* Info.plist */,
+				64DDE61A6DE61AA93851DB05061D56B5 /* SVProgressHUD.modulemap */,
+				A33F64BFC3F4CDB6B536322A90C79876 /* SVProgressHUD.xcconfig */,
+				F146A8DF05ABAF5BAA9EB8BCEB8B662F /* SVProgressHUD-dummy.m */,
+				521A9491F0458C61EE127A58F1429227 /* SVProgressHUD-prefix.pch */,
+				6DB4EC51C98A543277B477CE38A50795 /* SVProgressHUD-umbrella.h */,
 			);
-			name = Resources;
+			name = "Support Files";
+			path = "../Target Support Files/SVProgressHUD";
+			sourceTree = "<group>";
+		};
+		A2F56C057535E23A0502D3517052B9D1 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				FD7B6AFA114CB5C9A6CC386487C11D40 /* FontAwesome.swift.modulemap */,
+				4004ED8C58586DBB38A14BE741451CF8 /* FontAwesome.swift.xcconfig */,
+				42F0E6C938E081AA8C7C59F3DC0EED73 /* FontAwesome.swift-dummy.m */,
+				4ED505F9BA7C8CF334C7483372C8C197 /* FontAwesome.swift-prefix.pch */,
+				8319B1FB5D3CA0EA641277B35362E5E6 /* FontAwesome.swift-umbrella.h */,
+				3016C35E76B75B4F5C57ABA61AAC2FF9 /* Info.plist */,
+				6D3DFDA96702B75F48BCCCED439CEEFE /* ResourceBundle-FontAwesome.swift-Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/FontAwesome.swift";
 			sourceTree = "<group>";
 		};
 		B909981F77E5758884E47798D8B72770 /* Targets Support Files */ = {
@@ -360,15 +351,76 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
+		D0E61E2ADA124F5D0A1DE2456B3A1D97 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B315B4027AECC7C2A71E603D5B43AED3 /* DeviceKit.framework */,
+				C862E09C11D121DCA303681B679270B2 /* FontAwesome.swift.bundle */,
+				834556313BEF7DC011629E2922AF27F4 /* FontAwesome_swift.framework */,
+				E632B4A65C23F04E9F2A0D63C21D3138 /* Pods_keyboard.framework */,
+				CC93A9BCFDD338F094F34D69FF114960 /* Pods_NoProfanityKeyboard.framework */,
+				5D2D789E0D9A3A6A73B550A4AF591438 /* SVProgressHUD.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D2B127930143CA53571F8C814272EBE6 /* FontAwesome.swift */ = {
+			isa = PBXGroup;
+			children = (
+				45C6402D15FA4CB8C4E766575D6FF7D2 /* Enum.swift */,
+				02400061D166D101FA144F9FA9E611F5 /* FontAwesome.swift */,
+				857D01562B980A4F8206E1A245CB5D0C /* FontAwesomeView.swift */,
+				D58F6FE8D47136173A25770EC2B6EFBB /* Resources */,
+				A2F56C057535E23A0502D3517052B9D1 /* Support Files */,
+			);
+			path = FontAwesome.swift;
+			sourceTree = "<group>";
+		};
+		D58F6FE8D47136173A25770EC2B6EFBB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A99CE1EA3C1F25CC72E04283672EE3D2 /* FontAwesome.otf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		DE906E4CD9AA7CF9BD9DF32FCF069DBF /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				768E6497F74EC3D3552930A5A7AD4981 /* SVProgressHUD.bundle */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		F7DA133BAF443B995ED4E76B35229F4A /* DeviceKit */ = {
+			isa = PBXGroup;
+			children = (
+				F8DC1FE6B90795704298FE6B750F60DC /* Device.swift */,
+				01370D1CA7BEAC45A1A3AC3906150FE3 /* Support Files */,
+			);
+			path = DeviceKit;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		40BC075DA72FF313FBA6FBEB383EC7DD /* Headers */ = {
+		13777D85DF4CD6678BD632B70F670E28 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2131CC8CD0912C4C6705114B3C32D2BA /* FontAwesome-iOS-umbrella.h in Headers */,
-				961B58AA936C6E0D6FE69E964CBC62F0 /* NSString+FontAwesome.h in Headers */,
+				9BA89E90D08F82EC682B2BC6622669E0 /* FontAwesome.swift-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		492ED248FB65EA2098664C67B645ECAC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E0FF38015598EA6829043991F3C0F3B /* SVIndefiniteAnimatedView.h in Headers */,
+				79883B6D5AAF278C5BF8FC7411CD54E9 /* SVProgressAnimatedView.h in Headers */,
+				88F809E5E9ED0375FF06C2EAA8B7821A /* SVProgressHUD-umbrella.h in Headers */,
+				36D0840081763631BA091C3E454CD917 /* SVProgressHUD.h in Headers */,
+				82B8518F0A770C9EEAEA495F984F9113 /* SVRadialGradientLayer.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -380,45 +432,91 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7227FB3BF762D1496AA166489F7C8B6A /* Headers */ = {
+		750F943DFE1A5A1F7C15F52C6FC0F862 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				37770A818E59750C202C5AD709E4EDC8 /* Pods-NoProfanityKeyboard-umbrella.h in Headers */,
+				114481DA0C1BC74413C23AA935A67A8A /* Pods-keyboard-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D3DD2D39AE7C467EC1CEABC931E4DFB4 /* Headers */ = {
+		894B318E96521982A672D22C405D098A /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84428ECD38F959A3AE274E280E821C70 /* Pods-keyboard-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		FC255FBC50EA5C0C97DB3C152CD1F34C /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				42D925F246584C0984216A1F9A31DEC7 /* SVIndefiniteAnimatedView.h in Headers */,
-				6741F9C08B02D54F79CE4318E2079E0E /* SVProgressAnimatedView.h in Headers */,
-				2A8BDAE23DDAFBE1B68603AD6A303F13 /* SVProgressHUD-umbrella.h in Headers */,
-				CDA9052EC5A95642C9AA732FBD126F6E /* SVProgressHUD.h in Headers */,
-				1E4B3F3EE9FB549D28E815E43D476FFD /* SVRadialGradientLayer.h in Headers */,
+				2694F04E06F49B9865FB2C5D2AB3D1E5 /* Pods-NoProfanityKeyboard-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		326B13F11CA3E111904FEA4C0B0EAB38 /* SVProgressHUD */ = {
+		1FE2578FF0805299395CF2A0206BB671 /* FontAwesome.swift */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 353CA49EBF23CF7342D778509A38D1C8 /* Build configuration list for PBXNativeTarget "SVProgressHUD" */;
+			buildConfigurationList = F38BD62EC04F59923F9724EE5CEF993B /* Build configuration list for PBXNativeTarget "FontAwesome.swift" */;
 			buildPhases = (
-				31CD2D7E94B331DF30961690D6185AA7 /* Sources */,
-				D156500D5E6CF88C01D3546618DE2449 /* Frameworks */,
-				FC255FBC50EA5C0C97DB3C152CD1F34C /* Headers */,
-				81EB5B342C3FD17126848BE23A4870DD /* Resources */,
+				09814B1C51ECFF2DBBA94B61CEAB2E19 /* Sources */,
+				86EBEB7A5BC84E3C24D67ADD82B00EA6 /* Frameworks */,
+				E4D30328F854BCE3F55C358DF822523A /* Resources */,
+				13777D85DF4CD6678BD632B70F670E28 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5044CA3A48D08FC86E1A3B1F860FAE01 /* PBXTargetDependency */,
+			);
+			name = FontAwesome.swift;
+			productName = FontAwesome.swift;
+			productReference = 834556313BEF7DC011629E2922AF27F4 /* FontAwesome_swift.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		401C80451DFF735FE031CC55FC2EFFF5 /* Pods-keyboard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E812F29E2022674BBC0F614FB7F9D263 /* Build configuration list for PBXNativeTarget "Pods-keyboard" */;
+			buildPhases = (
+				EB56B5CBBF2C6B5AB017CE8F521F1C28 /* Sources */,
+				9976784512E0617FD92B51C0CCDE13C2 /* Frameworks */,
+				750F943DFE1A5A1F7C15F52C6FC0F862 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3080DD2C55A8B0EC9A4BFC128640DDC7 /* PBXTargetDependency */,
+				F79141768F7BD857A943BB2F0C09DF6F /* PBXTargetDependency */,
+			);
+			name = "Pods-keyboard";
+			productName = "Pods-keyboard";
+			productReference = E632B4A65C23F04E9F2A0D63C21D3138 /* Pods_keyboard.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		AAD2AC73C09297069EFEE153AE93F166 /* Pods-NoProfanityKeyboard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4A2CEEB2BA28FE7D9104464452455A8F /* Build configuration list for PBXNativeTarget "Pods-NoProfanityKeyboard" */;
+			buildPhases = (
+				2A828FB8623571F7DE414E9F34FE1015 /* Sources */,
+				A3128E0934F6E0E85AB6017029749B56 /* Frameworks */,
+				894B318E96521982A672D22C405D098A /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				58405965A8D2D2F1446B3D32D9ACF30D /* PBXTargetDependency */,
+				6ABAF0F6717B9633A4891C84DF4759DA /* PBXTargetDependency */,
+				AF9FE1FA760A7B5DD77F5338D4598E4C /* PBXTargetDependency */,
+			);
+			name = "Pods-NoProfanityKeyboard";
+			productName = "Pods-NoProfanityKeyboard";
+			productReference = CC93A9BCFDD338F094F34D69FF114960 /* Pods_NoProfanityKeyboard.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D811DE2D95D7A27AE53FE28C83D82DB7 /* SVProgressHUD */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A6461E521C4C209F9E7E223B42A23FA2 /* Build configuration list for PBXNativeTarget "SVProgressHUD" */;
+			buildPhases = (
+				EB034074B8742FA7819C12F8C7252899 /* Sources */,
+				A272F4FE328CE96C3F0E6A5A2EC9E32B /* Frameworks */,
+				492ED248FB65EA2098664C67B645ECAC /* Headers */,
+				C10C6D7F5015E837B984535397700C0F /* Resources */,
 			);
 			buildRules = (
 			);
@@ -426,64 +524,25 @@
 			);
 			name = SVProgressHUD;
 			productName = SVProgressHUD;
-			productReference = 577961349D9729C04D0C9641049254BC /* SVProgressHUD.framework */;
+			productReference = 5D2D789E0D9A3A6A73B550A4AF591438 /* SVProgressHUD.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		48369B33BCA4EE7CE5B05F02DB32CB72 /* FontAwesome-iOS */ = {
+		EF4F067C2D0E135B80299B089E168BDA /* FontAwesome.swift-FontAwesome.swift */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = ECB5B53CFA5F7E092EB3665B21174BD5 /* Build configuration list for PBXNativeTarget "FontAwesome-iOS" */;
+			buildConfigurationList = C7B375BC6286A9E3DE2F46F4B52CBA3F /* Build configuration list for PBXNativeTarget "FontAwesome.swift-FontAwesome.swift" */;
 			buildPhases = (
-				D5900ED66D4173D70143119CB3CC39DB /* Sources */,
-				A173EA1C4B71952FD7BF0158883C96D7 /* Frameworks */,
-				40BC075DA72FF313FBA6FBEB383EC7DD /* Headers */,
+				619EA0F427AF8584A7B03876241916DE /* Sources */,
+				5578ABFFBCB65D3EBF4D0CD1D5A77EB2 /* Frameworks */,
+				56ECBAFBCBB76303F03696DA1E059127 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "FontAwesome-iOS";
-			productName = "FontAwesome-iOS";
-			productReference = 618B9D2B597124ED9BC3CC7852F0DF23 /* FontAwesome_iOS.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		51470ECCDBE98ADBE6780ECD9BB70C59 /* Pods-keyboard */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = C56D0201C6432BCA5EB00FD95C9478D9 /* Build configuration list for PBXNativeTarget "Pods-keyboard" */;
-			buildPhases = (
-				CE3DBA58EB30E2AFAA953B0AC35793F7 /* Sources */,
-				1E576B066E4FF0022145DFE694273E78 /* Frameworks */,
-				D3DD2D39AE7C467EC1CEABC931E4DFB4 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				FAADA6635DC36213BADA983860310029 /* PBXTargetDependency */,
-				04F5B25E873D11D0D6056CF1765FC331 /* PBXTargetDependency */,
-			);
-			name = "Pods-keyboard";
-			productName = "Pods-keyboard";
-			productReference = E2013374F03C526324EF6195B82C74DA /* Pods_keyboard.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		7114084C1CCF4616568AADEC68F024FB /* Pods-NoProfanityKeyboard */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 23196B2442FE7F79CB421AEC13F7601C /* Build configuration list for PBXNativeTarget "Pods-NoProfanityKeyboard" */;
-			buildPhases = (
-				48671C326A8A2277DDF9B65A2F695545 /* Sources */,
-				BDDE355B8D44575CB81976C2C5F76D8A /* Frameworks */,
-				7227FB3BF762D1496AA166489F7C8B6A /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				4CE4405B3719E70F8E1BC4790CFF10E2 /* PBXTargetDependency */,
-				B1E3D70FBD81DE8CC3676324829658AA /* PBXTargetDependency */,
-				9F52BB368F58DACF3F556107C6897048 /* PBXTargetDependency */,
-			);
-			name = "Pods-NoProfanityKeyboard";
-			productName = "Pods-NoProfanityKeyboard";
-			productReference = F0A2725647E156562F8E13462AB45CFF /* Pods_NoProfanityKeyboard.framework */;
-			productType = "com.apple.product-type.framework";
+			name = "FontAwesome.swift-FontAwesome.swift";
+			productName = "FontAwesome.swift-FontAwesome.swift";
+			productReference = C862E09C11D121DCA303681B679270B2 /* FontAwesome.swift.bundle */;
+			productType = "com.apple.product-type.bundle";
 		};
 		EF78824223C74AA13AE655CD2ACF32A3 /* DeviceKit */ = {
 			isa = PBXNativeTarget;
@@ -499,7 +558,7 @@
 			);
 			name = DeviceKit;
 			productName = DeviceKit;
-			productReference = 5C2F732B76B76E05528F087462405F99 /* DeviceKit.framework */;
+			productReference = B315B4027AECC7C2A71E603D5B43AED3 /* DeviceKit.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -519,48 +578,71 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 40F00714B496BAFD30A6B77BAA414926 /* Products */;
+			productRefGroup = D0E61E2ADA124F5D0A1DE2456B3A1D97 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				EF78824223C74AA13AE655CD2ACF32A3 /* DeviceKit */,
-				48369B33BCA4EE7CE5B05F02DB32CB72 /* FontAwesome-iOS */,
-				51470ECCDBE98ADBE6780ECD9BB70C59 /* Pods-keyboard */,
-				7114084C1CCF4616568AADEC68F024FB /* Pods-NoProfanityKeyboard */,
-				326B13F11CA3E111904FEA4C0B0EAB38 /* SVProgressHUD */,
+				1FE2578FF0805299395CF2A0206BB671 /* FontAwesome.swift */,
+				EF4F067C2D0E135B80299B089E168BDA /* FontAwesome.swift-FontAwesome.swift */,
+				401C80451DFF735FE031CC55FC2EFFF5 /* Pods-keyboard */,
+				AAD2AC73C09297069EFEE153AE93F166 /* Pods-NoProfanityKeyboard */,
+				D811DE2D95D7A27AE53FE28C83D82DB7 /* SVProgressHUD */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		81EB5B342C3FD17126848BE23A4870DD /* Resources */ = {
+		56ECBAFBCBB76303F03696DA1E059127 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ED6855D89138B7337FCD952E2223FF3D /* SVProgressHUD.bundle in Resources */,
+				4FFA6651790C1B6890BC8AF9BCE67AD4 /* FontAwesome.otf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C10C6D7F5015E837B984535397700C0F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBD1C618BF31B1B545B418F19BB96912 /* SVProgressHUD.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E4D30328F854BCE3F55C358DF822523A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				977893CD9D5483CEDEC34CC89B83CAA7 /* FontAwesome.swift.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		31CD2D7E94B331DF30961690D6185AA7 /* Sources */ = {
+		09814B1C51ECFF2DBBA94B61CEAB2E19 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				297D1410932FC7241E914A53EEE1427F /* SVIndefiniteAnimatedView.m in Sources */,
-				B93B0E6F91C0FE1DF1818FEC146BD540 /* SVProgressAnimatedView.m in Sources */,
-				EF97F3B3CD2D9EF0096B4B497F79D0F0 /* SVProgressHUD-dummy.m in Sources */,
-				8BD6508BD28AC2B10919EE538F41949F /* SVProgressHUD.m in Sources */,
-				E91F7B36ED7E4136F77A09B4427DDE04 /* SVRadialGradientLayer.m in Sources */,
+				12D1D54665B1EDC301F4E9A900C42DC3 /* Enum.swift in Sources */,
+				3DDE96C1DBE8B94559B5F57A31D4C791 /* FontAwesome.swift in Sources */,
+				CF0F718C9F8E2818B98012CDDA4C6805 /* FontAwesome.swift-dummy.m in Sources */,
+				27967FFAE1AD1B478141BDE32EF090CF /* FontAwesomeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		48671C326A8A2277DDF9B65A2F695545 /* Sources */ = {
+		2A828FB8623571F7DE414E9F34FE1015 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				53085E2F96E8604FBE78AC40391A1DCD /* Pods-NoProfanityKeyboard-dummy.m in Sources */,
+				912B3481233904ECEFD517E00A20EB52 /* Pods-NoProfanityKeyboard-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		619EA0F427AF8584A7B03876241916DE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -573,55 +655,64 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CE3DBA58EB30E2AFAA953B0AC35793F7 /* Sources */ = {
+		EB034074B8742FA7819C12F8C7252899 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F228150C60D7B4C04CF3F4D5112013DD /* Pods-keyboard-dummy.m in Sources */,
+				2B5B0438D1610EB58B544EC341C9EE63 /* SVIndefiniteAnimatedView.m in Sources */,
+				6CDF796C4D2E01A4C6069A509C0545B6 /* SVProgressAnimatedView.m in Sources */,
+				0D16A70449028E9D91094197843A2FA3 /* SVProgressHUD-dummy.m in Sources */,
+				2A2DF7253D3B451EE773C69EDA05BBDE /* SVProgressHUD.m in Sources */,
+				9E049E4F35E4F58F6E8294F9921CB316 /* SVRadialGradientLayer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D5900ED66D4173D70143119CB3CC39DB /* Sources */ = {
+		EB56B5CBBF2C6B5AB017CE8F521F1C28 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A820A6F5196A639A6A10EBC99547F7EE /* FontAwesome-iOS-dummy.m in Sources */,
-				4C4672FF81D3749DA0FADDF6CA345420 /* NSString+FontAwesome.m in Sources */,
+				9CC28C07B7C491191D650E8B315319CC /* Pods-keyboard-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		04F5B25E873D11D0D6056CF1765FC331 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "FontAwesome-iOS";
-			target = 48369B33BCA4EE7CE5B05F02DB32CB72 /* FontAwesome-iOS */;
-			targetProxy = EFB6B169B8C1535AA7990FBA3845132B /* PBXContainerItemProxy */;
-		};
-		4CE4405B3719E70F8E1BC4790CFF10E2 /* PBXTargetDependency */ = {
+		3080DD2C55A8B0EC9A4BFC128640DDC7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = DeviceKit;
 			target = EF78824223C74AA13AE655CD2ACF32A3 /* DeviceKit */;
-			targetProxy = 1B993656C2AA9A5BE4E973CDE6C965EF /* PBXContainerItemProxy */;
+			targetProxy = FBFC32913DE3328363CDC8224B4C3D97 /* PBXContainerItemProxy */;
 		};
-		9F52BB368F58DACF3F556107C6897048 /* PBXTargetDependency */ = {
+		5044CA3A48D08FC86E1A3B1F860FAE01 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "FontAwesome.swift-FontAwesome.swift";
+			target = EF4F067C2D0E135B80299B089E168BDA /* FontAwesome.swift-FontAwesome.swift */;
+			targetProxy = 192DAE8239CEDF28426AC10F45C42C62 /* PBXContainerItemProxy */;
+		};
+		58405965A8D2D2F1446B3D32D9ACF30D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = DeviceKit;
+			target = EF78824223C74AA13AE655CD2ACF32A3 /* DeviceKit */;
+			targetProxy = E20D78014F5A3E0109266600716E1993 /* PBXContainerItemProxy */;
+		};
+		6ABAF0F6717B9633A4891C84DF4759DA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FontAwesome.swift;
+			target = 1FE2578FF0805299395CF2A0206BB671 /* FontAwesome.swift */;
+			targetProxy = C4729860C6EDC38195DA89325BDA6497 /* PBXContainerItemProxy */;
+		};
+		AF9FE1FA760A7B5DD77F5338D4598E4C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = SVProgressHUD;
-			target = 326B13F11CA3E111904FEA4C0B0EAB38 /* SVProgressHUD */;
-			targetProxy = A0B638E81C133B44B08084C80EE4B41C /* PBXContainerItemProxy */;
+			target = D811DE2D95D7A27AE53FE28C83D82DB7 /* SVProgressHUD */;
+			targetProxy = 42FD80DEE7F1744E963D11207C2E52FF /* PBXContainerItemProxy */;
 		};
-		B1E3D70FBD81DE8CC3676324829658AA /* PBXTargetDependency */ = {
+		F79141768F7BD857A943BB2F0C09DF6F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = "FontAwesome-iOS";
-			target = 48369B33BCA4EE7CE5B05F02DB32CB72 /* FontAwesome-iOS */;
-			targetProxy = ABFC8AAECF649374C7E89706B2F3EE76 /* PBXContainerItemProxy */;
-		};
-		FAADA6635DC36213BADA983860310029 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = DeviceKit;
-			target = EF78824223C74AA13AE655CD2ACF32A3 /* DeviceKit */;
-			targetProxy = A89C7EFACC34DCA61D2EBA68E343CD29 /* PBXContainerItemProxy */;
+			name = FontAwesome.swift;
+			target = 1FE2578FF0805299395CF2A0206BB671 /* FontAwesome.swift */;
+			targetProxy = 3F965F5029DE14EBC8EB9FA328EC68EB /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -670,7 +761,55 @@
 			};
 			name = Debug;
 		};
-		27BA574AB2C5831FB8693097531714C0 /* Debug */ = {
+		0A377CDE9B27653F98E0692049B8DE19 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4004ED8C58586DBB38A14BE741451CF8 /* FontAwesome.swift.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/FontAwesome.swift";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/FontAwesome.swift/ResourceBundle-FontAwesome.swift-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = FontAwesome.swift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		14F39EA0B1E8AB260439E60C08488F0D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4004ED8C58586DBB38A14BE741451CF8 /* FontAwesome.swift.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/FontAwesome.swift/FontAwesome.swift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FontAwesome.swift/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/FontAwesome.swift/FontAwesome.swift.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = FontAwesome_swift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		1C178594F66B7E56CB4B306FA72B7631 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D53A48DD6113D2572B386F0E7BE13481 /* Pods-keyboard.debug.xcconfig */;
 			buildSettings = {
@@ -705,102 +844,9 @@
 			};
 			name = Debug;
 		};
-		290765729A6694D8CFCBEC17E32175A5 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = EA9A6894639AFA3AC09D4F6C7C225617 /* Pods-keyboard.release.xcconfig */;
-			buildSettings = {
-				APPLICATION_EXTENSION_API_ONLY = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-keyboard/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-keyboard/Pods-keyboard.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_keyboard;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		30303CE7E9BF9DFE6EE9E83D0387316C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7BFBB97204A0F90848D4EBAAA85D8517 /* FontAwesome-iOS.xcconfig */;
-			buildSettings = {
-				APPLICATION_EXTENSION_API_ONLY = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/FontAwesome-iOS/FontAwesome-iOS-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/FontAwesome-iOS/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/FontAwesome-iOS/FontAwesome-iOS.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = FontAwesome_iOS;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		3A0067F7AD101967C769E8D034C3D608 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = D3CC0A79440CF0F5C8C377031D787C4B /* SVProgressHUD.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/SVProgressHUD/SVProgressHUD-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SVProgressHUD/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/SVProgressHUD/SVProgressHUD.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = SVProgressHUD;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 		3B680C80FEE470DBEDFC7C472D6C36CE /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0D244A1DD5D333424C6A2F93C6ACC5ED /* DeviceKit.xcconfig */;
+			baseConfigurationReference = F58FBFA9A232B50BB4A26C0920E6F77E /* DeviceKit.xcconfig */;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -823,35 +869,6 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		4114CBCEDC68F82B10E84289E8F8B390 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = D3CC0A79440CF0F5C8C377031D787C4B /* SVProgressHUD.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/SVProgressHUD/SVProgressHUD-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SVProgressHUD/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/SVProgressHUD/SVProgressHUD.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = SVProgressHUD;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -898,37 +915,7 @@
 			};
 			name = Release;
 		};
-		4C6887615C4D465C31E75A56FC084FE6 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7BFBB97204A0F90848D4EBAAA85D8517 /* FontAwesome-iOS.xcconfig */;
-			buildSettings = {
-				APPLICATION_EXTENSION_API_ONLY = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/FontAwesome-iOS/FontAwesome-iOS-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/FontAwesome-iOS/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/FontAwesome-iOS/FontAwesome-iOS.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = FontAwesome_iOS;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		5C74BDCF4C76DBBBCD0160B0C168082B /* Release */ = {
+		4F7DD2734EB57656DAC96FFBA58B7F3D /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 84B1C54A582C809A06232611E9C31806 /* Pods-NoProfanityKeyboard.release.xcconfig */;
 			buildSettings = {
@@ -961,7 +948,176 @@
 			};
 			name = Release;
 		};
-		66A9FCA45E8540DF2705CFA231E3E86A /* Debug */ = {
+		546D95CB6B5CE24EC4448E01C64610D0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A33F64BFC3F4CDB6B536322A90C79876 /* SVProgressHUD.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SVProgressHUD/SVProgressHUD-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SVProgressHUD/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SVProgressHUD/SVProgressHUD.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = SVProgressHUD;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8CF45D7EBB8B5AED47885057320454FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F58FBFA9A232B50BB4A26C0920E6F77E /* DeviceKit.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/DeviceKit/DeviceKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/DeviceKit/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/DeviceKit/DeviceKit.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = DeviceKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8E08812C97E40EECE61834FC21B28F81 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A33F64BFC3F4CDB6B536322A90C79876 /* SVProgressHUD.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SVProgressHUD/SVProgressHUD-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SVProgressHUD/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SVProgressHUD/SVProgressHUD.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = SVProgressHUD;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		9C18E082706851E460D8B984D640AD46 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4004ED8C58586DBB38A14BE741451CF8 /* FontAwesome.swift.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/FontAwesome.swift/FontAwesome.swift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FontAwesome.swift/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/FontAwesome.swift/FontAwesome.swift.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = FontAwesome_swift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A5CDEF4896424916421E96580C2BC61F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4004ED8C58586DBB38A14BE741451CF8 /* FontAwesome.swift.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/FontAwesome.swift";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/FontAwesome.swift/ResourceBundle-FontAwesome.swift-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = FontAwesome.swift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		C29C1DD6E6C47E2F159FF8EB153DB691 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EA9A6894639AFA3AC09D4F6C7C225617 /* Pods-keyboard.release.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-keyboard/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-keyboard/Pods-keyboard.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_keyboard;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		DC93353A06311BFC7F3407AC1FB09EBE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 53912A5A870FFB37FCE06475C7EC4C62 /* Pods-NoProfanityKeyboard.debug.xcconfig */;
 			buildSettings = {
@@ -995,48 +1151,9 @@
 			};
 			name = Debug;
 		};
-		8CF45D7EBB8B5AED47885057320454FA /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0D244A1DD5D333424C6A2F93C6ACC5ED /* DeviceKit.xcconfig */;
-			buildSettings = {
-				APPLICATION_EXTENSION_API_ONLY = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/DeviceKit/DeviceKit-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/DeviceKit/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/DeviceKit/DeviceKit.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = DeviceKit;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		23196B2442FE7F79CB421AEC13F7601C /* Build configuration list for PBXNativeTarget "Pods-NoProfanityKeyboard" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				66A9FCA45E8540DF2705CFA231E3E86A /* Debug */,
-				5C74BDCF4C76DBBBCD0160B0C168082B /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1046,20 +1163,29 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		353CA49EBF23CF7342D778509A38D1C8 /* Build configuration list for PBXNativeTarget "SVProgressHUD" */ = {
+		4A2CEEB2BA28FE7D9104464452455A8F /* Build configuration list for PBXNativeTarget "Pods-NoProfanityKeyboard" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4114CBCEDC68F82B10E84289E8F8B390 /* Debug */,
-				3A0067F7AD101967C769E8D034C3D608 /* Release */,
+				DC93353A06311BFC7F3407AC1FB09EBE /* Debug */,
+				4F7DD2734EB57656DAC96FFBA58B7F3D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C56D0201C6432BCA5EB00FD95C9478D9 /* Build configuration list for PBXNativeTarget "Pods-keyboard" */ = {
+		A6461E521C4C209F9E7E223B42A23FA2 /* Build configuration list for PBXNativeTarget "SVProgressHUD" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				27BA574AB2C5831FB8693097531714C0 /* Debug */,
-				290765729A6694D8CFCBEC17E32175A5 /* Release */,
+				546D95CB6B5CE24EC4448E01C64610D0 /* Debug */,
+				8E08812C97E40EECE61834FC21B28F81 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C7B375BC6286A9E3DE2F46F4B52CBA3F /* Build configuration list for PBXNativeTarget "FontAwesome.swift-FontAwesome.swift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5CDEF4896424916421E96580C2BC61F /* Debug */,
+				0A377CDE9B27653F98E0692049B8DE19 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1073,11 +1199,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		ECB5B53CFA5F7E092EB3665B21174BD5 /* Build configuration list for PBXNativeTarget "FontAwesome-iOS" */ = {
+		E812F29E2022674BBC0F614FB7F9D263 /* Build configuration list for PBXNativeTarget "Pods-keyboard" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				30303CE7E9BF9DFE6EE9E83D0387316C /* Debug */,
-				4C6887615C4D465C31E75A56FC084FE6 /* Release */,
+				1C178594F66B7E56CB4B306FA72B7631 /* Debug */,
+				C29C1DD6E6C47E2F159FF8EB153DB691 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F38BD62EC04F59923F9724EE5CEF993B /* Build configuration list for PBXNativeTarget "FontAwesome.swift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				14F39EA0B1E8AB260439E60C08488F0D /* Debug */,
+				9C18E082706851E460D8B984D640AD46 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

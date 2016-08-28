@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SVProgressHUD
 
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, ScoreProtocol {
 
@@ -23,7 +24,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         self.scoreBoardView = ScoreBoard(frame:CGRect(x:0,y:CGFloat(self.navigationController!.navigationBar.frame.size.height),width: UIScreen.mainScreen().bounds.size.width,height:310.0))
         self.scoreBoardView?.delegate = self
         self.view.addSubview(self.scoreBoardView!)
-
 
 
         let tableViewStartingY = CGFloat(self.scoreBoardView!.frame.origin.y+self.scoreBoardView!.bounds.size.height)
@@ -46,6 +46,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     {
         NSLog("Nam1BarBtnKlk")
         //reloadScore()
+        SVProgressHUD.show()
+
         self.viewDidLoad()
     }
 

@@ -1,0 +1,15 @@
+PODS:
+  - DeviceKit (0.3.4)
+  - SVProgressHUD (2.0.3)
+
+DEPENDENCIES:
+  - DeviceKit (~> 0.3.4)
+  - SVProgressHUD
+
+SPEC CHECKSUMS:
+  DeviceKit: b414b210c225ae19b77a47e64cb04f187c1c4f9a
+  SVProgressHUD: b0830714205bea1317ea1a2ebc71e5633af334d4
+
+PODFILE CHECKSUM: 5cc3ab75c58dec839addc260cf6d38d291a8b54c
+
+COCOAPODS: 1.1.0.beta.1

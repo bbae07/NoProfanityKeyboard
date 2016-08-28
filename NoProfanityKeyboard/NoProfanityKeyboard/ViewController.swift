@@ -40,6 +40,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
 
         let Nam1BarBtnVar = UIBarButtonItem(barButtonSystemItem: .Refresh, target: self, action: #selector(Nam1BarBtnKlkFnc(_:)))
         self.navigationItem.setRightBarButtonItems([Nam1BarBtnVar], animated: true)
+
+        SVProgressHUD.dismiss()
     }
 
     func Nam1BarBtnKlkFnc(BtnPsgVar: UIBarButtonItem)

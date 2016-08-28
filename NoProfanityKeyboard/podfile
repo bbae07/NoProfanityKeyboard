@@ -4,11 +4,10 @@ platform :ios, '8.0'
  use_frameworks!
 
 target 'NoProfanityKeyboard' do
-pod 'DeviceKit', '~> 0.3.4'
 pod 'SVProgressHUD'
 end
 
 target 'keyboard' do
-
+pod 'DeviceKit', '~> 0.3.4'
 end
 

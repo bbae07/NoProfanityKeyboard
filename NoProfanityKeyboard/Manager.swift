@@ -11,7 +11,7 @@ import UIKit
 
 class Manager{
     static let groupID = "group.chanseobae.npkeyboard"
-    static let defaults = NSUserDefaults(suiteName: groupID)
+    static let defaults = UserDefaults(suiteName: groupID)
 
     
 
@@ -19,28 +19,33 @@ class Manager{
     
     class func initWordBank()
     {
-        let swears:[String]     = ["LKM","BCS","hello","LKM","BCS","hello","LKM","BCS","hello","LKM","BCS"]
-        let s_count:[NSInteger] = [0,0,0,0,0,0,0,0,0,0,0]
-        let array_1 = ["이경문","KyungMoon","Mark", 0]
-        let array_2 = ["배찬서","Chanseo","Brian",0]
-        let array_3 = ["안녕","Bonjour","",0]
-        let array_4 = ["이경문","KyungMoon","Mark", 0]
-        let array_5 = ["배찬서","Chanseo","Brian",0]
-        let array_6 = ["안녕","Bonjour","",0]
-        let array_7 = ["이경문","KyungMoon","Mark", 0]
-        let array_8 = ["배찬서","Chanseo","Brian",0]
-        let array_9 = ["안녕","Bonjour","",0]
-        let array_10 = ["이경문","KyungMoon","Mark", 0]
-        let array_11 = ["배찬서","Chanseo","Brian",0]
+        let swears:[String]     = ["fuck","shit","damn","bitch","piss","dick","cock","pussy","asshole","fag","faggot","bastard","slut","douche","cunt","god"]
+        let s_count:[NSInteger] = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+        let array_1 = ["frick" as AnyObject,"fudge" as AnyObject,"frack" as AnyObject, 0 as AnyObject] as [AnyObject]
+        let array_2 = ["shoot" as AnyObject,"shucks" as AnyObject,"shite" as AnyObject,0 as AnyObject] as [AnyObject]
+        let array_3 = ["darn" as AnyObject,"drat" as AnyObject,"doggon" as AnyObject,0 as AnyObject] as [AnyObject]
+        let array_4 = ["biatch" as AnyObject,"" as AnyObject,"" as AnyObject, 0 as AnyObject] as [AnyObject]
+        let array_5 = ["ERASE" as AnyObject,"ERASE" as AnyObject,"ERASE" as AnyObject,0 as AnyObject] as [AnyObject]
+        let array_6 = ["ERASE" as AnyObject,"ERASE" as AnyObject,"ERASE" as AnyObject,0 as AnyObject] as [AnyObject]
+        let array_7 = ["ERASE" as AnyObject,"ERASE" as AnyObject,"ERASE" as AnyObject,0 as AnyObject] as [AnyObject]
+        let array_8 = ["ERASE" as AnyObject,"ERASE" as AnyObject,"ERASE" as AnyObject,0 as AnyObject] as [AnyObject]
+        let array_9 = ["ERASE" as AnyObject,"ERASE" as AnyObject,"ERASE" as AnyObject,0 as AnyObject] as [AnyObject]
+        let array_10 = ["ERASE" as AnyObject,"ERASE" as AnyObject,"ERASE" as AnyObject,0 as AnyObject] as [AnyObject]
+        let array_11 = ["ERASE" as AnyObject,"ERASE" as AnyObject,"ERASE" as AnyObject,0 as AnyObject] as [AnyObject]
+        let array_12 = ["" as AnyObject,"" as AnyObject,"" as AnyObject,0 as AnyObject] as [AnyObject]
+        let array_13 = ["" as AnyObject,"" as AnyObject,"" as AnyObject, 0 as AnyObject] as [AnyObject]
+        let array_14 = ["" as AnyObject,"" as AnyObject,"" as AnyObject,0 as AnyObject] as [AnyObject]
+        let array_15 = ["" as AnyObject,"" as AnyObject,"" as AnyObject,0 as AnyObject] as [AnyObject]
+        let array_16 = ["" as AnyObject,"" as AnyObject,"" as AnyObject, 0 as AnyObject] as [AnyObject]
 
         let array = [array_1,array_2,array_3,array_4,array_5,array_6,array_7,array_8,
-                     array_9,array_10,array_11]
+                     array_9,array_10,array_11,array_12,array_13,array_14,array_15,array_16]
         
         for i in 0 ..< swears.count
         {
-            Manager.defaults!.setObject([array[i],s_count[i]], forKey: swears[i])
+            Manager.defaults!.set([array[i],s_count[i]], forKey: swears[i])
         }
-        Manager.defaults!.setObject(swears, forKey: "swear")
+        Manager.defaults!.set(swears, forKey: "swear")
         Manager.defaults!.synchronize()
     }
     
@@ -48,24 +53,24 @@ class Manager{
     
     class func allSwears() -> [String]
     {
-       return Manager.defaults!.objectForKey("swear") as! [String]
+       return Manager.defaults!.object(forKey: "swear") as! [String]
     }
     
-    class func increment(swear:String)
+    class func increment(_ swear:String)
     {
-        var a = (Manager.defaults!.objectForKey(swear) as! [AnyObject!])[1] as! Int
+        var a = (Manager.defaults!.object(forKey: swear) as! [AnyObject?])[1] as! Int
         a += 1
-        Manager.defaults!.setObject([(Manager.defaults!.objectForKey(swear) as! [AnyObject!])[0],a], forKey: swear)
+        Manager.defaults!.set([(Manager.defaults!.object(forKey: swear) as! [AnyObject?])[0],a], forKey: swear)
         Manager.defaults!.synchronize()
     }
     
-    class func incrementChange(swear:String)
+    class func incrementChange(_ swear:String)
     {
-        let array = (Manager.defaults!.objectForKey(swear) as! [AnyObject!])[0] as! [AnyObject!]
+        let array = (Manager.defaults!.object(forKey: swear) as! [AnyObject?])[0] as! [AnyObject?]
         var a = array[3] as! Int
         a += 1
-        let new_array = [array[0],array[1],array[2],a]
-        Manager.defaults!.setObject([new_array, (Manager.defaults!.objectForKey(swear) as! [AnyObject!])[1]], forKey: swear)
+        let new_array = [array[0],array[1],array[2],a] as [Any]
+        Manager.defaults!.set([new_array, (Manager.defaults!.object(forKey: swear) as! [AnyObject?])[1]], forKey: swear)
         Manager.defaults!.synchronize()
     }
     

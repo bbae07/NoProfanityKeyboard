@@ -5,7 +5,7 @@
 
 import UIKit
 import DeviceKit
-import FontAwesome_swift
+/*import FontAwesome_swift*/
 
 
 class KeyboardViewController: UIInputViewController {
@@ -35,51 +35,43 @@ class KeyboardViewController: UIInputViewController {
     var footerShiftCharacterList:[String] = ["##","Z","X","C","V","B","N","M","<-"] // 9개
     var bottomShiftCharacterList:[String] = ["123","@@","space","return"] // 4개
 
-    
-    //var buttons:[UIButton]? = nil
 
     lazy var CharacterList: [[String]] = [self.topCharacterList,self.upperCharacterList,self.footerCharacterList,self.bottomCharacterList]
 
     var mainview = UIView()
     
     
-    var suggestionView = UIView(frame:CGRect(x: 0, y: 0, width: UIScreen.mainScreen().bounds.size.width, height: 35.0))
+    var suggestionView = UIView(frame:CGRect(x: 0, y: 0, width: UIScreen.main.bounds.size.width, height: 35.0))
     
-    var Btn_1 = UIButton(frame: CGRect(x:0,y:0,width: (UIScreen.mainScreen().bounds.size.width-3)/3, height:35))
+    var Btn_1 = UIButton(frame: CGRect(x:0,y:0,width: (UIScreen.main.bounds.size.width-3)/3, height:35))
     
-    var Line_1 = UIView(frame: CGRect(x: (UIScreen.mainScreen().bounds.size.width-3)/3, y:0, width: 1.5, height: 35))
+    var Line_1 = UIView(frame: CGRect(x: (UIScreen.main.bounds.size.width-3)/3, y:0, width: 1.5, height: 35))
     
-    var Btn_2 = UIButton(frame: CGRect(x:(UIScreen.mainScreen().bounds.size.width-3)/3+1.5,y:0,width: (UIScreen.mainScreen().bounds.size.width-3)/3, height:35))
+    var Btn_2 = UIButton(frame: CGRect(x:(UIScreen.main.bounds.size.width-3)/3+1.5,y:0,width: (UIScreen.main.bounds.size.width-3)/3, height:35))
     
-    var Btn_3 = UIButton(frame: CGRect(x:(UIScreen.mainScreen().bounds.size.width-3)/3*2+3,y:0,width: (UIScreen.mainScreen().bounds.size.width-3)/3, height:35))
-    var Line_2 = UIView(frame: CGRect(x: (UIScreen.mainScreen().bounds.size.width-3)/3*2+1.5, y:0, width: 1.5, height: 35))
+    var Btn_3 = UIButton(frame: CGRect(x:(UIScreen.main.bounds.size.width-3)/3*2+3,y:0,width: (UIScreen.main.bounds.size.width-3)/3, height:35))
+    var Line_2 = UIView(frame: CGRect(x: (UIScreen.main.bounds.size.width-3)/3*2+1.5, y:0, width: 1.5, height: 35))
 
-    var keyboardHeight = 181.0 as CGFloat // 184.0 as CGFloat
+    var keyboardHeight = 181.0 as CGFloat
 
     var textLength:Int = 0
     var currentText = ""
     
     var currentSwear = ""
     
-    func onButtonTap(sender: UIButton) {
-        // invoking the delegate when the
-        // button is actually tapped
+    func onButtonTap(_ sender: UIButton) {
         NSLog("This button was clicked in the subview!")
     }
     
-    //Customize Keyboard Height
-    
+
     var heightConstraint: NSLayoutConstraint!
     
     override func updateViewConstraints() {
         super.updateViewConstraints()
     
-        // Add custom view sizing constraints here
         if (view.frame.size.width == 0 || view.frame.size.height == 0) {
             return
         }
-        
-        //setUpHeightConstraint()
     }
     
     
@@ -89,10 +81,10 @@ class KeyboardViewController: UIInputViewController {
         
         if heightConstraint == nil {
             heightConstraint = NSLayoutConstraint(item: self.view,
-                                                  attribute: .Height,
-                                                  relatedBy: .Equal,
+                                                  attribute: .height,
+                                                  relatedBy: .equal,
                                                   toItem: nil,
-                                                  attribute: .NotAnAttribute,
+                                                  attribute: .notAnAttribute,
                                                   multiplier: 1,
                                                   constant: customHeight)
             heightConstraint.priority = UILayoutPriority(UILayoutPriorityRequired)
@@ -113,19 +105,16 @@ class KeyboardViewController: UIInputViewController {
         if device == .iPhone6Plus{
             NSLog("iPhone6Plus")
             self.keyboardHeight = 189.0 as CGFloat
-        }//if(device==.iPhone)
-
-        //Set Dictionary if container app haven't been opened
+        }
         
-        if(Manager.defaults!.objectForKey("swear") == nil)
+        if(Manager.defaults!.object(forKey: "swear") == nil)
         {
             Manager.initWordBank()
         }
-        //End
+
+        NotificationCenter.default.addObserver(self,selector: #selector(KeyboardViewController.keyboardShown(_:)), name: NSNotification.Name.UIKeyboardDidShow, object: nil)
         
-        NSNotificationCenter.defaultCenter().addObserver(self,selector: #selector(KeyboardViewController.keyboardShown(_:)), name: UIKeyboardDidShowNotification, object: nil)
-        
-        mainview.frame = CGRect(x:0,y:35,width: UIScreen.mainScreen().bounds.size.width, height: keyboardHeight)
+        mainview.frame = CGRect(x:0,y:35,width: UIScreen.main.bounds.size.width, height: keyboardHeight)
 
         createKeyBoard()
         self.view.addSubview(mainview)
@@ -133,15 +122,15 @@ class KeyboardViewController: UIInputViewController {
         Btn_1.backgroundColor = UIColor(red:1.0,green:1.0,blue:1.0,alpha:0.6)
         Btn_2.backgroundColor = UIColor(red:1.0,green:1.0,blue:1.0,alpha:0.6)
         Btn_3.backgroundColor = UIColor(red:1.0,green:1.0,blue:1.0,alpha:0.6)
-        Btn_1.setTitleColor(UIColor(red:85.0/255.0, green:85.0/255.0, blue:85.0/255.0, alpha: 1.0), forState: .Normal)
-        Btn_2.setTitleColor(UIColor(red:85.0/255.0, green:85.0/255.0, blue:85.0/255.0, alpha: 1.0), forState: .Normal)
-        Btn_3.setTitleColor(UIColor(red:85.0/255.0, green:85.0/255.0, blue:85.0/255.0, alpha: 1.0), forState: .Normal)
-        Btn_1.addTarget(self, action: #selector(switchWord(_:)), forControlEvents: .TouchUpInside)
-        Btn_2.addTarget(self, action: #selector(switchWord(_:)), forControlEvents: .TouchUpInside)
-        Btn_3.addTarget(self, action: #selector(switchWord(_:)), forControlEvents: .TouchUpInside)
+        Btn_1.setTitleColor(UIColor(red:85.0/255.0, green:85.0/255.0, blue:85.0/255.0, alpha: 1.0), for: UIControlState())
+        Btn_2.setTitleColor(UIColor(red:85.0/255.0, green:85.0/255.0, blue:85.0/255.0, alpha: 1.0), for: UIControlState())
+        Btn_3.setTitleColor(UIColor(red:85.0/255.0, green:85.0/255.0, blue:85.0/255.0, alpha: 1.0), for: UIControlState())
+        Btn_1.addTarget(self, action: #selector(switchWord(_:)), for: .touchUpInside)
+        Btn_2.addTarget(self, action: #selector(switchWord(_:)), for: .touchUpInside)
+        Btn_3.addTarget(self, action: #selector(switchWord(_:)), for: .touchUpInside)
 
-        Line_1.backgroundColor = UIColor.whiteColor()
-        Line_2.backgroundColor = UIColor.whiteColor()
+        Line_1.backgroundColor = UIColor.white
+        Line_2.backgroundColor = UIColor.white
         
         suggestionView.addSubview(Btn_1)
         suggestionView.addSubview(Btn_2)
@@ -153,31 +142,27 @@ class KeyboardViewController: UIInputViewController {
 
     }
     
-    override func viewDidAppear(animated: Bool) {
+    override func viewDidAppear(_ animated: Bool) {
         let expandedHeight:CGFloat = 300
         let heightConstraint = NSLayoutConstraint(item:self.view,
-                                                  attribute: .Height,
-                                                  relatedBy: .Equal,
+                                                  attribute: .height,
+                                                  relatedBy: .equal,
                                                   toItem: nil,
-                                                  attribute: .NotAnAttribute,
+                                                  attribute: .notAnAttribute,
                                                   multiplier: 1.0,
                                                   constant: expandedHeight)
         heightConstraint.priority = 999
-        heightConstraint.active = true
+        heightConstraint.isActive = true
         self.view.addConstraint(heightConstraint)
         self.view.updateConstraints()
     }
     
     
-    func switchWord(sender:UIButton)
+    func switchWord(_ sender:UIButton)
     {
-        /*
-        currentText : 버튼 눌렀을 때의, 현재까지 입력된 (backward 반영된) 텍스트값
-        currentSwear : currentText에 의해 필터
-        */
         self.textLength = (self.textDocumentProxy.documentContextBeforeInput?.characters.count)!
 
-        let newStr = currentText.stringByReplacingOccurrencesOfString(currentSwear, withString: sender.titleLabel!.text!)
+        let newStr = currentText.replacingOccurrences(of: currentSwear, with: sender.titleLabel!.text!)
         for i in 0 ..< currentText.characters.count
         {
            self.textDocumentProxy.deleteBackward()
@@ -190,21 +175,21 @@ class KeyboardViewController: UIInputViewController {
 
     func btnReset()
     {
-        Btn_1.setTitle("", forState:  .Normal)
-        Btn_2.setTitle("", forState:  .Normal)
-        Btn_3.setTitle("", forState:  .Normal)
-        Btn_1.enabled = false
-        Btn_2.enabled = false
-        Btn_3.enabled = false
+        Btn_1.setTitle("", for:  UIControlState())
+        Btn_2.setTitle("", for:  UIControlState())
+        Btn_3.setTitle("", for:  UIControlState())
+        Btn_1.isEnabled = false
+        Btn_2.isEnabled = false
+        Btn_3.isEnabled = false
     }
     
     
-    func keyboardShown(notification: NSNotification) {
-        let info  = notification.userInfo!
-        let value: AnyObject = info[UIKeyboardFrameEndUserInfoKey]!
+    func keyboardShown(_ notification: Notification) {
+        let info  = (notification as NSNotification).userInfo!
+        let value: AnyObject = info[UIKeyboardFrameEndUserInfoKey]! as AnyObject
         
-        let rawFrame = value.CGRectValue
-        let keyboardFrame = view.convertRect(rawFrame, fromView: nil)
+        let rawFrame = value.cgRectValue
+        let keyboardFrame = view.convert(rawFrame!, from: nil)
         keyboardHeight = keyboardFrame.size.width - 35
     }
     
@@ -226,7 +211,7 @@ class KeyboardViewController: UIInputViewController {
                 var Btn:UIButton = UIButton()
                 if(array == CharacterList[0])
                 {
-                    Btn = UIButton(frame:CGRect(x:count+CGFloat(6*array.count/(array.count+1)),y:y,width:((UIScreen.mainScreen().bounds.size.width)/CGFloat(array.count))-6,height:keyboardHeight/4 - 8))
+                    Btn = UIButton(frame:CGRect(x:count+CGFloat(6*array.count/(array.count+1)),y:y,width:((UIScreen.main.bounds.size.width)/CGFloat(array.count))-6,height:keyboardHeight/4 - 8))
                 }
                 else if(array == CharacterList[1])
                 {
@@ -234,84 +219,77 @@ class KeyboardViewController: UIInputViewController {
                     {
                         if(member == array[0])
                         {
-                            Btn = UIButton(frame:CGRect(x:20+CGFloat(6*array.count/(array.count+1)),y:y,width:((UIScreen.mainScreen().bounds.size.width)/CGFloat(10.0))-6,height:keyboardHeight/4 - 8))
+                            Btn = UIButton(frame:CGRect(x:20+CGFloat(6*array.count/(array.count+1)),y:y,width:((UIScreen.main.bounds.size.width)/CGFloat(10.0))-6,height:keyboardHeight/4 - 8))
                         }
                             
                         else
                         {
-                            Btn = UIButton(frame:CGRect(x:count1+CGFloat(6*array.count/(array.count+1)),y:y,width:((UIScreen.mainScreen().bounds.size.width)/CGFloat(10.0))-6,height:keyboardHeight/4 - 8))
+                            Btn = UIButton(frame:CGRect(x:count1+CGFloat(6*array.count/(array.count+1)),y:y,width:((UIScreen.main.bounds.size.width)/CGFloat(10.0))-6,height:keyboardHeight/4 - 8))
                         }
     
                     }
                         
                     else
                     {
-                        Btn = UIButton(frame:CGRect(x:count+CGFloat(6*array.count/(array.count+1)),y:y,width:((UIScreen.mainScreen().bounds.size.width)/CGFloat(array.count))-6,height:keyboardHeight/4 - 8))
+                        Btn = UIButton(frame:CGRect(x:count+CGFloat(6*array.count/(array.count+1)),y:y,width:((UIScreen.main.bounds.size.width)/CGFloat(array.count))-6,height:keyboardHeight/4 - 8))
                     }
                     
                 }
                 else if(array  == CharacterList[2])
                 {
-                    Btn = UIButton(frame:CGRect(x:count+CGFloat(6*array.count/(array.count+1)),y:y,width:((UIScreen.mainScreen().bounds.size.width)/CGFloat(array.count))-6,height:keyboardHeight/4 - 8))
+                    Btn = UIButton(frame:CGRect(x:count+CGFloat(6*array.count/(array.count+1)),y:y,width:((UIScreen.main.bounds.size.width)/CGFloat(array.count))-6,height:keyboardHeight/4 - 8))
                 }
                 else if(array == CharacterList[3])
                 {
                     if(member == array[0])
                     {
-                        Btn = UIButton(frame:CGRect(x:5,y:y,width:(UIScreen.mainScreen().bounds.size.width - 20)/8,height:keyboardHeight/4 - 8))
+                        Btn = UIButton(frame:CGRect(x:5,y:y,width:(UIScreen.main.bounds.size.width - 20)/8,height:keyboardHeight/4 - 8))
                     }
                     else if(member == array[1])
                     {
                         //padding 3,2,3,3
-                        Btn = UIButton(frame:CGRect(x:10+(UIScreen.mainScreen().bounds.size.width - 25)/8 ,y:y,width:(UIScreen.mainScreen().bounds.size.width - 25)/8,height:keyboardHeight/4 - 8))
+                        Btn = UIButton(frame:CGRect(x:10+(UIScreen.main.bounds.size.width - 25)/8 ,y:y,width:(UIScreen.main.bounds.size.width - 25)/8,height:keyboardHeight/4 - 8))
                     }
                     else if(member == array[2])
                     {
-                        Btn = UIButton(frame:CGRect(x:15+(UIScreen.mainScreen().bounds.size.width - 25)/4,y:y,width:(UIScreen.mainScreen().bounds.size.width - 25)/2,height:keyboardHeight/4 - 8))
+                        Btn = UIButton(frame:CGRect(x:15+(UIScreen.main.bounds.size.width - 25)/4,y:y,width:(UIScreen.main.bounds.size.width - 25)/2,height:keyboardHeight/4 - 8))
                     }
                     else if(member == array[3])
                     {
-                        Btn = UIButton(frame:CGRect(x:20+(UIScreen.mainScreen().bounds.size.width - 25)*3/4,y:y,width:(UIScreen.mainScreen().bounds.size.width - 25)/4,height:keyboardHeight/4 - 8))
+                        Btn = UIButton(frame:CGRect(x:20+(UIScreen.main.bounds.size.width - 25)*3/4,y:y,width:(UIScreen.main.bounds.size.width - 25)/4,height:keyboardHeight/4 - 8))
                     }
                 }
                 
-                Btn.setTitle(member, forState: UIControlState.Normal)
-                Btn.backgroundColor = UIColor.whiteColor()
-                Btn.setTitleColor(UIColor.blackColor(), forState: .Normal)
+                Btn.setTitle(member, for: UIControlState())
+                Btn.backgroundColor = UIColor.white
+                Btn.setTitleColor(UIColor.black, for: UIControlState())
                 Btn.layer.cornerRadius = 5
                 //Btn.layer.borderWidth = 1
                 //Btn.layer.borderColor = UIColor.blackColor().CGColor
 
-                if(Btn.titleLabel?.text == "#1")
+                /*if(Btn.titleLabel?.text == "#1")
                 {
-                    /*let doubleTap:UITapGestureRecognizer = UITapGestureRecognizer()
-                    doubleTap.numberOfTapsRequired = 2
-                    doubleTap.numberOfTouchesRequired = 1
-                    doubleTap.delaysTouchesBegan = false
 
-                    doubleTap.addTarget(self, action: #selector(capsLock(_:)))
-
-                    Btn.addGestureRecognizer(doubleTap)*/
-                    Btn.setImage(UIImage.fontAwesomeIconWithName(.CircleO, textColor: UIColor.blackColor(), size: CGSizeMake(Btn.bounds.size.width, Btn.bounds.size.height)), forState: .Normal)
+                    Btn.setImage(UIImage.fontAwesomeIconWithName(.CircleO, textColor: UIColor.black, size: CGSize(width: Btn.bounds.size.width, height: Btn.bounds.size.height)), for: UIControlState())
                 }
                 if(Btn.titleLabel?.text == "##")
                 {
-                    Btn.addTarget(self, action: #selector(capsLock(_:)), forControlEvents: .TouchDownRepeat)
-                    Btn.setImage(UIImage.fontAwesomeIconWithName(.Circle, textColor: UIColor.blackColor(), size: CGSizeMake(Btn.bounds.size.width, Btn.bounds.size.height)), forState: .Normal)
+                    Btn.addTarget(self, action: #selector(capsLock(_:)), for: .touchDownRepeat)
+                    Btn.setImage(UIImage.fontAwesomeIconWithName(.Circle, textColor: UIColor.black, size: CGSize(width: Btn.bounds.size.width, height: Btn.bounds.size.height)), for: UIControlState())
                 }
                 if(Btn.titleLabel?.text == "###")
                 {
-                    Btn.setImage(UIImage.fontAwesomeIconWithName(.DotCircleO, textColor: UIColor.blackColor(), size: CGSizeMake(Btn.bounds.size.width, Btn.bounds.size.height)), forState: .Normal)
+                    Btn.setImage(UIImage.fontAwesomeIconWithName(.DotCircleO, textColor: UIColor.black, size: CGSize(width: Btn.bounds.size.width, height: Btn.bounds.size.height)), for: UIControlState())
                 }
                 if (Btn.titleLabel?.text == "@@") {
-                    Btn.setImage(UIImage.fontAwesomeIconWithName(.Globe, textColor: UIColor.blackColor(), size: CGSizeMake(Btn.bounds.size.width, Btn.bounds.size.height)), forState: .Normal)
+                    Btn.setImage(UIImage.fontAwesomeIconWithName(.Globe, textColor: UIColor.black, size: CGSize(width: Btn.bounds.size.width, height: Btn.bounds.size.height)), for: UIControlState())
                     //UIImageIns
                 }
                 if (Btn.titleLabel?.text == "<-"){
-                    Btn.setImage(UIImage.fontAwesomeIconWithName(.CaretLeft, textColor: UIColor.blackColor(), size: CGSizeMake(Btn.bounds.size.width, Btn.bounds.size.height)), forState: .Normal)
-                }
+                    Btn.setImage(UIImage.fontAwesomeIconWithName(.CaretLeft, textColor: UIColor.black, size: CGSize(width: Btn.bounds.size.width, height: Btn.bounds.size.height)), for: UIControlState())
+                }*/
 
-                Btn.addTarget(self, action: #selector(handleBtn(_:)), forControlEvents: .TouchUpInside)
+                Btn.addTarget(self, action: #selector(handleBtn(_:)), for: .touchUpInside)
 
                 mainview.addSubview(Btn)
                 count += Btn.bounds.size.width+CGFloat(6*array.count/(array.count+1))
@@ -322,13 +300,13 @@ class KeyboardViewController: UIInputViewController {
         
     }
 
-    func capsLock(sender:UITapGestureRecognizer)
+    func capsLock(_ sender:UITapGestureRecognizer)
     {
         CharacterList = [topCapCharacterList,upperCapCharacterList,footerCapCharacterList,bottomCapCharacterList]
         createKeyBoard()
     }
 
-    func handleBtn(sender:UIButton)
+    func handleBtn(_ sender:UIButton)
     {
         let label = sender.titleLabel?.text
         
@@ -391,32 +369,32 @@ class KeyboardViewController: UIInputViewController {
                 CharacterList = [topCharacterList,upperCharacterList,footerCharacterList,bottomCharacterList]
                 createKeyBoard()
             }
-            if self.textDocumentProxy.hasText() {
+            if self.textDocumentProxy.hasText {
                 checkforSwear(self.textDocumentProxy.documentContextBeforeInput!,length: self.textLength)
             }
         }
     }
     
-    func checkforSwear(text:String, length:Int)
+    func checkforSwear(_ text:String, length:Int)
     {
-        let range = Range(start: text.startIndex.advancedBy(length), end: text.endIndex)
-        let subText = text.substringWithRange(range)
+        let range = (text.characters.index(text.startIndex, offsetBy: length) ..< text.endIndex)
+        let subText = text.substring(with: range)
         currentText = subText
         
         
         for word in Manager.allSwears()
         {
-            if(subText.containsString(word))
+            if(subText.contains(word))
             {
                 currentSwear = word
 
-                Btn_1.enabled = true
-                Btn_2.enabled = true
-                Btn_3.enabled = true
+                Btn_1.isEnabled = true
+                Btn_2.isEnabled = true
+                Btn_3.isEnabled = true
 
-                Btn_1.setTitle(((Manager.defaults!.objectForKey(word) as! [AnyObject!])[0] as! [AnyObject!])[0] as! String , forState: .Normal)
-                Btn_2.setTitle(((Manager.defaults!.objectForKey(word) as! [AnyObject!])[0] as! [AnyObject!])[1] as! String , forState: .Normal)
-                Btn_3.setTitle(((Manager.defaults!.objectForKey(word) as! [AnyObject!])[0] as! [AnyObject!])[2] as! String , forState: .Normal)
+                Btn_1.setTitle(((Manager.defaults!.object(forKey: word) as! [AnyObject?])[0] as! [AnyObject?])[0] as! String , for: UIControlState())
+                Btn_2.setTitle(((Manager.defaults!.object(forKey: word) as! [AnyObject?])[0] as! [AnyObject?])[1] as! String , for: UIControlState())
+                Btn_3.setTitle(((Manager.defaults!.object(forKey: word) as! [AnyObject?])[0] as! [AnyObject?])[2] as! String , for: UIControlState())
                 Manager.increment(word)
             }
         }
@@ -429,19 +407,19 @@ class KeyboardViewController: UIInputViewController {
         // Dispose of any resources that can be recreated
     }
 
-    override func textWillChange(textInput: UITextInput?) {
+    override func textWillChange(_ textInput: UITextInput?) {
         // The app is about to change the document's contents. Perform any preparation here.
     }
 
-    override func textDidChange(textInput: UITextInput?) {
+    override func textDidChange(_ textInput: UITextInput?) {
         // The app has just changed the document's contents, the document context has been updated.
     
         var textColor: UIColor
         let proxy = self.textDocumentProxy
-        if proxy.keyboardAppearance == UIKeyboardAppearance.Dark {
-            textColor = UIColor.whiteColor()
+        if proxy.keyboardAppearance == UIKeyboardAppearance.dark {
+            textColor = UIColor.white
         } else {
-            textColor = UIColor.blackColor()
+            textColor = UIColor.black
         }
     }
     

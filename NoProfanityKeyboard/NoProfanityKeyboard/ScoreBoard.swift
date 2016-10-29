@@ -29,13 +29,13 @@ class ScoreBoard: UIView {
         var total_s_count:Double = 0;
         var total_change:Double = 0;
         for swear in Manager.allSwears(){
-            var x = Manager.defaults!.arrayForKey(swear) as! [AnyObject!]
+            var x = Manager.defaults!.array(forKey: swear) as! [AnyObject?]
             total_s_count += x[1] as! Double
-            total_change += (x[0] as! [AnyObject!])[3] as! Double
+            total_change += (x[0] as! [AnyObject])[3] as! Double
         }
         
         
-        var number = NSNumber.init(double: round(total_change / total_s_count * 100 as Double))
+        var number = NSNumber.init(value: round(total_change / total_s_count * 100 as Double) as Double)
         if(total_change == 0) {
             number = 0 as NSNumber
         }
@@ -56,7 +56,7 @@ class ScoreBoard: UIView {
     }
 
     func loadNib(){
-        let view = NSBundle.mainBundle().loadNibNamed("ScoreBoard", owner: self, options: nil).first as! UIView
+        let view = Bundle.main.loadNibNamed("ScoreBoard", owner: self, options: nil)?.first as! UIView
         
         view.frame = self.bounds
         self.reloadScore()

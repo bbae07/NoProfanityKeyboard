@@ -1,18 +1,28 @@
 PODS:
   - DeviceKit (0.3.4)
-  - FontAwesome.swift (0.8.0)
+  - FontAwesome.swift (1.0.0)
   - SVProgressHUD (2.0.3)
 
 DEPENDENCIES:
   - DeviceKit (~> 0.3.4)
-  - FontAwesome.swift
+  - FontAwesome.swift (from `https://github.com/thii/FontAwesome.swift.git`, branch `master`)
   - SVProgressHUD
+
+EXTERNAL SOURCES:
+  FontAwesome.swift:
+    :branch: master
+    :git: https://github.com/thii/FontAwesome.swift.git
+
+CHECKOUT OPTIONS:
+  FontAwesome.swift:
+    :commit: 9ca8cc149b14856605ca744ee7c36621e5dc194b
+    :git: https://github.com/thii/FontAwesome.swift.git
 
 SPEC CHECKSUMS:
   DeviceKit: b414b210c225ae19b77a47e64cb04f187c1c4f9a
-  FontAwesome.swift: f8c6cc5c42cbe93bdc04371363bc7b371fb3d3a1
+  FontAwesome.swift: beb1ff2f206a1517745f4f057a4d30a76f8d7d4e
   SVProgressHUD: b0830714205bea1317ea1a2ebc71e5633af334d4
 
-PODFILE CHECKSUM: 87653c1cc82e895abe75ad1cbecfef402845e6be
+PODFILE CHECKSUM: d4701159563c8dd51f2b858942df1dfa1789b1f5
 
 COCOAPODS: 1.1.0.beta.1

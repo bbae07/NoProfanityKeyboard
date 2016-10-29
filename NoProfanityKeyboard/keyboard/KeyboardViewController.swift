@@ -271,23 +271,24 @@ class KeyboardViewController: UIInputViewController {
                 if(Btn.titleLabel?.text == "#1")
                 {
 
-                    Btn.setImage(UIImage.fontAwesomeIconWithName(.CircleO, textColor: UIColor.black, size: CGSize(width: Btn.bounds.size.width, height: Btn.bounds.size.height)), for: UIControlState())
+                    Btn.setImage(UIImage.fontAwesomeIcon(name: .circleO, textColor: UIColor.black, size: CGSize(width: Btn.bounds.size.width, height: Btn.bounds.size.height)), for: .normal)
                 }
                 if(Btn.titleLabel?.text == "##")
                 {
                     Btn.addTarget(self, action: #selector(capsLock(_:)), for: .touchDownRepeat)
-                    Btn.setImage(UIImage.fontAwesomeIconWithName(.Circle, textColor: UIColor.black, size: CGSize(width: Btn.bounds.size.width, height: Btn.bounds.size.height)), for: UIControlState())
+
+                    Btn.setImage(UIImage.fontAwesomeIcon(name: .circleO, textColor: UIColor.black, size: CGSize(width: Btn.bounds.size.width, height: Btn.bounds.size.height)), for: .normal)
                 }
                 if(Btn.titleLabel?.text == "###")
                 {
-                    Btn.setImage(UIImage.fontAwesomeIconWithName(.DotCircleO, textColor: UIColor.black, size: CGSize(width: Btn.bounds.size.width, height: Btn.bounds.size.height)), for: UIControlState())
+                    Btn.setImage(UIImage.fontAwesomeIcon(name: .dotCircleO, textColor: UIColor.black, size: CGSize(width: Btn.bounds.size.width, height: Btn.bounds.size.height)), for: .normal)
                 }
                 if (Btn.titleLabel?.text == "@@") {
-                    Btn.setImage(UIImage.fontAwesomeIconWithName(.Globe, textColor: UIColor.black, size: CGSize(width: Btn.bounds.size.width, height: Btn.bounds.size.height)), for: UIControlState())
+                    Btn.setImage(UIImage.fontAwesomeIcon(name: .globe, textColor: UIColor.black, size: CGSize(width: Btn.bounds.size.width, height: Btn.bounds.size.height)), for: .normal)
                     //UIImageIns
                 }
                 if (Btn.titleLabel?.text == "<-"){
-                    Btn.setImage(UIImage.fontAwesomeIconWithName(.CaretLeft, textColor: UIColor.black, size: CGSize(width: Btn.bounds.size.width, height: Btn.bounds.size.height)), for: UIControlState())
+                    Btn.setImage(UIImage.fontAwesomeIcon(name: .caretLeft, textColor: UIColor.black, size: CGSize(width: Btn.bounds.size.width, height: Btn.bounds.size.height)), for: .normal)
                 }
 
                 Btn.addTarget(self, action: #selector(handleBtn(_:)), for: .touchUpInside)
@@ -393,9 +394,15 @@ class KeyboardViewController: UIInputViewController {
                 Btn_2.isEnabled = true
                 Btn_3.isEnabled = true
 
-                Btn_1.setTitle(((Manager.defaults!.object(forKey: word) as! [AnyObject?])[0] as! [AnyObject?])[0] as! String , for: UIControlState())
-                Btn_2.setTitle(((Manager.defaults!.object(forKey: word) as! [AnyObject?])[0] as! [AnyObject?])[1] as! String , for: UIControlState())
-                Btn_3.setTitle(((Manager.defaults!.object(forKey: word) as! [AnyObject?])[0] as! [AnyObject?])[2] as! String , for: UIControlState())
+                let suggetWord1:String! = (((Manager.defaults!.object(forKey: word) as! [AnyObject])[0]) as! [AnyObject])[0] as! String
+                let suggestWord2:String! = (((Manager.defaults!.object(forKey: word) as! [AnyObject])[0]) as! [AnyObject])[1] as! String
+                let suggestWord3:String! = (((Manager.defaults!.object(forKey: word) as! [AnyObject])[0]) as! [AnyObject])[2] as! String
+
+                Btn_1.setTitle("test", for: .normal)
+                Btn_1.setTitle(suggetWord1, for: .normal)
+                Btn_2.setTitle(suggestWord2, for: .normal)
+                Btn_3.setTitle(suggestWord3, for: .normal)
+
                 Manager.increment(word)
             }
         }

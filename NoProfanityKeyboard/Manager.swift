@@ -58,19 +58,19 @@ class Manager{
     
     class func increment(_ swear:String)
     {
-        var a = (Manager.defaults!.object(forKey: swear) as! [AnyObject?])[1] as! Int
+        var a = (Manager.defaults!.object(forKey: swear) as! [AnyObject])[1] as! Int
         a += 1
-        Manager.defaults!.set([(Manager.defaults!.object(forKey: swear) as! [AnyObject?])[0],a], forKey: swear)
+        Manager.defaults!.set([(Manager.defaults!.object(forKey: swear) as! [AnyObject])[0],a as! AnyObject], forKey: swear)
         Manager.defaults!.synchronize()
     }
     
     class func incrementChange(_ swear:String)
     {
-        let array = (Manager.defaults!.object(forKey: swear) as! [AnyObject?])[0] as! [AnyObject?]
+        let array = (Manager.defaults!.object(forKey: swear) as! [AnyObject])[0] as! [AnyObject]
         var a = array[3] as! Int
         a += 1
         let new_array = [array[0],array[1],array[2],a] as [Any]
-        Manager.defaults!.set([new_array, (Manager.defaults!.object(forKey: swear) as! [AnyObject?])[1]], forKey: swear)
+        Manager.defaults!.set([new_array, (Manager.defaults!.object(forKey: swear) as! [AnyObject])[1]], forKey: swear)
         Manager.defaults!.synchronize()
     }
     

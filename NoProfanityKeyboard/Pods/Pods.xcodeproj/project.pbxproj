@@ -569,20 +569,6 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0700;
-				TargetAttributes = {
-					1FE2578FF0805299395CF2A0206BB671 = {
-						LastSwiftMigration = 0800;
-					};
-					AAD2AC73C09297069EFEE153AE93F166 = {
-						LastSwiftMigration = 0800;
-					};
-					EF4F067C2D0E135B80299B089E168BDA = {
-						LastSwiftMigration = 0800;
-					};
-					EF78824223C74AA13AE655CD2ACF32A3 = {
-						LastSwiftMigration = 0800;
-					};
-				};
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -817,7 +803,6 @@
 				PRODUCT_NAME = FontAwesome.swift;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = bundle;
 			};
@@ -957,7 +942,6 @@
 				PRODUCT_NAME = Pods_NoProfanityKeyboard;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -1007,7 +991,6 @@
 				PRODUCT_NAME = FontAwesome.swift;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = bundle;
 			};
@@ -1106,7 +1089,6 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";

@@ -5,7 +5,8 @@
 
 import UIKit
 import DeviceKit
-/*import FontAwesome_swift*/
+import FontAwesome_swift
+
 
 
 class KeyboardViewController: UIInputViewController {
@@ -267,7 +268,7 @@ class KeyboardViewController: UIInputViewController {
                 //Btn.layer.borderWidth = 1
                 //Btn.layer.borderColor = UIColor.blackColor().CGColor
 
-                /*if(Btn.titleLabel?.text == "#1")
+                if(Btn.titleLabel?.text == "#1")
                 {
 
                     Btn.setImage(UIImage.fontAwesomeIconWithName(.CircleO, textColor: UIColor.black, size: CGSize(width: Btn.bounds.size.width, height: Btn.bounds.size.height)), for: UIControlState())
@@ -287,7 +288,7 @@ class KeyboardViewController: UIInputViewController {
                 }
                 if (Btn.titleLabel?.text == "<-"){
                     Btn.setImage(UIImage.fontAwesomeIconWithName(.CaretLeft, textColor: UIColor.black, size: CGSize(width: Btn.bounds.size.width, height: Btn.bounds.size.height)), for: UIControlState())
-                }*/
+                }
 
                 Btn.addTarget(self, action: #selector(handleBtn(_:)), for: .touchUpInside)
 
